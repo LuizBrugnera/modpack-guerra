@@ -75,7 +75,7 @@ O autor do *Sentry Mechanical Arm* não deixa launchers baixarem automaticamente
 1. Dê dois cliques na instância **Modpack Guerra**. A primeira abertura demora (2–5 min).
 2. **Multijogador → Adicionar servidor**.
    - Nome: `Guerra`
-   - Endereço: **`26.32.177.254`**
+   - Endereço: **o IP do servidor no Radmin** (o admin passa)
 3. **Pronto** → clique no servidor → **Entrar no servidor**.
 
 ### Primeiro acesso
