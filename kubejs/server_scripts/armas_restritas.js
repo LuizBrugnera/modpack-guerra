@@ -1,6 +1,7 @@
 // Modpack Guerra — itens restritos que a bancada do Project Explosive monta por lógica interna
 // (não dá para trocar a receita). Regras:
 //  - Nucleares: só admin (op) pode ter. Para eventos, um admin entrega/usa.
+//    Exceção: Fat Man feita no Crafter Mecânico 7x7 (receita de fim de jogo em progressao.js).
 //  - Bombas grandes (Mk 84) e ICBM grande: só quem já chegou na Era 4
 //    (estágio 'era4', ganho ao ter uma placa de circuito do TFMG no inventário).
 //  - Blocos à prova total (_ub): limite de colocação por jogador.
@@ -15,6 +16,17 @@ const ERA4_ITENS = [
   'projectexplosive:big_bomb_frag', 'projectexplosive:big_bomb_frag_head', 'projectexplosive:icbm_big'
 ]
 const GATILHO_ERA4 = 'tfmg:circuit_board'
+
+// Fat Man feita pela receita de fim de jogo (progressao.js) carrega custom_data {guerra_autorizada:1b}
+function fatManAutorizada(item) {
+  try {
+    const cd = item.getCustomData()
+    return cd != null && cd.getBoolean('guerra_autorizada')
+  } catch (e) {
+    console.warn('[Guerra] não consegui ler custom_data da Fat Man: ' + e)
+    return false
+  }
+}
 const LIMITE_UB = 128
 
 PlayerEvents.inventoryChanged(event => {
@@ -30,9 +42,15 @@ PlayerEvents.inventoryChanged(event => {
   }
   if (player.hasPermissions(2)) return
 
+  if (id === 'projectexplosive:nuclear_bomb' && fatManAutorizada(item)) return
+
   if (NUCLEARES.includes(id)) {
     item.setCount(0)
-    player.tell(Text.of('§c[Guerra] Armas nucleares só existem em eventos do servidor.'))
+    if (id === 'projectexplosive:nuclear_bomb') {
+      player.tell(Text.of('§c[Guerra] Fat Man da bancada é proibida. Monte-a no Crafter Mecânico 7x7 (receita de fim de jogo, veja no EMI).'))
+    } else {
+      player.tell(Text.of('§c[Guerra] Armas nucleares só existem em eventos do servidor.'))
+    }
   } else if (ERA4_ITENS.includes(id) && !player.stages.has('era4')) {
     item.setCount(0)
     player.tell(Text.of('§c[Progressão] Bombas grandes exigem a Era 4 (fabrique uma placa de circuito do TFMG).'))

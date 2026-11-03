@@ -30,7 +30,7 @@ hash = "8247c72bbfaa68b0c0fec73f350d7aaae3053701d8f5020013f0fe0163a4b5cd"
 
 [[files]]
 file = "kubejs/server_scripts/armas_restritas.js"
-hash = "bf24e9520fae954dec4b8998c04fdfa6867c4dddc919ddc1e2084d28bb1dd9e6"
+hash = "b3e89f4dfe170f1d6bdcaa8e9d55404146c5fc1c4b07381bbee5e226dd6d1540"
 
 [[files]]
 file = "kubejs/server_scripts/horario_guerra.js"
@@ -38,7 +38,7 @@ hash = "7089cc79cc1fd55b3e1ad0b0f678967550cde390f23dbb399779c9a3dec63372"
 
 [[files]]
 file = "kubejs/server_scripts/progressao.js"
-hash = "3bb41e008a6c93b70f4bde7d38b3379ba169029f24d8cb4b088d9fb134e76540"
+hash = "840e72cba45c1593c1a8ebc295fdc7d7c10e5af51605280d78e6bab2d4f2e8aa"
 
 [[files]]
 file = "mods/aeroclaims.pw.toml"

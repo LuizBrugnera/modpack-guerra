@@ -57,6 +57,31 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'projectexplosive:nuclear_bomb' })
   event.remove({ output: 'projectexplosive:icbm_nuclear' })
 
+  // Fat Man (projectexplosive:nuclear_bomb): única forma legítima = Crafter Mecânico 7x7 (Era 5).
+  // A bancada de munição do mod também monta a Fat Man (lógica interna, sem receita editável):
+  // essas saem SEM a marca 'guerra_autorizada' e são confiscadas por armas_restritas.js.
+  event.recipes.create.mechanical_crafting(
+    Item.of('projectexplosive:nuclear_bomb[minecraft:custom_data={guerra_autorizada:1b}]'),
+    [
+      '  SSS  ',
+      ' SAUAS ',
+      'SAUMUAS',
+      'SUCNCUS',
+      'SAUBUAS',
+      ' SAUAS ',
+      '  SSS  '
+    ],
+    {
+      S: ERA3.blocoAco,                    // 16 blocos de aço
+      A: 'tfmg:aluminum_block',            // 8 blocos de alumínio
+      U: 'projectexplosive:uranium_ingot', // 8 lingotes de urânio
+      C: 'tfmg:coated_circuit_board',      // 2 placas de circuito revestidas
+      M: ERA4.motor,                       // 1 motor elétrico pesado
+      B: 'projectexplosive:big_bomb',      // 1 bomba Mk 84 (Era 4)
+      N: 'minecraft:nether_star'           // 1 estrela do Nether
+    }
+  )
+
   // ---------- Bunkers: blocos "à prova total" (_ub) só na Era 4, caros ----------
   // Os reforçados normais (pedra + pepita de ferro) continuam liberados cedo.
   // bloco à prova total ← bloco reforçado normal

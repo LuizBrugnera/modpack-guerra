@@ -73,3 +73,9 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 
 - `online-mode=false` + **MixAuth** (só servidor): conta original entra verificada pela Mojang (mesmo UUID de sempre); conta pirata usa `/register` e `/login`.
 - **Whitelist desligada**: em modo offline ela bloquearia contas piratas (UUID diferente). A proteção fica na rede fechada do Radmin + senha do MixAuth.
+## Fat Man (bomba nuclear do Project Explosive) — 03/11/2026
+
+- A bancada de munição do mod monta a Fat Man barato e a receita dela é fixa no código (mod ofuscado). Essas bombas continuam **confiscadas**.
+- **Receita nova (Era 5):** Crafter Mecânico do Create **7x7** — 16 blocos de aço TFMG, 8 blocos de alumínio TFMG, 8 lingotes de urânio, 2 placas de circuito revestidas, 1 motor elétrico pesado, 1 bomba Mk 84 e 1 Estrela do Nether. A bomba sai com `custom_data {guerra_autorizada:1b}` e só essa passa pelo confisco.
+- **Testar no jogo:** a receita aparece no EMI; uma Fat Man da bancada some do inventário de quem não é op; a do crafter fica.
+- ICBM nuclear e shells nucleares do Enhanced Shells continuam só para admin.
