@@ -1,0 +1,13 @@
+name = "Project: Explosive"
+filename = "projectexplosive-0.7.2-beta.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3rXU9gz8/versions/ZLwuD5gm/projectexplosive-0.7.2-beta.jar"
+hash-format = "sha512"
+hash = "211377ff0d9d868a3c27f7ce9e350ff77d4c736f08224740d882f2ad450cb54da4c9855ecd04b0825a30f79e193e0daaec855e76b6eab4957df42cb60e76768f"
+
+[update]
+[update.modrinth]
+mod-id = "3rXU9gz8"
+version = "ZLwuD5gm"

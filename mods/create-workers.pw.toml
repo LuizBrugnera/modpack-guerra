@@ -1,0 +1,13 @@
+name = "Create: Workers"
+filename = "createworkers-1.21.1-0.5.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b7ced495daa6cdf6393958605e1065298b501cff"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8948608
+project-id = 1662272

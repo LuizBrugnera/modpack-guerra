@@ -1,0 +1,13 @@
+name = "Stronger blocks"
+filename = "stronger_blocks-1.5.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3uSVhWTF/versions/e8tTDBqc/stronger_blocks-1.5.0-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "8c3b02417242f0659e0da660d82c52d46f8432987f577b9ed774857a3d5e671ad49e0d773fedfbc4b644c20ed6553553b9be53d5c76637ae545c338e828e355c"
+
+[update]
+[update.modrinth]
+mod-id = "3uSVhWTF"
+version = "e8tTDBqc"

@@ -1,0 +1,9 @@
+README.md
+PENDENCIAS.md
+JOGADORES.md
+docker-compose.yml
+exports/
+scripts/
+*.mrpack
+*.zip
+.git/

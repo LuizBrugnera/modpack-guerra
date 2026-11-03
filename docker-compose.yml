@@ -1,0 +1,56 @@
+# Servidor do Modpack Guerra para VPS / host com Docker.
+# Uso: troque PACKWIZ_URL pela URL pública do pack.toml e rode: docker compose up -d
+services:
+  mc:
+    image: itzg/minecraft-server:java21
+    container_name: modpack-guerra
+    environment:
+      EULA: "TRUE"
+      TYPE: NEOFORGE
+      VERSION: "1.21.1"
+      NEOFORGE_VERSION: "21.1.265"
+      # Variável oficial da imagem itzg para packs packwiz
+      PACKWIZ_URL: "https://<host-do-repo>/pack.toml"
+      MEMORY: ""
+      INIT_MEMORY: "10G"
+      MAX_MEMORY: "12G"
+      USE_AIKAR_FLAGS: "FALSE"
+      JVM_OPTS: >-
+        -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200
+        -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC
+        -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M
+        -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15
+      MOTD: "Modpack Guerra"
+      DIFFICULTY: hard
+      PVP: "true"
+      ALLOW_FLIGHT: "TRUE"
+      VIEW_DISTANCE: "8"
+      SIMULATION_DISTANCE: "6"
+      SPAWN_PROTECTION: "0"
+      MAX_TICK_TIME: "-1"
+      ENABLE_WHITELIST: "TRUE"
+      ENFORCE_WHITELIST: "TRUE"
+      # WHITELIST: "nick1,nick2"
+      # OPS: "seu_nick"
+      TZ: "America/Sao_Paulo"
+    ports:
+      - "25565:25565"       # jogo (TCP)
+      - "24454:24454/udp"   # Simple Voice Chat (UDP)
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+
+  # Backup diário do mundo, mantém 7 dias
+  backup:
+    image: itzg/mc-backup
+    environment:
+      BACKUP_INTERVAL: "24h"
+      PRUNE_BACKUPS_DAYS: "7"
+      RCON_HOST: mc
+      INITIAL_DELAY: "10m"
+    volumes:
+      - ./data:/data:ro
+      - ./backups:/backups
+    depends_on:
+      - mc
+    restart: unless-stopped

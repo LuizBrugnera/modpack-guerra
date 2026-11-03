@@ -1,0 +1,13 @@
+name = "Sable Drive-By-Wire TFMG engine controller support"
+filename = "drivebywire-0.2.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/stUNbMf2/versions/NAafPNxX/drivebywire-0.2.7.jar"
+hash-format = "sha512"
+hash = "c5e37e4441978a4d85a734956c2de7ea8ba0ba20f5ef2ec27bad4d985cf3771bad0267e95134e9cb17ed0809e9f6688f025a3556ddd7a65ef0618689230356f2"
+
+[update]
+[update.modrinth]
+mod-id = "stUNbMf2"
+version = "NAafPNxX"
