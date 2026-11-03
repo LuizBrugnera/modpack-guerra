@@ -4,7 +4,7 @@ Vale para **conta original** e **conta pirata**. Só o passo 2 muda.
 Tempo total: uns 15 minutos (a maior parte é download).
 
 **Você vai precisar:**
-- O arquivo **`ModpackGuerra-0.1.0.mrpack`** (o admin manda)
+- A instância **`ModpackGuerra-Prism.zip`** (link no Passo 3)
 - O **nome e a senha da rede do Radmin** (o admin manda)
 - 8 GB de RAM livres para o jogo
 
@@ -46,21 +46,24 @@ Tempo total: uns 15 minutos (a maior parte é download).
 
 ## Passo 3 — Instalar o modpack
 
-1. Clique em **Adicionar instância** (canto superior esquerdo).
-2. No menu da esquerda, escolha **Importar**.
-3. Clique em **Procurar** → selecione o `ModpackGuerra-0.1.0.mrpack` → **OK**.
-4. Espere baixar (são ~60 mods, pode levar alguns minutos).
+1. Baixe a instância pronta: **https://github.com/LuizBrugnera/modpack-guerra/releases/latest** → arquivo **`ModpackGuerra-Prism.zip`** (não precisa descompactar).
+2. No launcher, clique em **Adicionar instância** (canto superior esquerdo).
+3. No menu da esquerda, escolha **Importar**.
+4. Clique em **Procurar** → selecione o `ModpackGuerra-Prism.zip` → **OK**.
 
-### Mod que precisa ser colocado à mão (1 arquivo)
-O autor do *Sentry Mechanical Arm* não deixa launchers baixarem automaticamente:
+Pronto: ela baixa **todos os mods sozinha** na primeira vez que você abrir o jogo (inclusive o Sentry Mechanical Arm) e **se atualiza sozinha** toda vez que o admin mudar o pack. Você nunca mais precisa reimportar.
 
-1. Abra: https://www.curseforge.com/minecraft/mc-mods/create-sentry-mechanical-arm-1/files/8897599
-2. Clique em **Download** e espere baixar o `sentrymechanicalarm-neoforge-1.21.1-1.3.7.jar`.
-3. No launcher: clique com o **botão direito** na instância **Modpack Guerra** → **Pasta**.
-4. Entre em **`minecraft`** → **`mods`** e **cole o arquivo** baixado ali.
+> Na primeira abertura aparece uma janelinha do *packwiz-installer* baixando os mods. Espere ela terminar.
+
+<details>
+<summary>Alternativa: importar o .mrpack (sem atualização automática)</summary>
+
+1. Peça ao admin o `ModpackGuerra-0.1.0.mrpack` e importe do mesmo jeito.
+2. Baixe à mão o `sentrymechanicalarm-neoforge-1.21.1-1.3.7.jar` em https://www.curseforge.com/minecraft/mc-mods/create-sentry-mechanical-arm-1/files/8897599 e coloque em: botão direito na instância → **Pasta** → `minecraft` → `mods`.
+3. A cada atualização do pack, importe o `.mrpack` novo.
+</details>
 
 ---
-
 ## Passo 4 — Memória
 
 1. Botão direito na instância → **Editar**.
@@ -104,7 +107,7 @@ O autor do *Sentry Mechanical Arm* não deixa launchers baixarem automaticamente
 
 | Problema | Solução |
 |---|---|
-| "Mods incompatíveis" / lista de mods ao conectar | Falta o jar do Sentry (Passo 3) ou o pack está desatualizado: reimporte o `.mrpack` novo. |
+| "Mods incompatíveis" / lista de mods ao conectar | Feche e abra o jogo de novo (a instância se atualiza na abertura). Se usou o `.mrpack`: confira o jar do Sentry e importe o `.mrpack` novo. |
 | "Tempo esgotado" / não conecta | Radmin desligado, ou o servidor está desligado. Confira a bolinha verde do admin no Radmin. |
 | Jogo fecha sozinho ao abrir | Pouca memória: confira o Passo 4. |
 | Fica parado ao entrar (pirata) | Você ainda não fez `/register` ou `/login`. |

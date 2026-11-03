@@ -4,6 +4,8 @@ Modpack de guerra para servidor com amigos: Create + Create Aeronautics + Create
 
 - Minecraft 1.21.1 · NeoForge 21.1.265 · Java 21
 - Gerenciado com [packwiz](https://packwiz.infra.link). Este repositório é a fonte única: servidor e clientes puxam os mods daqui.
+- URL do pack: `https://raw.githubusercontent.com/LuizBrugnera/modpack-guerra/main/pack.toml`
+- Atualizar o pack para todo mundo = `git push`. A instância do Prism e o `iniciar-servidor.bat` baixam a versão nova na próxima abertura.
 
 ## Estrutura
 

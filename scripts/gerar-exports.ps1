@@ -71,7 +71,19 @@ $mmc = '{"components":[{"uid":"net.minecraft","version":"1.21.1","important":tru
 [IO.File]::WriteAllText((Join-Path $tmp 'mmc-pack.json'), $mmc, $utf8)
 $prism = Join-Path $out 'ModpackGuerra-Prism.zip'
 Remove-Item $prism -ErrorAction SilentlyContinue
-Compress-Archive -Path (Join-Path $tmp '*') -DestinationPath $prism
+Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
+function New-ZipSlash($origem, $destino) {
+  # Cria zip com separador "/" (o Compress-Archive do PowerShell 5 grava "\" e quebra o import do Prism)
+  $zip = [IO.Compression.ZipFile]::Open($destino, 'Create')
+  try {
+    Get-ChildItem $origem -Recurse | ForEach-Object {
+      $rel = $_.FullName.Substring($origem.Length).TrimStart('\').Replace('\', '/')
+      if ($_.PSIsContainer) { [void]$zip.CreateEntry("$rel/") }
+      else { [void][IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $_.FullName, $rel) }
+    }
+  } finally { $zip.Dispose() }
+}
+New-ZipSlash $tmp $prism
 
 # ---- Pacote do servidor (sem mundo; rode com o servidor desligado) ----
 $srv = Join-Path $raiz 'servidor'

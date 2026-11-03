@@ -1,5 +1,5 @@
 # Servidor do Modpack Guerra para VPS / host com Docker.
-# Uso: troque PACKWIZ_URL pela URL pública do pack.toml e rode: docker compose up -d
+# Uso: docker compose up -d
 services:
   mc:
     image: itzg/minecraft-server:java21
@@ -10,7 +10,7 @@ services:
       VERSION: "1.21.1"
       NEOFORGE_VERSION: "21.1.265"
       # Variável oficial da imagem itzg para packs packwiz
-      PACKWIZ_URL: "https://<host-do-repo>/pack.toml"
+      PACKWIZ_URL: "https://raw.githubusercontent.com/LuizBrugnera/modpack-guerra/main/pack.toml"
       MEMORY: ""
       INIT_MEMORY: "10G"
       MAX_MEMORY: "12G"
