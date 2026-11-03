@@ -32,6 +32,8 @@ services:
       ENFORCE_WHITELIST: "TRUE"
       # WHITELIST: "nick1,nick2"
       # OPS: "seu_nick"
+      ONLINE_MODE: "FALSE"        # contas piratas; login por senha via MixAuth
+      ENFORCE_SECURE_PROFILE: "FALSE"
       TZ: "America/Sao_Paulo"
     ports:
       - "25565:25565"       # jogo (TCP)

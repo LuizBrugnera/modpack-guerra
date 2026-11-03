@@ -25,6 +25,10 @@ file = "defaultconfigs/openpartiesandclaims-default-player-config.toml"
 hash = "21c9248a694adce931e8a341a38c56cfee0f06afab4a49449cf7d896449adf35"
 
 [[files]]
+file = "kubejs/data/guardvillagers/loot_table/entities/guard_armor.json"
+hash = "8247c72bbfaa68b0c0fec73f350d7aaae3053701d8f5020013f0fe0163a4b5cd"
+
+[[files]]
 file = "kubejs/server_scripts/armas_restritas.js"
 hash = "bf24e9520fae954dec4b8998c04fdfa6867c4dddc919ddc1e2084d28bb1dd9e6"
 
@@ -68,7 +72,7 @@ metafile = true
 
 [[files]]
 file = "mods/cbc-more-shells.pw.toml"
-hash = "2ca1c31a7df0eff63bcd7246658d877b0c210f3b07787e11b984fdb3326894be"
+hash = "f6ee0508d441b5beceeb0f02b6243876196b2417b59f4d701e03f94102086190"
 metafile = true
 
 [[files]]
@@ -89,6 +93,11 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics-climbable-rope.pw.toml"
 hash = "914f2efb2afa0113d5936b0e721fb5c291abb9c2e66944f33fc33be8e33c8a89"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-gadgets-and-gizmos.pw.toml"
+hash = "fb6321007ad551c275d1d113d962f9315248294fffb8ed9ce7340e4b908beb68"
 metafile = true
 
 [[files]]
@@ -129,6 +138,11 @@ metafile = true
 [[files]]
 file = "mods/create-radars.pw.toml"
 hash = "ecd68ff74b75e98bcb9d5dc482ca167a2b5024167eacc5075ce3bdc212cd01c2"
+metafile = true
+
+[[files]]
+file = "mods/create-sentry-mechanical-arm-1.pw.toml"
+hash = "19acdb9fe9a906fd81ef73b179fad6f85021e02d2c5dbaf6daf769fcf2aa9b12"
 metafile = true
 
 [[files]]
@@ -202,6 +216,16 @@ hash = "be9f3f981dd69822b4a3e5ab6fd677ec69a4e01dcf66c62e239b6ef65f31f0fd"
 metafile = true
 
 [[files]]
+file = "mods/mixauth.pw.toml"
+hash = "94867ea2f0b435da9235cf4966a4c901c486ff50a35a6d20f92676512c2a2fa9"
+metafile = true
+
+[[files]]
+file = "mods/navaroneecore.pw.toml"
+hash = "7526a56d8da198d2558406fb7b3389d07844aded724c5fb87f5f7baf365b2dc3"
+metafile = true
+
+[[files]]
 file = "mods/noreteams.pw.toml"
 hash = "212945dde7f7e800c4454efc9c3bc00482dde208640863846fea5eb7525028b6"
 metafile = true
@@ -219,6 +243,11 @@ metafile = true
 [[files]]
 file = "mods/rhino.pw.toml"
 hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
+metafile = true
+
+[[files]]
+file = "mods/rise-of-villages.pw.toml"
+hash = "49094cb86e60128469f97278cebc35c42e2153f4a6575c4345f8fa26c68f9eb5"
 metafile = true
 
 [[files]]
@@ -244,16 +273,6 @@ metafile = true
 [[files]]
 file = "mods/sable.pw.toml"
 hash = "fadb5c9cfe145e51992894fe57209fc8f1696ef892ee9702a24c6205f042e9b2"
-metafile = true
-
-[[files]]
-file = "mods/shaolib-munitions.pw.toml"
-hash = "90b63cf06f0d0c78a1eebe08b0b7dc60fbceb6b4d1787e200c22979745ab9973"
-metafile = true
-
-[[files]]
-file = "mods/shaolib.pw.toml"
-hash = "52844ecbde49a202162b1808ab3c36240fce17dd80e036dc0eadb7320f4071d2"
 metafile = true
 
 [[files]]

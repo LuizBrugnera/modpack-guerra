@@ -2,15 +2,14 @@
 
 Atualizado em 03/11/2026. Pack: MC 1.21.1, NeoForge 21.1.265.
 
-## Mods da lista sem build 1.21.1 NeoForge (não substituídos)
+## Decisões aplicadas (03/11/2026)
 
-| Mod | Situação | Possível alternativa (precisa de aprovação) |
-|---|---|---|
-| Frontier Cohorts | Não encontrado no Modrinth nem no CurseForge | Villager Recruits só tem 1.20.1 |
-| Create Aeronautics Thrusters and Things | Não encontrado | Create: Simulated Thrusters / Create: Linked Thrusters (1.21.1) |
-| Create: Sentry Mechanical Arm | Oficial só tem 1.20.1 Forge | Port não oficial chinês no CurseForge: "Create: Sentry Mechanical Arm_非官方移植" (1.21.1 NeoForge) |
-
-Com isso também ficam sem efeito: claims de facção do Frontier Cohorts e "recrutamento custa munição e combustível".
+- **Thrusters and Things → Create Aeronautics: Gadgets & Gizmos** (renomeado; CurseForge 1537945). Adicionado pelo **Modrinth** (download automático liberado), **fixado na 1.2.10** (última 1.x estável, "Performance Hotfix"). O jar é "bundled" e a 1.2.10 não declara a *Gadgets & Gizmos Library* (essa biblioteca saiu junto com a 2.0.0). **Teste futuro:** 2.0.0 (lançada em 03/11/2026, exige rever dependências).
+- **Create: Sentry Mechanical Arm** → port aprovado `create-sentry-mechanical-arm-1` (1.3.7). O autor **bloqueou download pela API do CurseForge**: o packwiz não baixa sozinho. Solução: o `iniciar-servidor.bat` e a instância do Prism baixam o jar direto do CDN do CurseForge antes do packwiz rodar. O `.mrpack` sai **sem** ele (o jogador baixa à mão) — embutir o jar seria redistribuir o mod.
+- **Frontier Cohorts**: removido do pack e da especificação. Não usar ports do Villager Recruits (licença ARR). Removida a regra "recrutamento custa munição e combustível".
+- **Rise of Villages** (Modrinth, 2.0.0-ep10, + NavaroneeCore): adicionado como **exército provisório** (recrutas, arqueiros, cavalaria). Ele tem território próprio ao comprar uma vila — ver config abaixo para manter o território só no OPAC.
+- **Guard Villagers**: datapack em `kubejs/data/guardvillagers/loot_table/entities/guard_armor.json`. Nesta versão (2.4.12) não existe `guard_main_hand`: a mão principal fica no pool `mainhand` da tabela `guard_armor`, que foi sobrescrito só com armas TaCZ da Era 1–2 (M1911, CZ75, Glock 17, Rhino .357, Springfield 1873, Kar98k, escopetas de cano duplo, M870, SKS). Armadura e mão secundária continuam as originais. Armas vêm sem munição: os guardas buscam em baús (Guard Villagers TACZ Support).
+- **Exports**: sem export CurseForge. Só `.mrpack` + instância do Prism (com packwiz-installer).
 
 ## Trocas e versões fixadas (decididas na montagem)
 
@@ -60,4 +59,17 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 ## Infra
 
 - Publicar o repositório (ex.: GitHub) para ter a URL pública do `pack.toml` (usada pelo servidor, pelo Prism e pelo docker-compose).
-- Export CurseForge `.zip`: mods só do Modrinth vão como override/URL; conferir se o CurseForge App importa.
+- **docker-compose (VPS)**: a imagem itzg roda o packwiz-installer, que falha no Sentry Arm (download bloqueado). Antes de usar em VPS, colocar o jar em `data/mods/` manualmente.
+
+## Testes de 03/11/2026 (servidor dedicado, sem jogadores)
+
+- **Crash corrigido:** a Shaolib 0.1.0 (dependência do CBC Military Supplement 3.x) derrubava o servidor no primeiro impacto de projétil do CBC (`NoClassDefFoundError: com/verr1/synaxis/...`). Solução: **CBC Military Supplement fixado na 2.1.4** (sem Shaolib; mantém torpedos, tubos e carga de profundidade). Após a troca, disparos não derrubam mais o servidor.
+- **Descoberta:** o CBC calcula a penetração de projéteis sólidos como uma *explosão do jogo* (`handleCustomExplosion`). Logo, o `horario_guerra.js` provavelmente também bloqueia esse dano fora do horário. **Confirmar no jogo.**
+- **OPAC × projétil sólido do CBC: INCONCLUSIVO.** O projétil invocado por `/summon` não quebrou nem a parede de controle (fora de claim, modo guerra), então o teste por comando não serve. O OPAC não tem integração com o CBC no código. **Teste manual pendente:** montar um canhão real, fazer um claim com uma conta e disparar contra uma parede dentro e fora do claim, com `/guerra on`.
+- **Datapack dos guardas: não verificado** (os guardas de teste morreram de queda antes da leitura). Teste no jogo: `/summon guardvillagers:guard ~ ~ ~` e ver a arma na mão.
+- MixAuth, Rise of Villages, Gadgets & Gizmos 1.2.10 e Sentry Arm: carregam sem erro.
+
+## Modo pirata
+
+- `online-mode=false` + **MixAuth** (só servidor): conta original entra verificada pela Mojang (mesmo UUID de sempre); conta pirata usa `/register` e `/login`.
+- **Whitelist desligada**: em modo offline ela bloquearia contas piratas (UUID diferente). A proteção fica na rede fechada do Radmin + senha do MixAuth.

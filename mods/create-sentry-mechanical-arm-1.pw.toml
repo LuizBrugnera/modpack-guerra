@@ -1,0 +1,13 @@
+name = "Create: Sentry Mechanical Arm_非官方移植"
+filename = "sentrymechanicalarm-neoforge-1.21.1-1.3.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b1a2beb0a65e1ead0641c0a38b5930bfd4ee9d3a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8897599
+project-id = 1551674

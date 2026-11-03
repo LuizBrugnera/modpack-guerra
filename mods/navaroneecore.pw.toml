@@ -1,0 +1,13 @@
+name = "NavaroneeCore"
+filename = "navaronee_corelib-1.21.1-21.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/eVxkzQCG/versions/ErmVIgH9/navaronee_corelib-1.21.1-21.4.jar"
+hash-format = "sha512"
+hash = "2c35314cd275f9b6874e462956477307662c087c35977f55d759270b8c0079f49260f1baa096faca56df09740aa430f1d2d34258fa96207c0213f65f0f6597f7"
+
+[update]
+[update.modrinth]
+mod-id = "eVxkzQCG"
+version = "ErmVIgH9"

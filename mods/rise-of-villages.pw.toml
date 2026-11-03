@@ -1,0 +1,13 @@
+name = "Rise of Villages"
+filename = "riseofvillages-2.0.0-ep10.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/uvAr4AW4/versions/5QftlXjz/riseofvillages-2.0.0-ep10.jar"
+hash-format = "sha512"
+hash = "913bb696b029e1a3ac3c6bfb30745acdae35411949688ea28a33e3dcc8873248efad3ed53a001ac63903aea1d95c4d4db19f93c3e14d8bf92482ca0adea3f671"
+
+[update]
+[update.modrinth]
+mod-id = "uvAr4AW4"
+version = "5QftlXjz"

@@ -24,8 +24,7 @@ packwiz mr add <slug>        # adicionar mod do Modrinth
 packwiz cf add <slug>        # adicionar mod do CurseForge
 packwiz update --all         # atualizar mods (faça backup do mundo antes!)
 packwiz refresh              # recalcular o índice depois de editar arquivos
-packwiz mr export            # gerar .mrpack
-packwiz cf export            # gerar .zip do CurseForge
+powershell -File scripts\gerar-exports.ps1 -PackUrl <url>   # .mrpack + instancia Prism + pacote do servidor
 packwiz serve                # servir o pack em http://localhost:8080 para testes
 ```
 
