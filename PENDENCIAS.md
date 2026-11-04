@@ -116,3 +116,11 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - O primeiro zip tinha `PreLaunchCommand=cmd /c "...atualizar-mods.bat" "$INST_JAVA"`. O Prism lê o `instance.cfg` como INI (QSettings): apaga as aspas e cola os argumentos → "A sintaxe do nome do arquivo... está incorreta" e o jogo não abre.
 - Agora: `PreLaunchCommand="\"$INST_JAVA\" -jar packwiz-installer-bootstrap.jar <URL>"` (valor inteiro entre aspas, aspas internas com `\"`), como na documentação do packwiz. O `.bat` saiu: os mods bloqueados na API já têm URL direta.
 - Quem importou o zip antigo: reimportar o zip novo, ou em *Editar instância → Configurações → Comandos personalizados → Pré-lançamento* colar `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/LuizBrugnera/modpack-guerra/main/pack.toml`.
+
+## Lote 3 de 04/11/2026
+- **Create Aeronautics: Offroad** já estava no pack: vem dentro do `create-aeronautics-bundled` (rodas, pneus, broca). Nada a adicionar.
+- **CBC: Advanced Technologies** 0.1.4c (Modrinth `create-big-cannons-advanced-technologies`) + **CBC AT crash fix** fixado na **1.0.1**: o CBC AT foi compilado contra um CBC antigo e crasha ao disparar no CBC 5.11.7; a 1.0.1 corrige só isso. As versões 1.1.x do fix exigem Create: Radars ≥ 5.0, que não dá para usar (Simulated Missiles exige < 0.5 e o Firepower Components crasha com 5.x) — o servidor nem sobe.
+- **Superb Warfare** 0.8.9.2 (+ Kotlin for Forge) e **SBW Aeronautics compat** 1.15.0. Incompatível com "Iris/Oculus & GeckoLib Compat" (não está no pack).
+- **"SW x CA Compat"**: não encontrado no Modrinth, CurseForge nem na web. O único compat Superb Warfare + Aeronautics é o SBW Aeronautics compat (adicionado). Se for outro, falta o link.
+- Receita quebrada no próprio CBC AT: `cbc_at:cutting/twin_autocannon_barrel_cast_mould`.
+- Não testado em jogo: veículos/armas do Superb Warfare em estruturas do Aeronautics, disparo dos canhões do CBC AT (o fix é exatamente para isso), equilíbrio Superb Warfare × TaCZ.

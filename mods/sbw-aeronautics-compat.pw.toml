@@ -1,0 +1,13 @@
+name = "SBW Aeronautics compat"
+filename = "aerowarfare_compat-1.15.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/mcHsAayo/versions/Cm5jwHlO/aerowarfare_compat-1.15.0.jar"
+hash-format = "sha512"
+hash = "a04e307c85ad3ee708e7b806518dbc6a36d9fd62f21937e0982ce2d31a889d9d673db59f2cd7ab8dc9d11b4e44127b51452e7f651d244f70bb6ab0305acd3e3d"
+
+[update]
+[update.modrinth]
+mod-id = "mcHsAayo"
+version = "Cm5jwHlO"
