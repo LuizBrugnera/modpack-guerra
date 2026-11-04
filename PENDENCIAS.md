@@ -124,3 +124,7 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - **"SW x CA Compat"**: não encontrado no Modrinth, CurseForge nem na web. O único compat Superb Warfare + Aeronautics é o SBW Aeronautics compat (adicionado). Se for outro, falta o link.
 - Receita quebrada no próprio CBC AT: `cbc_at:cutting/twin_autocannon_barrel_cast_mould`.
 - Não testado em jogo: veículos/armas do Superb Warfare em estruturas do Aeronautics, disparo dos canhões do CBC AT (o fix é exatamente para isso), equilíbrio Superb Warfare × TaCZ.
+
+## Varinha de construção — 04/11/2026
+- Pedido: "mod de magic wand para facilitar a construção". Não existe mod de construção chamado "Magic Wand" para 1.21.1 (os que existem são de magia, Bukkit ou versões antigas). Adicionado o **Building Wands** 3.0.5 (nicguzzo, Apache-2.0; deps Architectury e Cloth Config, já no pack): varinhas de pedra/ferro/diamante/netherite que colocam e removem fileiras de blocos em vários modos.
+- Testado: servidor de teste sobe com ele. Não testado: varinha dentro de claims do OPAC.

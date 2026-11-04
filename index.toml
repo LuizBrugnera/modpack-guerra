@@ -109,6 +109,11 @@ hash = "a2c8cf1a4fc5faed55ca1f8d04f7abaa1c8282b9bcd70e1b3e607181923f48d9"
 metafile = true
 
 [[files]]
+file = "mods/building-wands.pw.toml"
+hash = "98de570e4873e332455e5526ed5b62779cdb23c217efac51ad864ae510861456"
+metafile = true
+
+[[files]]
 file = "mods/burnt.pw.toml"
 hash = "5b399a748b038a060884d9c24f5aa5b1a8d48feb699fc72c5a5d8f2260ae282f"
 metafile = true
