@@ -57,6 +57,10 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - `armas_restritas.js`: bombas grandes exigem o estágio `era4` (ganho ao ter uma placa de circuito do TFMG); nucleares só para op.
 - Limite de blocos à prova total: 128 por jogador (contador simples, não devolve ao quebrar).
 
+## Mods bloqueados na API do CurseForge
+- `create-sentry-mechanical-arm-1` e `create-simulated-missiles-create-aeronautics`: o autor bloqueou download por API. Os `.pw.toml` apontam direto para o CDN do CurseForge (`url = mediafilez.forgecdn.net/...`), então o packwiz-installer baixa sozinho. Ao atualizar esses dois, trocar `url`, `hash` e `file-id` à mão (o `packwiz update` voltaria para o modo API).
+- Simulated Missiles 0.2.0 exige Create: Radars `[0.4.9.4, 0.5.0)` — combina com o pin atual do Radars.
+
 ## Infra
 
 - Publicar o repositório (ex.: GitHub) para ter a URL pública do `pack.toml` (usada pelo servidor, pelo Prism e pelo docker-compose).

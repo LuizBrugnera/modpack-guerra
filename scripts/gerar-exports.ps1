@@ -16,7 +16,7 @@ New-Item -ItemType Directory -Force $out | Out-Null
 Set-Location $pack
 
 # Mods do CurseForge cujo autor bloqueou download por API: baixados direto do CDN do CurseForge
-$SLUGS_MANUAIS = @('create-sentry-mechanical-arm-1')
+$SLUGS_MANUAIS = @('create-sentry-mechanical-arm-1', 'create-simulated-missiles-create-aeronautics')
 
 function Get-Manual($slug) {
   $t = Get-Content (Join-Path $pack "mods\$slug.pw.toml") -Raw
