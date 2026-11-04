@@ -104,6 +104,9 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - Receitas quebradas nos próprios mods (o mod carrega, só essas receitas não existem): Terminal Ballistics `copycat_armor_layer`, `framed_collapsible_copycat_armor_block`, `armor_upgrader`; Steel armor blocks `glassarmor`. Dá para recriar via KubeJS se fizerem falta.
 - Não testado em jogo: First Aid New com dano do TaCZ (não há compat instalado), Corpse com OPAC, armadilhas do MineTraps em claims.
 
+## HUD
+- First Aid: o boneco de vida ficava em cima do minimapa do Xaero (os dois no canto superior esquerdo). `config/firstaid-client.toml`: `overlayPosition = "BOTTOM_LEFT"`. Opções: TOP_LEFT, TOP_RIGHT, BOTTOM_RIGHT, BOTTOM_LEFT, mais `xOffset`/`yOffset`.
+
 ## Quests (FTB Quests)
 - 4 capítulos, 32 quests, em português: 1. Primeiros passos no Create → 2. Seu primeiro barco → 3. Voando: balão e avião → 4. Navegação e controle. Textos originais (não copiados de outros modpacks).
 - Fonte: `scripts/gerar-quests.ps1` gera `config/ftbquests/quests/`. Editar lá e rodar de novo; os IDs são fixos (hash da chave), então o progresso dos jogadores se mantém. Editar pelo editor do jogo grava só na pasta local — copie de volta para o repo se usar.
