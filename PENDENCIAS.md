@@ -98,14 +98,14 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - Testado: servidor de teste sobe com tudo, sem erros novos. Não testado em jogo: frequência das luas (Peaceful Moon impede spawn de hostis por uma noite; Black Moon dá cegueira), estruturas do Born in Chaos/Better Villages e itens da Air War/Propulsion.
 
 ## Lote 2 de 03/11/2026
-- Adicionados (Modrinth): Create: Steel armor blocks 1.4.3, CBC: Terminal Ballistics 0.3.5, Create:Parachute 1.1.5, Corpse 1.1.22, Create: Copycats+ 3.0.9, Sable Pathfinder 1.4.0, First Aid New 1.3.5, Fracture Point 3.0.0-PT1-fix (dep. Curios), TaCZ Armor Scaling 0.5.4, MineTraps 3.0.2, Aeronautics Camera Sync 1.4.0, ModernFix 5.27.27, FerriteCore 7.0.3. CurseForge: FTB Quests 2101.1.38 (+ FTB Library, FTB Teams; Architectury veio do Modrinth).
+- Adicionados (Modrinth): Create: Steel armor blocks 1.4.3, CBC: Terminal Ballistics 0.3.5, Create:Parachute 1.1.5, Corpse 1.1.22, Create: Copycats+ 3.0.9, Sable Pathfinder 1.4.0, ~~First Aid New 1.3.5~~ (removido em 04/11), Fracture Point 3.0.0-PT1-fix (dep. Curios), TaCZ Armor Scaling 0.5.4, MineTraps 3.0.2, Aeronautics Camera Sync 1.4.0, ModernFix 5.27.27, FerriteCore 7.0.3. CurseForge: FTB Quests 2101.1.38 (+ FTB Library, FTB Teams; Architectury veio do Modrinth).
 - **TaCZ Armor Scaling**: fixado na 0.5.4 (a "0.5.4-customgun" é para outro mod de armas). Exige o **Custom BattleRoyale** (o código saiu dele) — entrou como dependência; os erros de "example.json" dele no log são dos arquivos de exemplo e não afetam nada. Só servidor. **Vem desligado**: para ativar, como op: `/armorscaling damageScaling true` e `/armorscaling durabilityScaling true` (config em `config/armorscaling/`). Não testado.
 - **Otimizações**: ModernFix e FerriteCore em servidor e cliente (`side = both`), configs padrão. A opção "dynamic resources" do ModernFix (economiza RAM no cliente) ficou desligada: pode quebrar texturas de alguns mods; testar antes de ligar.
 - Receitas quebradas nos próprios mods (o mod carrega, só essas receitas não existem): Terminal Ballistics `copycat_armor_layer`, `framed_collapsible_copycat_armor_block`, `armor_upgrader`; Steel armor blocks `glassarmor`. Dá para recriar via KubeJS se fizerem falta.
-- Não testado em jogo: First Aid New com dano do TaCZ (não há compat instalado), Corpse com OPAC, armadilhas do MineTraps em claims.
+- Não testado em jogo: Corpse com OPAC, armadilhas do MineTraps em claims.
 
 ## HUD
-- First Aid: o boneco de vida ficava em cima do minimapa do Xaero (os dois no canto superior esquerdo). `config/firstaid-client.toml`: `overlayPosition = "BOTTOM_RIGHT"` (pedido do admin em 04/11; o HUD de munição do TaCZ também fica embaixo à direita — conferir se não sobrepõe). Opções: TOP_LEFT, TOP_RIGHT, BOTTOM_RIGHT, BOTTOM_LEFT, mais `xOffset`/`yOffset`.
+- ~~First Aid~~: **removido em 04/11/2026** a pedido do admin (junto com a config do HUD).
 
 ## Quests (FTB Quests)
 - 4 capítulos, 32 quests, em português: 1. Primeiros passos no Create → 2. Seu primeiro barco → 3. Voando: balão e avião → 4. Navegação e controle. Textos originais (não copiados de outros modpacks).

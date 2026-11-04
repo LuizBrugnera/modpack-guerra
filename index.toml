@@ -17,10 +17,6 @@ file = "config/createbigcannons-server.toml"
 hash = "f9b43150ae555d8c43f6a65f41a0c3b31dc344eb01c7f6b2608fd0a016294b0c"
 
 [[files]]
-file = "config/firstaid-client.toml"
-hash = "6227492a4d1fe99384f7fa804e048c97d61e8f27bb5e94cce2f94a5eb210068b"
-
-[[files]]
 file = "config/ftbquests/quests/chapters/c1_create.snbt"
 hash = "0ef5d287e300ae81a43ce106aa627526d2874d59bfa837e070ef235295b600c7"
 
@@ -310,11 +306,6 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
-metafile = true
-
-[[files]]
-file = "mods/first-aid-new.pw.toml"
-hash = "40cdfaf0c9317fc6fdc191a103c0fc863fc80fa43e65f211ad2d15d19a5ac229"
 metafile = true
 
 [[files]]
