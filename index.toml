@@ -14,7 +14,7 @@ hash = "5acfddaeea2429786823909b309a4412bf9b8d63635acc39f225975bf997af20"
 
 [[files]]
 file = "config/chunky/config.json"
-hash = "6c103db0800e63ba88c2296e42fb8f5e631f70ea17b8c5d77bef0166d0662d96"
+hash = "5ea4f4e8acb81d76d9644a918a03967d9a244177af95c49bc47bbdcd9a2a3819"
 
 [[files]]
 file = "config/createbigcannons-server.toml"

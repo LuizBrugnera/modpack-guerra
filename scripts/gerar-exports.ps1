@@ -87,7 +87,7 @@ New-ZipSlash $tmp $prism
 $srv = Join-Path $raiz 'servidor'
 $srvZip = Join-Path $out "ModpackGuerra-$ver-servidor.zip"
 Remove-Item $srvZip -ErrorAction SilentlyContinue
-$itens = 'mods', 'config', 'defaultconfigs', 'kubejs', 'libraries', 'iniciar-servidor.bat', 'run.bat', 'run.sh', 'user_jvm_args.txt', 'server.properties', 'packwiz-installer-bootstrap.jar' |
+$itens = 'mods', 'config', 'defaultconfigs', 'kubejs', 'libraries', 'iniciar-servidor.bat', 'desativar-selecao.ps1', 'run.bat', 'run.sh', 'user_jvm_args.txt', 'server.properties', 'packwiz-installer-bootstrap.jar' |
   ForEach-Object { Join-Path $srv $_ } | Where-Object { Test-Path $_ }
 Compress-Archive -Path $itens -DestinationPath $srvZip
 
