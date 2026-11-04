@@ -617,8 +617,8 @@ hash = "6b235aa1d0c43ab4fa7eacca3eb3c62530fa6ae1b44bc56aecc25c636a8ffc5b"
 metafile = true
 
 [[files]]
-file = "mods/guerra-correcoes-1.1.0.jar"
-hash = "fe46034b518c405303de8eaade22c85370547d66d23d174c9f1e5cbb13a3734b"
+file = "mods/guerra-correcoes-1.1.1.jar"
+hash = "c7c3724982548ee8475fc9509b02989ec7cd607b18b7a3738604b20518044cfd"
 
 [[files]]
 file = "mods/horde-moon-2.pw.toml"
