@@ -1,0 +1,19 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="guerra_weather2fix"
+version="1.0.0"
+displayName="Guerra: Weather2 Fix"
+description="Corrige a queda de conexão 'Failed to encode packet custom_payload' do Weather2 2.8.7 (envia cópia do NBT)."
+
+[[mixins]]
+config="guerra_weather2fix.mixins.json"
+
+[[dependencies.guerra_weather2fix]]
+modId="weather2"
+type="required"
+versionRange="[1.21.0-2.8.7,)"
+ordering="AFTER"
+side="BOTH"

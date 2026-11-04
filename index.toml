@@ -191,6 +191,10 @@ hash = "6b235aa1d0c43ab4fa7eacca3eb3c62530fa6ae1b44bc56aecc25c636a8ffc5b"
 metafile = true
 
 [[files]]
+file = "mods/guerra-weather2fix-1.0.0.jar"
+hash = "f84feac7c854afac79b92b7c72eba5f0f1f92d0f6b8f7a246b80cfdcc884dafa"
+
+[[files]]
 file = "mods/iris.pw.toml"
 hash = "db1c1e6382878b78e994dba1b9026935f8d1c5ca685c89d2437858e0a0dcab58"
 metafile = true

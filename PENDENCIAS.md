@@ -79,3 +79,10 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - **Receita nova (Era 5):** Crafter Mecânico do Create **7x7** — 16 blocos de aço TFMG, 8 blocos de alumínio TFMG, 8 lingotes de urânio, 2 placas de circuito revestidas, 1 motor elétrico pesado, 1 bomba Mk 84 e 1 Estrela do Nether. A bomba sai com `custom_data {guerra_autorizada:1b}` e só essa passa pelo confisco.
 - **Testar no jogo:** a receita aparece no EMI; uma Fat Man da bancada some do inventário de quem não é op; a do crafter fica.
 - ICBM nuclear e shells nucleares do Enhanced Shells continuam só para admin.
+## Correção própria: Weather2 derrubava jogadores — 03/11/2026
+- Sintoma: `Connection Lost — Failed to encode packet 'clientbound/minecraft:custom_payload'`.
+- Causa (log do cliente): `Failed encoding custom payload weather2:nbt_client: ConcurrentModificationException`. O Weather2 2.8.7 (última versão, licença ARR) envia o mesmo `CompoundTag` que continua alterando; o Netty serializa em outra thread e quebra. Pode acontecer no servidor dedicado também, a qualquer momento com tempestade ativa.
+- Correção: mod próprio `mods/guerra-weather2fix-1.0.0.jar` (código em `fix-mods/weather2fix/`, MIT). Um mixin faz `WeatherNetworkingv2.serverSendToClient*` enviar uma cópia do tag. O jar do Weather2 não foi alterado.
+- Verificado: servidor sobe; a classe exportada pelo Mixin mostra a cópia nos 4 métodos de envio. A corrida em si é aleatória e não dá para reproduzir sob demanda: observar se a queda volta.
+- Se uma versão nova do Weather2 corrigir o bug, remover o jar. Se o Weather2 renomear os métodos, o servidor não sobe (mixin obrigatório) — o erro aponta para `guerra_weather2fix`.
+- Recompilar: ver comando em `fix-mods/weather2fix/COMPILAR.md`.
