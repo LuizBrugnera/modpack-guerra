@@ -51,7 +51,7 @@ Tempo total: uns 15 minutos (a maior parte é download).
 3. No menu da esquerda, escolha **Importar**.
 4. Clique em **Procurar** → selecione o `ModpackGuerra-Prism.zip` → **OK**.
 
-Pronto: ela baixa **todos os mods sozinha** na primeira vez que você abrir o jogo (inclusive o Sentry Mechanical Arm) e **se atualiza sozinha** toda vez que o admin mudar o pack. Você nunca mais precisa reimportar.
+Pronto: ela baixa **todos os mods sozinha** na primeira vez que você abrir o jogo e **se atualiza sozinha** toda vez que o admin mudar o pack. Você nunca mais precisa reimportar.
 
 > Na primeira abertura aparece uma janelinha do *packwiz-installer* baixando os mods. Espere ela terminar.
 
@@ -59,7 +59,7 @@ Pronto: ela baixa **todos os mods sozinha** na primeira vez que você abrir o jo
 <summary>Alternativa: importar o .mrpack (sem atualização automática)</summary>
 
 1. Peça ao admin o `ModpackGuerra-0.1.0.mrpack` e importe do mesmo jeito.
-2. Baixe à mão o `sentrymechanicalarm-neoforge-1.21.1-1.3.7.jar` em https://www.curseforge.com/minecraft/mc-mods/create-sentry-mechanical-arm-1/files/8897599 e coloque em: botão direito na instância → **Pasta** → `minecraft` → `mods`.
+2. Baixe à mão o `cbcaeronauticsmissiles-0.2.0.jar` (Create: Simulated Missiles) em https://www.curseforge.com/minecraft/mc-mods/create-simulated-missiles-create-aeronautics/files/8746555 e coloque em: botão direito na instância → **Pasta** → `minecraft` → `mods`.
 3. A cada atualização do pack, importe o `.mrpack` novo.
 </details>
 
@@ -107,7 +107,7 @@ Pronto: ela baixa **todos os mods sozinha** na primeira vez que você abrir o jo
 
 | Problema | Solução |
 |---|---|
-| "Mods incompatíveis" / lista de mods ao conectar | Feche e abra o jogo de novo (a instância se atualiza na abertura). Se usou o `.mrpack`: confira o jar do Sentry e importe o `.mrpack` novo. |
+| "Mods incompatíveis" / lista de mods ao conectar | Feche e abra o jogo de novo (a instância se atualiza na abertura). Se usou o `.mrpack`: confira o jar do Simulated Missiles e importe o `.mrpack` novo. |
 | "Tempo esgotado" / não conecta | Radmin desligado, ou o servidor está desligado. Confira a bolinha verde do admin no Radmin. |
 | Jogo fecha sozinho ao abrir | Pouca memória: confira o Passo 4. |
 | Fica parado ao entrar (pirata) | Você ainda não fez `/register` ou `/login`. |

@@ -229,11 +229,6 @@ hash = "ecd68ff74b75e98bcb9d5dc482ca167a2b5024167eacc5075ce3bdc212cd01c2"
 metafile = true
 
 [[files]]
-file = "mods/create-sentry-mechanical-arm-1.pw.toml"
-hash = "2dc51348cdfb58cb30a3260e5ffd11957e59a50809011c99abfc075b8719e249"
-metafile = true
-
-[[files]]
 file = "mods/create-simulated-missiles-create-aeronautics.pw.toml"
 hash = "4e5d55989ca2b2492de40fe0613908b501cf8f24939a7ec2fd46c4b5d53ef153"
 metafile = true

@@ -5,7 +5,7 @@ Atualizado em 03/11/2026. Pack: MC 1.21.1, NeoForge 21.1.265.
 ## Decisões aplicadas (03/11/2026)
 
 - **Thrusters and Things → Create Aeronautics: Gadgets & Gizmos** (renomeado; CurseForge 1537945). Adicionado pelo **Modrinth** (download automático liberado), **fixado na 1.2.10** (última 1.x estável, "Performance Hotfix"). O jar é "bundled" e a 1.2.10 não declara a *Gadgets & Gizmos Library* (essa biblioteca saiu junto com a 2.0.0). **Teste futuro:** 2.0.0 (lançada em 03/11/2026, exige rever dependências).
-- **Create: Sentry Mechanical Arm** → port aprovado `create-sentry-mechanical-arm-1` (1.3.7). O autor **bloqueou download pela API do CurseForge**: o packwiz não baixa sozinho. Solução: o `iniciar-servidor.bat` e a instância do Prism baixam o jar direto do CDN do CurseForge antes do packwiz rodar. O `.mrpack` sai **sem** ele (o jogador baixa à mão) — embutir o jar seria redistribuir o mod.
+- ~~**Create: Sentry Mechanical Arm**~~ → **removido em 03/11/2026** a pedido do admin (exigia download manual: o autor bloqueou a API do CurseForge).
 - **Frontier Cohorts**: removido do pack e da especificação. Não usar ports do Villager Recruits (licença ARR). Removida a regra "recrutamento custa munição e combustível".
 - **Rise of Villages** (Modrinth, 2.0.0-ep10, + NavaroneeCore): adicionado como **exército provisório** (recrutas, arqueiros, cavalaria). Ele tem território próprio ao comprar uma vila — ver config abaixo para manter o território só no OPAC.
 - **Guard Villagers**: datapack em `kubejs/data/guardvillagers/loot_table/entities/guard_armor.json`. Nesta versão (2.4.12) não existe `guard_main_hand`: a mão principal fica no pool `mainhand` da tabela `guard_armor`, que foi sobrescrito só com armas TaCZ da Era 1–2 (M1911, CZ75, Glock 17, Rhino .357, Springfield 1873, Kar98k, escopetas de cano duplo, M870, SKS). Armadura e mão secundária continuam as originais. Armas vêm sem munição: os guardas buscam em baús (Guard Villagers TACZ Support).
@@ -58,13 +58,13 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - Limite de blocos à prova total: 128 por jogador (contador simples, não devolve ao quebrar).
 
 ## Mods bloqueados na API do CurseForge
-- `create-sentry-mechanical-arm-1` e `create-simulated-missiles-create-aeronautics`: o autor bloqueou download por API. Os `.pw.toml` apontam direto para o CDN do CurseForge (`url = mediafilez.forgecdn.net/...`), então o packwiz-installer baixa sozinho. Ao atualizar esses dois, trocar `url`, `hash` e `file-id` à mão (o `packwiz update` voltaria para o modo API).
+- `create-simulated-missiles-create-aeronautics`: o autor bloqueou download por API. O `.pw.toml` aponta direto para o CDN do CurseForge (`url = mediafilez.forgecdn.net/...`), então o packwiz-installer baixa sozinho. Ao atualizar, trocar `url`, `hash` e `file-id` à mão (o `packwiz update` voltaria para o modo API). Fica fora do `.mrpack` (quem usa o .mrpack baixa à mão). O Sentry Mechanical Arm, que tinha o mesmo problema, foi removido.
 - Simulated Missiles 0.2.0 exige Create: Radars `[0.4.9.4, 0.5.0)` — combina com o pin atual do Radars.
 
 ## Infra
 
 - Publicar o repositório (ex.: GitHub) para ter a URL pública do `pack.toml` (usada pelo servidor, pelo Prism e pelo docker-compose).
-- **docker-compose (VPS)**: a imagem itzg roda o packwiz-installer, que falha no Sentry Arm (download bloqueado). Antes de usar em VPS, colocar o jar em `data/mods/` manualmente.
+- **docker-compose (VPS)**: os mods bloqueados na API agora têm URL direta no `.pw.toml`, então o packwiz-installer da imagem itzg deve baixar tudo sozinho (não testado em VPS).
 
 ## Testes de 03/11/2026 (servidor dedicado, sem jogadores)
 
