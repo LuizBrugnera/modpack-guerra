@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "t2_voo"
-	group: "A6DC4DBA16805B43"
+	group: "26DC4DBA16805B43"
 	icon: { count: 1, id: "aeronautics:white_envelope" }
 	id: "3302A2577A88B85D"
 	order_index: 7
@@ -12,31 +12,31 @@
 			dependencies: ["553DCFD107A1D7EC"]
 			id: "5933CD21B8FE8A34"
 			rewards: []
-			tasks: [{ count: 8L, id: "B5A6CDF8FB13CFE1", item: { count: 1, id: "aeronautics:white_envelope" }, type: "item" }]
+			tasks: [{ count: 8L, id: "35A6CDF8FB13CFE1", item: { count: 1, id: "aeronautics:white_envelope" }, type: "item" }]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5933CD21B8FE8A34"]
-			id: "EFA88038E2BED6D9"
+			id: "6FA88038E2BED6D9"
 			rewards: []
 			tasks: [{ count: 1L, id: "7A85492F0CEC5460", item: { count: 1, id: "aeronautics:adjustable_burner" }, type: "item" }]
 			x: 1.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["EFA88038E2BED6D9"]
-			id: "CE73FE22C7711BE8"
-			rewards: [{ count: 32, id: "9F5888DEEDBD9043", item: { count: 1, id: "minecraft:string" }, type: "item" }]
-			tasks: [{ id: "D5241A011D2B121F", type: "checkmark" }]
+			dependencies: ["6FA88038E2BED6D9"]
+			id: "4E73FE22C7711BE8"
+			rewards: [{ count: 32, id: "1F5888DEEDBD9043", item: { count: 1, id: "minecraft:string" }, type: "item" }]
+			tasks: [{ id: "55241A011D2B121F", type: "checkmark" }]
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5933CD21B8FE8A34"]
-			id: "C766A184BAC1FCF5"
+			id: "4766A184BAC1FCF5"
 			rewards: []
-			tasks: [{ count: 4L, id: "B2225174D4F3FF13", item: { count: 1, id: "aeronautics:levitite" }, type: "item" }]
+			tasks: [{ count: 4L, id: "32225174D4F3FF13", item: { count: 1, id: "aeronautics:levitite" }, type: "item" }]
 			x: 3.0d
 			y: -1.5d
 		}
@@ -49,24 +49,24 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["CE73FE22C7711BE8"]
-			id: "B128DC9D00EC8EB2"
+			dependencies: ["4E73FE22C7711BE8"]
+			id: "3128DC9D00EC8EB2"
 			rewards: []
 			tasks: [{ count: 4L, id: "24E40782A2046FC6", item: { count: 1, id: "createpropulsion:wing" }, type: "item" }]
 			x: 4.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["CE73FE22C7711BE8", "A2C7333459CA22E6"]
+			dependencies: ["4E73FE22C7711BE8", "22C7333459CA22E6"]
 			id: "3A424595E9F2D9B4"
 			rewards: []
-			tasks: [{ count: 1L, id: "AAB7A4D981E64AE6", item: { count: 1, id: "aeronautics:andesite_propeller" }, type: "item" }]
+			tasks: [{ count: 1L, id: "2AB7A4D981E64AE6", item: { count: 1, id: "aeronautics:andesite_propeller" }, type: "item" }]
 			x: 4.5d
 			y: 1.0d
 		}
 		{
-			dependencies: ["B128DC9D00EC8EB2", "A78A2446133441F3"]
-			id: "8BF907B6D761DB48"
+			dependencies: ["3128DC9D00EC8EB2", "278A2446133441F3"]
+			id: "0BF907B6D761DB48"
 			rewards: []
 			tasks: [{ count: 1L, id: "18177F448E9A0EBC", item: { count: 1, id: "createpropulsion:thruster" }, type: "item" }]
 			x: 6.0d
@@ -74,17 +74,17 @@
 		}
 		{
 			dependencies: ["3A424595E9F2D9B4"]
-			id: "B9A65210502934FE"
+			id: "39A65210502934FE"
 			rewards: []
 			tasks: [{ count: 1L, id: "2142420F45116BA4", item: { count: 1, id: "aeronautics:aviators_goggles" }, type: "item" }]
 			x: 6.0d
 			y: 1.0d
 		}
 		{
-			dependencies: ["8BF907B6D761DB48", "B9A65210502934FE"]
+			dependencies: ["0BF907B6D761DB48", "39A65210502934FE"]
 			id: "5CF7B02391FFDFBE"
-			rewards: [{ count: 1, id: "A861265E7B4A7B82", item: { count: 1, id: "create_parachute:parachute_block" }, type: "item" }]
-			tasks: [{ id: "E91707E5AD6C997D", type: "checkmark" }]
+			rewards: [{ count: 1, id: "2861265E7B4A7B82", item: { count: 1, id: "create_parachute:parachute_block" }, type: "item" }]
+			tasks: [{ id: "691707E5AD6C997D", type: "checkmark" }]
 			x: 7.5d
 			y: 0.0d
 		}

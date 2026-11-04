@@ -9,39 +9,39 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["FFC1C0E989516143"]
+			dependencies: ["7FC1C0E989516143"]
 			id: "6C002353DB7739E4"
-			rewards: [{ count: 4, id: "C58D17957406DCBE", item: { count: 1, id: "create:andesite_alloy" }, type: "item" }]
+			rewards: [{ count: 4, id: "458D17957406DCBE", item: { count: 1, id: "create:andesite_alloy" }, type: "item" }]
 			tasks: [{ count: 1L, id: "2ACF646BFB565C5C", item: { count: 1, id: "create:wrench" }, type: "item" }]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6C002353DB7739E4"]
-			id: "AC34C5B08FF0D138"
+			id: "2C34C5B08FF0D138"
 			rewards: []
 			tasks: [{ count: 16L, id: "1E7788F50E638ECB", item: { count: 1, id: "create:andesite_alloy" }, type: "item" }]
 			x: 1.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["AC34C5B08FF0D138"]
-			id: "836D152141988D6B"
-			rewards: [{ count: 8, id: "B5D3839A676F7A0B", item: { count: 1, id: "create:shaft" }, type: "item" }]
+			dependencies: ["2C34C5B08FF0D138"]
+			id: "036D152141988D6B"
+			rewards: [{ count: 8, id: "35D3839A676F7A0B", item: { count: 1, id: "create:shaft" }, type: "item" }]
 			tasks: [{ count: 1L, id: "618D21C2FE1D9D1F", item: { count: 1, id: "create:water_wheel" }, type: "item" }]
 			x: 3.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["836D152141988D6B"]
+			dependencies: ["036D152141988D6B"]
 			id: "667AA553D3345EF6"
 			rewards: []
-			tasks: [{ count: 8L, id: "D053746EDF07EE0F", item: { count: 1, id: "create:shaft" }, type: "item" }, { count: 4L, id: "6DC029D81BB2626A", item: { count: 1, id: "create:cogwheel" }, type: "item" }]
+			tasks: [{ count: 8L, id: "5053746EDF07EE0F", item: { count: 1, id: "create:shaft" }, type: "item" }, { count: 4L, id: "6DC029D81BB2626A", item: { count: 1, id: "create:cogwheel" }, type: "item" }]
 			x: 4.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["AC34C5B08FF0D138"]
+			dependencies: ["2C34C5B08FF0D138"]
 			id: "70E2F5E693423FB3"
 			rewards: []
 			tasks: [{ count: 1L, id: "4558F5BFFA39FD4B", item: { count: 1, id: "create:goggles" }, type: "item" }]
@@ -50,17 +50,17 @@
 		}
 		{
 			dependencies: ["70E2F5E693423FB3"]
-			id: "C8B6ECCC0B857511"
+			id: "48B6ECCC0B857511"
 			rewards: []
 			tasks: [{ count: 1L, id: "525B0DC0502C502C", item: { count: 1, id: "create:mechanical_press" }, type: "item" }]
 			x: 4.5d
 			y: 1.0d
 		}
 		{
-			dependencies: ["C8B6ECCC0B857511"]
+			dependencies: ["48B6ECCC0B857511"]
 			id: "61523EC84C40C655"
 			rewards: []
-			tasks: [{ count: 8L, id: "E8A4BCACD2E7AF98", item: { count: 1, id: "create:andesite_casing" }, type: "item" }]
+			tasks: [{ count: 8L, id: "68A4BCACD2E7AF98", item: { count: 1, id: "create:andesite_casing" }, type: "item" }]
 			x: 6.0d
 			y: 1.0d
 		}
@@ -73,7 +73,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["AC34C5B08FF0D138"]
+			dependencies: ["2C34C5B08FF0D138"]
 			id: "41BC7E3ADF1E4B77"
 			rewards: [{ count: 16, id: "2A5E79DBAB5D969C", item: { count: 1, id: "minecraft:iron_ingot" }, type: "item" }]
 			tasks: [{ count: 1L, id: "35D67203BD48835F", item: { count: 1, id: "tacz:gun_smith_table" }, type: "item" }]
@@ -83,8 +83,8 @@
 		{
 			dependencies: ["41BC7E3ADF1E4B77"]
 			id: "26DF2942C3B68BC8"
-			rewards: [{ count: 16, id: "8EF3413108568D62", item: { count: 1, id: "minecraft:gunpowder" }, type: "item" }]
-			tasks: [{ id: "848DF7D4DCCF794E", type: "checkmark" }]
+			rewards: [{ count: 16, id: "0EF3413108568D62", item: { count: 1, id: "minecraft:gunpowder" }, type: "item" }]
+			tasks: [{ count: 1L, id: "048DF7D4DCCF794E", item: { count: 1, id: "tacz:modern_kinetic_gun" }, match_components: "none", type: "item" }, { count: 16L, id: "76066A6F8C559C8B", item: { count: 1, id: "tacz:ammo" }, match_components: "none", type: "item" }]
 			x: 1.5d
 			y: 3.0d
 		}
@@ -100,7 +100,7 @@
 			dependencies: ["699D1D4E2C58DF83"]
 			id: "5893693F59E82C08"
 			rewards: []
-			tasks: [{ count: 4L, id: "81F887623447C749", item: { count: 1, id: "createbigcannons:solid_shot" }, type: "item" }, { count: 4L, id: "9CC92639BBEACD9A", item: { count: 1, id: "createbigcannons:powder_charge" }, type: "item" }]
+			tasks: [{ count: 4L, id: "01F887623447C749", item: { count: 1, id: "createbigcannons:solid_shot" }, type: "item" }, { count: 4L, id: "1CC92639BBEACD9A", item: { count: 1, id: "createbigcannons:powder_charge" }, type: "item" }]
 			x: 4.5d
 			y: 3.0d
 		}
@@ -108,17 +108,17 @@
 			dependencies: ["2ED1F727FF4549ED"]
 			id: "1806806DA0CBF0B3"
 			rewards: []
-			tasks: [{ count: 8L, id: "69DECE550CFE07C3", item: { count: 1, id: "aeronautics:white_envelope" }, type: "item" }, { count: 1L, id: "A6DA5D5DD396D907", item: { count: 1, id: "aeronautics:adjustable_burner" }, type: "item" }]
+			tasks: [{ count: 8L, id: "69DECE550CFE07C3", item: { count: 1, id: "aeronautics:white_envelope" }, type: "item" }, { count: 1L, id: "26DA5D5DD396D907", item: { count: 1, id: "aeronautics:adjustable_burner" }, type: "item" }]
 			x: 6.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["2ED1F727FF4549ED", "61523EC84C40C655"]
-			id: "EE3C72F6DDE9EF4D"
-			rewards: [{ count: 32, id: "627DB2CA5E24B6A0", item: { count: 1, id: "create:andesite_alloy" }, type: "item" }, { count: 16, id: "D6EC74160DB0DFF3", item: { count: 1, id: "minecraft:copper_ingot" }, type: "item" }]
+			id: "6E3C72F6DDE9EF4D"
+			rewards: [{ count: 32, id: "627DB2CA5E24B6A0", item: { count: 1, id: "create:andesite_alloy" }, type: "item" }, { count: 16, id: "56EC74160DB0DFF3", item: { count: 1, id: "minecraft:copper_ingot" }, type: "item" }]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{ count: 1L, id: "B6E5B1A30C4CE426", item: { count: 1, id: "create:steam_engine" }, type: "item" }]
+			tasks: [{ count: 1L, id: "36E5B1A30C4CE426", item: { count: 1, id: "create:steam_engine" }, type: "item" }]
 			x: 8.0d
 			y: 1.0d
 		}

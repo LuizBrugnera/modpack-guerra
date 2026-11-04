@@ -139,3 +139,10 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - Testado no servidor de teste: 5/5 scripts sem erro; receitas das armas e das travas conferidas pelos ingredientes; FTB Quests carrega 10 capítulos/110 quests; `/era` e `/guerra` respondem.
 - Não testado: notas no EMI (script de cliente), tela da bancada de armas, anúncio de era com jogador.
 - Servidor de teste e servidor real rodando juntos na mesma máquina: o de teste usava a mesma porta do voice chat (24454) e morria logo depois de subir; trocada para 24464 em `servidor-teste/config/voicechat/`.
+
+## Quests "Unnamed" — corrigido 04/11/2026
+- Causa 1: as chaves do `lang/en_us.snbt` iam **com aspas** (`"quest.ID.title": …`). O FTB Quests grava e lê sem aspas; com aspas, elas entram no nome da chave e nada casa.
+- Causa 2: **IDs negativos**. O ID é um long do Java; os gerados por hash que começavam com 8–F eram negativos, e o FTB Quests troca esses IDs ao carregar (e regrava os arquivos), então as traduções deixavam de casar e os capítulos perdiam o grupo. Agora `gerar-quests.ps1` zera o bit mais alto.
+- Também: as tarefas de marcar ganharam nome (antes apareciam como "Unnamed" na lista de tarefas), subtítulos nas quests principais, e "Primeira arma" agora detecta qualquer arma/munição do TaCZ (`match_components: "none"`).
+- Verificado no servidor de teste pela API do FTB Quests: 3 grupos, 10 capítulos, 110 quests e 21 tarefas de marcar, todos com título; 110 descrições; depois de desligar, o FTB só reformata os arquivos e mantém os 276 IDs.
+- Os IDs mudaram em relação à versão anterior: o progresso de quests de quem já tinha começado zera (o mundo é novo, então não afeta ninguém).

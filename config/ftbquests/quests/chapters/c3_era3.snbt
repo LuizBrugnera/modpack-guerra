@@ -4,53 +4,53 @@
 	filename: "c3_era3"
 	group: "05E56B3176A98963"
 	icon: { count: 1, id: "tfmg:steel_ingot" }
-	id: "888FD4A106FD8FAA"
+	id: "088FD4A106FD8FAA"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["90C94F4E86A4381E"]
+			dependencies: ["10C94F4E86A4381E"]
 			id: "3AC398F04F7C4FCB"
 			rewards: []
 			shape: "hexagon"
-			tasks: [{ id: "C9436E3E85033D5E", type: "checkmark" }]
+			tasks: [{ id: "49436E3E85033D5E", type: "checkmark" }]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3AC398F04F7C4FCB"]
-			id: "BAADDEBB0E253E43"
+			id: "3AADDEBB0E253E43"
 			rewards: []
-			tasks: [{ count: 4L, id: "AD0176F4E6F14A56", item: { count: 1, id: "tfmg:steel_block" }, type: "item" }]
+			tasks: [{ count: 4L, id: "2D0176F4E6F14A56", item: { count: 1, id: "tfmg:steel_block" }, type: "item" }]
 			x: 1.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3AC398F04F7C4FCB"]
-			id: "F3A9CAA4474C9A2F"
+			id: "73A9CAA4474C9A2F"
 			rewards: []
-			tasks: [{ count: 1L, id: "138B3FEA43B510CC", item: { count: 1, id: "tfmg:pumpjack_base" }, type: "item" }, { count: 1L, id: "5B18D8967009D210", item: { count: 1, id: "tfmg:pumpjack_crank" }, type: "item" }, { count: 1L, id: "A57D3D898EFE2C6C", item: { count: 1, id: "tfmg:pumpjack_hammer" }, type: "item" }]
+			tasks: [{ count: 1L, id: "138B3FEA43B510CC", item: { count: 1, id: "tfmg:pumpjack_base" }, type: "item" }, { count: 1L, id: "5B18D8967009D210", item: { count: 1, id: "tfmg:pumpjack_crank" }, type: "item" }, { count: 1L, id: "257D3D898EFE2C6C", item: { count: 1, id: "tfmg:pumpjack_hammer" }, type: "item" }]
 			x: 1.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["F3A9CAA4474C9A2F"]
-			id: "9ACEE90271F9D05A"
+			dependencies: ["73A9CAA4474C9A2F"]
+			id: "1ACEE90271F9D05A"
 			rewards: []
-			tasks: [{ count: 1L, id: "DB0D3896A5E05CF4", item: { count: 1, id: "tfmg:steel_distillation_controller" }, type: "item" }, { count: 2L, id: "9807D1990920B119", item: { count: 1, id: "tfmg:steel_distillation_output" }, type: "item" }]
+			tasks: [{ count: 1L, id: "5B0D3896A5E05CF4", item: { count: 1, id: "tfmg:steel_distillation_controller" }, type: "item" }, { count: 2L, id: "1807D1990920B119", item: { count: 1, id: "tfmg:steel_distillation_output" }, type: "item" }]
 			x: 3.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["9ACEE90271F9D05A"]
-			id: "A78A2446133441F3"
+			dependencies: ["1ACEE90271F9D05A"]
+			id: "278A2446133441F3"
 			rewards: []
-			tasks: [{ count: 1L, id: "83799A67260C4626", item: { count: 1, id: "tfmg:diesel_bucket" }, type: "item" }]
+			tasks: [{ count: 1L, id: "03799A67260C4626", item: { count: 1, id: "tfmg:diesel_bucket" }, type: "item" }]
 			x: 4.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["A78A2446133441F3"]
+			dependencies: ["278A2446133441F3"]
 			id: "32DBAA8EA1006947"
 			rewards: []
 			tasks: [{ count: 1L, id: "4D24EACE49C06908", item: { count: 1, id: "tfmg:regular_engine" }, type: "item" }]
@@ -58,10 +58,10 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["9ACEE90271F9D05A"]
+			dependencies: ["1ACEE90271F9D05A"]
 			id: "4A4E90A4D3F1FA20"
 			rewards: []
-			tasks: [{ count: 8L, id: "94A46B486889A1B7", item: { count: 1, id: "tfmg:sulfur_dust" }, type: "item" }]
+			tasks: [{ count: 8L, id: "14A46B486889A1B7", item: { count: 1, id: "tfmg:sulfur_dust" }, type: "item" }]
 			x: 3.0d
 			y: -1.5d
 		}
@@ -74,16 +74,16 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["BAADDEBB0E253E43"]
+			dependencies: ["3AADDEBB0E253E43"]
 			id: "7BC77AE85E63EA6D"
 			rewards: []
-			tasks: [{ count: 1L, id: "9336A5D08D0D08E6", item: { count: 1, id: "createbigcannons:steel_cannon_barrel" }, type: "item" }, { count: 1L, id: "F906BA53D9DC3FFA", item: { count: 1, id: "createbigcannons:steel_cannon_chamber" }, type: "item" }]
+			tasks: [{ count: 1L, id: "1336A5D08D0D08E6", item: { count: 1, id: "createbigcannons:steel_cannon_barrel" }, type: "item" }, { count: 1L, id: "7906BA53D9DC3FFA", item: { count: 1, id: "createbigcannons:steel_cannon_chamber" }, type: "item" }]
 			x: 3.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["4A4E90A4D3F1FA20"]
-			id: "C4A7DA913D83C489"
+			id: "44A7DA913D83C489"
 			rewards: []
 			tasks: [{ count: 1L, id: "1B4BBF400C3076E2", item: { count: 1, id: "cbc_enhanced_shells:he_shell_mk3" }, type: "item" }]
 			x: 4.5d
@@ -98,34 +98,34 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["BAADDEBB0E253E43"]
-			id: "ABBDC94DE72D22A3"
+			dependencies: ["3AADDEBB0E253E43"]
+			id: "2BBDC94DE72D22A3"
 			rewards: []
-			tasks: [{ count: 1L, id: "F900392796707668", item: { count: 1, id: "superbwarfare:blueprint_research_table" }, type: "item" }]
+			tasks: [{ count: 1L, id: "7900392796707668", item: { count: 1, id: "superbwarfare:blueprint_research_table" }, type: "item" }]
 			x: 1.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["BAADDEBB0E253E43"]
-			id: "C872657F0AC6F0FA"
+			dependencies: ["3AADDEBB0E253E43"]
+			id: "4872657F0AC6F0FA"
 			rewards: []
-			tasks: [{ count: 1L, id: "E47DB3940C2A3ABD", item: { count: 1, id: "cbcaeronauticsmissiles:rocket_motor" }, type: "item" }]
+			tasks: [{ count: 1L, id: "647DB3940C2A3ABD", item: { count: 1, id: "cbcaeronauticsmissiles:rocket_motor" }, type: "item" }]
 			x: 3.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["A78A2446133441F3"]
+			dependencies: ["278A2446133441F3"]
 			id: "6090D4058C47B556"
 			rewards: []
-			tasks: [{ count: 1L, id: "CEE1AC47C520E04E", item: { count: 1, id: "createpropulsion:thruster" }, type: "item" }]
+			tasks: [{ count: 1L, id: "4EE1AC47C520E04E", item: { count: 1, id: "createpropulsion:thruster" }, type: "item" }]
 			x: 4.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["BAADDEBB0E253E43"]
-			id: "C7353683E5A636ED"
+			dependencies: ["3AADDEBB0E253E43"]
+			id: "47353683E5A636ED"
 			rewards: []
-			tasks: [{ count: 16L, id: "91A11DE3F9E0626E", item: { count: 1, id: "s_a_b:steelblock" }, type: "item" }]
+			tasks: [{ count: 16L, id: "11A11DE3F9E0626E", item: { count: 1, id: "s_a_b:steelblock" }, type: "item" }]
 			x: 6.0d
 			y: 3.0d
 		}
@@ -133,7 +133,7 @@
 			dependencies: ["32DBAA8EA1006947"]
 			id: "5C602756A9493004"
 			rewards: []
-			tasks: [{ count: 1L, id: "F3C2BEAEEC9A5BFA", item: { count: 1, id: "tfmg:generator" }, type: "item" }]
+			tasks: [{ count: 1L, id: "73C2BEAEEC9A5BFA", item: { count: 1, id: "tfmg:generator" }, type: "item" }]
 			x: 8.0d
 			y: -1.5d
 		}
@@ -141,25 +141,25 @@
 			dependencies: ["5C602756A9493004"]
 			id: "12C403244C1EFF48"
 			rewards: []
-			tasks: [{ count: 1L, id: "F93DF9794C06C9A7", item: { count: 1, id: "tfmg:electric_motor" }, type: "item" }, { count: 4L, id: "592C93A0F77BA85E", item: { count: 1, id: "tfmg:cable_connector" }, type: "item" }]
+			tasks: [{ count: 1L, id: "793DF9794C06C9A7", item: { count: 1, id: "tfmg:electric_motor" }, type: "item" }, { count: 4L, id: "592C93A0F77BA85E", item: { count: 1, id: "tfmg:cable_connector" }, type: "item" }]
 			x: 9.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["12C403244C1EFF48"]
-			id: "EB813BF84196EAF6"
+			id: "6B813BF84196EAF6"
 			rewards: []
 			tasks: [{ count: 8L, id: "2A2E0AD2ECB6D4CA", item: { count: 1, id: "tfmg:aluminum_ingot" }, type: "item" }]
 			x: 9.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["EB813BF84196EAF6"]
+			dependencies: ["6B813BF84196EAF6"]
 			id: "3525D3D9BC0A612E"
 			rewards: [{ count: 8, id: "487009F99B7D7C66", item: { count: 1, id: "tfmg:aluminum_ingot" }, type: "item" }]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{ count: 1L, id: "F3B197365D158AC3", item: { count: 1, id: "tfmg:circuit_board" }, type: "item" }]
+			tasks: [{ count: 1L, id: "73B197365D158AC3", item: { count: 1, id: "tfmg:circuit_board" }, type: "item" }]
 			x: 11.0d
 			y: 0.0d
 		}

@@ -18,47 +18,47 @@ hash = "f9b43150ae555d8c43f6a65f41a0c3b31dc344eb01c7f6b2608fd0a016294b0c"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "d4e396cbbdbba4e43ffd873cdbfb412e8df9fafee3f03d5a98146946df54b8f0"
+hash = "8a2d2a0e20147f1cb9c3d1d8e6489a375f9c838564593ad9a145317aeeca248b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/c0_bemvindo.snbt"
-hash = "d9d6024e9f86616c368980b9cea594dd1b3c427c2009725dc7a36076b79c10b9"
+hash = "c8e1dbb35fd6ede0a35cf54d160541e0459050500d705ac32c41597551e822cf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/c1_era1.snbt"
-hash = "6b9c908c646515c1f4d34ec72ce3c12c0c13b55c7be493c85bcabc8e087e4106"
+hash = "e802a15eae3f810497a8d8dc972880d75c9a823d602b8b23f9ce81d7057a7bd4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/c2_era2.snbt"
-hash = "aafc2c00bcbf7327e843525c95740e97a79a539ac00481354c730f44bc8d9a7c"
+hash = "f27e62eebab1087b198775406088f8a11eed5b1de785bb52b018a32abaf4882d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/c3_era3.snbt"
-hash = "4905892e6800596a7e8bbf82e504786e7b07a1c4603c53caf990278c51f5c883"
+hash = "6a245547836ec7591eb556b017be19a1d41cedfb9f768a3e096ac0fa73049290"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/c4_era4.snbt"
-hash = "a75613c39723d51e5768f1799f58c3d0724a4c98017ed7d299c80bbe24e58081"
+hash = "2893144cd84917b6151dc9c67df8d97cbfdd9149c65ed41eaa1760a4c39ea915"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/c5_era5.snbt"
-hash = "206c430cc3ba2c76f68686b3f6e350c634fab8749356bf82828ded5030a042ca"
+hash = "72b7451cc1e161d8b3a2a67b698eb00a60aefaabe05dec695346852a2f7e8f3f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/t1_barco.snbt"
-hash = "7f5de4f645850d724e0cbce730db2c6e835f0b67816955339e8d8b2f844df908"
+hash = "9fa117fd041329f778c1aa542c5191eeacac7205c456e290ccd41241d681ac2f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/t2_voo.snbt"
-hash = "6ac50b0ec8adeabc5cacad2785dec63ad04a2d9b711f48c1bba4e67862abbe66"
+hash = "e2411f283161ec12e1fbcac185c835f6ad2a494bdd0a94ea8c1c7f9e7dbebdfd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/t3_navegacao.snbt"
-hash = "d1a9146560557798abcb484f0902b574b367d24e853b8b3290c7fb58648af956"
+hash = "c572161ed88225b5714901e2fec1ba72fb7657cc5a6a95a7c350d9948a2ab260"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/t4_defesa.snbt"
-hash = "d5144cef6c853f46e32dee9c1a4e7015bbd1f36da5e39123ff684b1d09897045"
+hash = "033edc29df535f10d97ed90b4c340acb3ec01fa2dd2297a9d537181dca0c3eba"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -66,7 +66,7 @@ hash = "3518b6c3095128aa2bfbb04e68dcfc95c60ba3effcf0fa09e859f206985fcfb9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "6490beda3165ec7855a19ce8c402ef4ca3e6beaeae0768045c8228ce821224da"
+hash = "06517bdf9edcec03a53263c6548c3b9817796716d1b217d5e1ed5040d532e9dd"
 
 [[files]]
 file = "config/guardvillagerstaczsupport-common.toml"

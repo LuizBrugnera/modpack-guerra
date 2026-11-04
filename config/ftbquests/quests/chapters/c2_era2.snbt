@@ -4,13 +4,13 @@
 	filename: "c2_era2"
 	group: "05E56B3176A98963"
 	icon: { count: 1, id: "create:steam_engine" }
-	id: "D71C61250DD26BEB"
+	id: "571C61250DD26BEB"
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["EE3C72F6DDE9EF4D"]
-			id: "9F74209A02F200F1"
+			dependencies: ["6E3C72F6DDE9EF4D"]
+			id: "1F74209A02F200F1"
 			rewards: []
 			shape: "hexagon"
 			tasks: [{ id: "5D6637DCEC46F51F", type: "checkmark" }]
@@ -18,7 +18,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["9F74209A02F200F1"]
+			dependencies: ["1F74209A02F200F1"]
 			id: "133D658E8EFDA2F1"
 			rewards: []
 			tasks: [{ count: 1L, id: "1E7FD5EB48C07D2B", item: { count: 1, id: "create:blaze_burner" }, type: "item" }]
@@ -35,38 +35,38 @@
 		}
 		{
 			dependencies: ["4EBFB0F05F70DC2C"]
-			id: "A2C7333459CA22E6"
+			id: "22C7333459CA22E6"
 			rewards: []
-			tasks: [{ count: 16L, id: "A3712A5CEE17D740", item: { count: 1, id: "create:brass_ingot" }, type: "item" }]
+			tasks: [{ count: 16L, id: "23712A5CEE17D740", item: { count: 1, id: "create:brass_ingot" }, type: "item" }]
 			x: 4.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["A2C7333459CA22E6"]
-			id: "DF60AF1ED47A92A3"
+			dependencies: ["22C7333459CA22E6"]
+			id: "5F60AF1ED47A92A3"
 			rewards: []
-			tasks: [{ count: 4L, id: "E47F229167AAD55A", item: { count: 1, id: "create:electron_tube" }, type: "item" }]
+			tasks: [{ count: 4L, id: "647F229167AAD55A", item: { count: 1, id: "create:electron_tube" }, type: "item" }]
 			x: 4.5d
 			y: -2.5d
 		}
 		{
-			dependencies: ["A2C7333459CA22E6"]
-			id: "FAA25A787C902286"
+			dependencies: ["22C7333459CA22E6"]
+			id: "7AA25A787C902286"
 			rewards: []
 			tasks: [{ count: 2L, id: "121932E87652A705", item: { count: 1, id: "create:precision_mechanism" }, type: "item" }]
 			x: 6.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["FAA25A787C902286"]
+			dependencies: ["7AA25A787C902286"]
 			id: "32BA299E28BA2AF0"
 			rewards: []
-			tasks: [{ count: 32L, id: "B80C2EE4C68B6B30", item: { count: 1, id: "create:track" }, type: "item" }, { count: 1L, id: "E8873396F1D6104F", item: { count: 1, id: "create:controls" }, type: "item" }]
+			tasks: [{ count: 32L, id: "380C2EE4C68B6B30", item: { count: 1, id: "create:track" }, type: "item" }, { count: 1L, id: "68873396F1D6104F", item: { count: 1, id: "create:controls" }, type: "item" }]
 			x: 6.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["A2C7333459CA22E6"]
+			dependencies: ["22C7333459CA22E6"]
 			id: "7E3215F55E853C03"
 			rewards: []
 			tasks: [{ id: "67918402B4AF9F36", type: "checkmark" }]
@@ -74,48 +74,48 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["A2C7333459CA22E6"]
-			id: "95FA54C1535544B2"
+			dependencies: ["22C7333459CA22E6"]
+			id: "15FA54C1535544B2"
 			rewards: []
-			tasks: [{ count: 1L, id: "906EFE08F10462D1", item: { count: 1, id: "createbigcannons:cast_iron_autocannon_barrel" }, type: "item" }, { count: 1L, id: "74789C75DF3A2ED3", item: { count: 1, id: "createbigcannons:cast_iron_autocannon_breech" }, type: "item" }, { count: 1L, id: "BDA8B7707A658A3D", item: { count: 1, id: "createbigcannons:autocannon_ammo_container" }, type: "item" }]
+			tasks: [{ count: 1L, id: "106EFE08F10462D1", item: { count: 1, id: "createbigcannons:cast_iron_autocannon_barrel" }, type: "item" }, { count: 1L, id: "74789C75DF3A2ED3", item: { count: 1, id: "createbigcannons:cast_iron_autocannon_breech" }, type: "item" }, { count: 1L, id: "3DA8B7707A658A3D", item: { count: 1, id: "createbigcannons:autocannon_ammo_container" }, type: "item" }]
 			x: 3.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["A2C7333459CA22E6"]
-			id: "F666E5D9C651FC9C"
+			dependencies: ["22C7333459CA22E6"]
+			id: "7666E5D9C651FC9C"
 			rewards: []
-			tasks: [{ count: 1L, id: "8477AF54072AF467", item: { count: 1, id: "create_the_air_wars:machinegun" }, type: "item" }]
+			tasks: [{ count: 1L, id: "0477AF54072AF467", item: { count: 1, id: "create_the_air_wars:machinegun" }, type: "item" }]
 			x: 4.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["A2C7333459CA22E6"]
+			dependencies: ["22C7333459CA22E6"]
 			id: "422C9528BB387E45"
 			rewards: []
-			tasks: [{ count: 1L, id: "85DDF08D2E544DE6", item: { count: 1, id: "aeronautics:propeller_bearing" }, type: "item" }, { count: 1L, id: "FBAD0CBF2AC7385C", item: { count: 1, id: "aeronautics:andesite_propeller" }, type: "item" }]
+			tasks: [{ count: 1L, id: "05DDF08D2E544DE6", item: { count: 1, id: "aeronautics:propeller_bearing" }, type: "item" }, { count: 1L, id: "7BAD0CBF2AC7385C", item: { count: 1, id: "aeronautics:andesite_propeller" }, type: "item" }]
 			x: 6.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["FAA25A787C902286"]
+			dependencies: ["7AA25A787C902286"]
 			id: "62414BAD907EC793"
 			rewards: []
-			tasks: [{ count: 1L, id: "9EE001CF8AAF6955", item: { count: 1, id: "tfmg:coke_oven" }, type: "item" }, { count: 8L, id: "61C86E74BD877CA7", item: { count: 1, id: "tfmg:coal_coke" }, type: "item" }]
+			tasks: [{ count: 1L, id: "1EE001CF8AAF6955", item: { count: 1, id: "tfmg:coke_oven" }, type: "item" }, { count: 8L, id: "61C86E74BD877CA7", item: { count: 1, id: "tfmg:coal_coke" }, type: "item" }]
 			x: 7.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["62414BAD907EC793"]
-			id: "C72B128E3D9F082D"
+			id: "472B128E3D9F082D"
 			rewards: []
-			tasks: [{ count: 1L, id: "AE7EE42BA9A2BCB3", item: { count: 1, id: "tfmg:blast_furnace_output" }, type: "item" }, { count: 8L, id: "FE9CB637351064D9", item: { count: 1, id: "tfmg:blast_furnace_reinforcement" }, type: "item" }]
+			tasks: [{ count: 1L, id: "2E7EE42BA9A2BCB3", item: { count: 1, id: "tfmg:blast_furnace_output" }, type: "item" }, { count: 8L, id: "7E9CB637351064D9", item: { count: 1, id: "tfmg:blast_furnace_reinforcement" }, type: "item" }]
 			x: 9.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["C72B128E3D9F082D"]
-			id: "90C94F4E86A4381E"
+			dependencies: ["472B128E3D9F082D"]
+			id: "10C94F4E86A4381E"
 			rewards: [{ count: 8, id: "09B407B23355DCBF", item: { count: 1, id: "tfmg:steel_ingot" }, type: "item" }]
 			shape: "gear"
 			size: 1.5d

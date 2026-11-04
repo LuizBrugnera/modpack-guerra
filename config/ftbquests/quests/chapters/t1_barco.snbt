@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "t1_barco"
-	group: "A6DC4DBA16805B43"
+	group: "26DC4DBA16805B43"
 	icon: { count: 1, id: "simulated:steering_wheel" }
 	id: "015B357BB5253AC0"
 	order_index: 6
@@ -10,14 +10,14 @@
 	quests: [
 		{
 			dependencies: ["2ED1F727FF4549ED"]
-			id: "8D51DF8C6F657746"
+			id: "0D51DF8C6F657746"
 			rewards: []
 			tasks: [{ count: 1L, id: "1D268F8135C9BFE3", item: { count: 1, id: "simulated:physics_assembler" }, type: "item" }]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["8D51DF8C6F657746"]
+			dependencies: ["0D51DF8C6F657746"]
 			id: "553DCFD107A1D7EC"
 			rewards: [{ count: 64, id: "2080B62D13B849EA", item: { count: 1, id: "minecraft:oak_planks" }, type: "item" }]
 			tasks: [{ id: "64ABCE9ADCD079CE", type: "checkmark" }]
@@ -28,7 +28,7 @@
 			dependencies: ["553DCFD107A1D7EC"]
 			id: "00D7A5EB51F49098"
 			rewards: []
-			tasks: [{ count: 1L, id: "E23C8386DACFE835", item: { count: 1, id: "simulated:steering_wheel" }, type: "item" }]
+			tasks: [{ count: 1L, id: "623C8386DACFE835", item: { count: 1, id: "simulated:steering_wheel" }, type: "item" }]
 			x: 3.0d
 			y: -1.0d
 		}
@@ -36,7 +36,7 @@
 			dependencies: ["553DCFD107A1D7EC"]
 			id: "3314FEB7EB02EF95"
 			rewards: []
-			tasks: [{ count: 1L, id: "D4B28A21AA9E89DD", item: { count: 1, id: "aeronautics:propeller_bearing" }, type: "item" }, { count: 1L, id: "3213A9540A2CCC4E", item: { count: 1, id: "aeronautics:wooden_propeller" }, type: "item" }]
+			tasks: [{ count: 1L, id: "54B28A21AA9E89DD", item: { count: 1, id: "aeronautics:propeller_bearing" }, type: "item" }, { count: 1L, id: "3213A9540A2CCC4E", item: { count: 1, id: "aeronautics:wooden_propeller" }, type: "item" }]
 			x: 3.0d
 			y: 1.0d
 		}
@@ -44,7 +44,7 @@
 			dependencies: ["3314FEB7EB02EF95"]
 			id: "78244061AD2B9F46"
 			rewards: []
-			tasks: [{ count: 1L, id: "BA440700E9E12449", item: { count: 1, id: "simulated:white_portable_engine" }, type: "item" }]
+			tasks: [{ count: 1L, id: "3A440700E9E12449", item: { count: 1, id: "simulated:white_portable_engine" }, type: "item" }]
 			x: 4.5d
 			y: 1.0d
 		}
@@ -58,16 +58,16 @@
 		}
 		{
 			dependencies: ["78244061AD2B9F46", "07191F37D94E695F"]
-			id: "AD2A8A67769504A3"
+			id: "2D2A8A67769504A3"
 			rewards: []
-			tasks: [{ count: 1L, id: "E36933296777CE58", item: { count: 1, id: "simulated:throttle_lever" }, type: "item" }]
+			tasks: [{ count: 1L, id: "636933296777CE58", item: { count: 1, id: "simulated:throttle_lever" }, type: "item" }]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["AD2A8A67769504A3"]
+			dependencies: ["2D2A8A67769504A3"]
 			id: "0C6AA1F4EB5DC837"
-			rewards: [{ count: 16, id: "DE7AB6CD1E3E81A6", item: { count: 1, id: "create:andesite_alloy" }, type: "item" }, { count: 16, id: "0E3EB71DCA1CAA94", item: { count: 1, id: "minecraft:iron_ingot" }, type: "item" }]
+			rewards: [{ count: 16, id: "5E7AB6CD1E3E81A6", item: { count: 1, id: "create:andesite_alloy" }, type: "item" }, { count: 16, id: "0E3EB71DCA1CAA94", item: { count: 1, id: "minecraft:iron_ingot" }, type: "item" }]
 			tasks: [{ id: "5631FF9D6BEE0FB1", type: "checkmark" }]
 			x: 7.5d
 			y: 0.0d

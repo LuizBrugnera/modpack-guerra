@@ -10,6 +10,10 @@ $utf8 = New-Object System.Text.UTF8Encoding($false)
 function Id([string]$chave) {
   $md5 = [System.Security.Cryptography.MD5]::Create()
   $b = $md5.ComputeHash([Text.Encoding]::UTF8.GetBytes("guerra:$chave"))
+  # O ID é um long do Java: com o bit mais alto ligado ele fica negativo, e o FTB Quests troca
+  # IDs negativos por outros ao carregar (e aí nenhuma tradução casa → "Unnamed").
+  $b[0] = $b[0] -band 0x7F
+  if (($b[0..7] | Measure-Object -Sum).Sum -eq 0) { $b[7] = 1 }
   ($b[0..7] | ForEach-Object { $_.ToString('X2') }) -join ''
 }
 function Str([string]$s) { '"' + ($s -replace '\\', '\\' -replace '"', '\"') + '"' }
@@ -24,19 +28,19 @@ $grupos = @(
   @{ arquivo = 'c0_bemvindo'; titulo = 'Bem-vindo à Guerra'; icone = 'minecraft:writable_book'
      subtitulo = 'Leia antes de tudo: como o servidor funciona.'
      quests = @(
-      @{ k='q0_bemvindo'; x=0; y=0; deps=@(); t=@('check'); r=@('minecraft:bread=16'); titulo='Bem-vindo à Guerra'; forma='gear'; tam=1.5
+      @{ k='q0_bemvindo'; s='Comece por aqui'; tc='Li e entendi'; x=0; y=0; deps=@(); t=@('check'); r=@('minecraft:bread=16'); titulo='Bem-vindo à Guerra'; forma='gear'; tam=1.5
          d=@('Este é um servidor de §cguerra entre times§r: indústria do Create e do TFMG sustentando canhões, armas, aviões, mísseis e bombas.', '', 'A progressão é dividida em §65 eras§r. Cada era libera armas e veículos novos, e cada um exige o material da indústria daquela era. Não dá para pular etapas: quem domina a indústria domina a guerra.', '', 'Clique na tarefa para marcar como lida.') }
-      @{ k='q0_eras'; x=1.5; y=0; deps=@('q0_bemvindo'); t=@('check'); r=@(); titulo='Como funcionam as eras'
+      @{ k='q0_eras'; tc='Li e entendi'; x=1.5; y=0; deps=@('q0_bemvindo'); t=@('check'); r=@(); titulo='Como funcionam as eras'
          d=@('§fEra 1 — Mecânica:§r Create básico. Pistolas, rifles clássicos, canhões de ferro, barcos e balões.', '§fEra 2 — Vapor:§r latão e motor a vapor. Submetralhadoras, autocanhões, hélices, trens.', '§fEra 3 — Petróleo e Aço:§r refinaria e aço do TFMG. Fuzis, canhões de aço, bombas, Superb Warfare.', '§fEra 4 — Eletricidade:§r alumínio e circuitos. Armas pesadas, Mk 84, mísseis guiados, veículos, jatos.', '§fEra 5 — Fim de jogo:§r urânio. A Fat Man.', '', 'Você sobe de era ao ter no inventário o §emarco§r da próxima: §fmotor a vapor → aço → placa de circuito → urânio§r. O servidor anuncia para todo mundo.', '', 'Digite §e/era§r a qualquer momento para ver sua era e o que falta.') }
-      @{ k='q0_emi'; x=3; y=-1; deps=@('q0_eras'); t=@('check'); r=@(); titulo='Receitas e regras no EMI'
+      @{ k='q0_emi'; tc='Li e entendi'; x=3; y=-1; deps=@('q0_eras'); t=@('check'); r=@(); titulo='Receitas e regras no EMI'
          d=@('A lista de itens à direita do inventário é o §eEMI§r (o JEI do pack).', '', '§eR§r em cima de um item: receitas. §eU§r: onde ele é usado.', 'Itens com regra especial (era, confisco, limite) têm uma página §fInformação§r explicando — por exemplo a bancada de armas do TaCZ, o aço do TFMG e a Fat Man.') }
-      @{ k='q0_time'; x=3; y=1; deps=@('q0_eras'); t=@('check'); r=@(); titulo='Monte seu time e proteja a base'
-         d=@('Os claims são do §eOpen Parties and Claims§r:', '1. Aperte §e''§r (apóstrofo) para abrir o menu e crie um §fgrupo§r (party). Convide seus amigos.', '2. Abra o mapa (§eM§r), clique com o direito nos chunks e escolha §fReivindicar§r.', '', 'Limite: §f64 chunks§r, +16 por membro do grupo. Os claims são do grupo.', 'Dentro do claim, ninguém de fora quebra nem abre nada.') }
-      @{ k='q0_horario'; x=4.5; y=-1; deps=@('q0_emi'); t=@('check'); r=@(); titulo='Horário de guerra'
+      @{ k='q0_time'; tc='Li e entendi'; x=3; y=1; deps=@('q0_eras'); t=@('check'); r=@(); titulo='Monte seu time e proteja a base'
+         d=@('Os claims são do §eOpen Parties and Claims§r:', '1. Aperte §e''§r (apóstrofo) para abrir o menu e crie um §fgrupo§r (party). Convide seus amigos.', '2. Abra o mapa (§eM§r), clique com o direito nos chunks e escolha §fReivindicar§r.', '', 'Limite: §f64 chunks§r, +16 por membro do grupo. Os claims são do grupo.', 'Dentro do claim, ninguém de fora quebra ou abre nada com as mãos.', '§cExplosões passam pelo claim§r — no horário de guerra elas quebram blocos dentro da sua base também.') }
+      @{ k='q0_horario'; tc='Li e entendi'; x=4.5; y=-1; deps=@('q0_emi'); t=@('check'); r=@(); titulo='Horário de guerra'
          d=@('Explosões só quebram blocos no §chorário de guerra§r: §fsexta e sábado, 20h–23h§r (Brasília).', 'Fora disso, explosões ainda ferem, mas não destroem nada.', '', 'Admins podem forçar com /guerra on | off.') }
-      @{ k='q0_regras'; x=4.5; y=1; deps=@('q0_time'); t=@('check'); r=@(); titulo='Regras de armamento'
+      @{ k='q0_regras'; tc='Li e entendi'; x=4.5; y=1; deps=@('q0_time'); t=@('check'); r=@(); titulo='Regras de armamento'
          d=@('§c•§r Armas nucleares (exceto a Fat Man) só existem em eventos do servidor.', '§c•§r Fat Man só vale montada no Crafter Mecânico 7x7 (Era 5). Outras são confiscadas.', '§c•§r Bombas grandes Mk 84 exigem a Era 4; sem ela o item some.', '§c•§r Blocos à prova total (bunker): no máximo 128 por jogador.') }
-      @{ k='q0_mundo'; x=6; y=0; deps=@('q0_horario', 'q0_regras'); t=@('check'); r=@('minecraft:torch=32'); titulo='O mundo'
+      @{ k='q0_mundo'; tc='Li e entendi'; x=6; y=0; deps=@('q0_horario', 'q0_regras'); t=@('check'); r=@('minecraft:torch=32'); titulo='O mundo'
          d=@('§f•§r O mapa tem borda: §f16.000 × 16.000 blocos§r, centro em 0, 0.', '§f•§r Existem §fcidades abandonadas§r pelo mapa, com loot e prédios para combate urbano.', '§f•§r §fTornados§r quebram blocos. Fique de olho no céu.', '§f•§r Algumas noites têm §fluas especiais§r: horda de zumbis, aranhas, cegueira (Lua Negra), caos (mobs do Born in Chaos mais fortes)…', '§f•§r Morreu? Seu §fcorpo§r fica no lugar com os itens (mod Corpse). Volte para buscar.', '', '§aAgora comece pela Era 1.') }
      ) }
  ) }
@@ -60,29 +64,29 @@ $grupos = @(
          d=@('Base de várias máquinas, inclusive o montador de física dos veículos.') }
       @{ k='e1_cola'; x=6; y=-1; deps=@('e1_eixos'); t=@('create:super_glue=1'); r=@(); titulo='Super cola'
          d=@('Gruda blocos para que se movam juntos. Todo veículo começa aqui — veja a trilha §fBarcos§r.') }
-      @{ k='e1_bancada'; x=0; y=3; deps=@('e1_liga'); t=@('tacz:gun_smith_table=1'); r=@('minecraft:iron_ingot=16'); titulo='Bancada de armas'
+      @{ k='e1_bancada'; s='Armas da Era 1'; x=0; y=3; deps=@('e1_liga'); t=@('tacz:gun_smith_table=1'); r=@('minecraft:iron_ingot=16'); titulo='Bancada de armas'
          d=@('Aqui você monta as armas do TaCZ. Na Era 1 saem:', '§fpistolas comuns (M1911, Glock, CZ75…), Kar98, Springfield, SKS, escopetas de cano duplo e M870§r.', '', 'As outras armas aparecem na bancada, mas pedem material de eras seguintes (latão, aço, alumínio). Veja a página Informação da bancada no EMI.') }
-      @{ k='e1_arma'; x=1.5; y=3; deps=@('e1_bancada'); t=@('check'); r=@('minecraft:gunpowder=16'); titulo='Primeira arma'
-         d=@('Monte uma arma da Era 1 e a munição dela (bancada de munição do TaCZ).', '', 'Marque quando tiver feito.') }
+      @{ k='e1_arma'; x=1.5; y=3; deps=@('e1_bancada'); t=@('~tacz:modern_kinetic_gun=1', '~tacz:ammo=16'); r=@('minecraft:gunpowder=16'); titulo='Primeira arma'
+         d=@('Monte uma arma da Era 1 na bancada de armas e 16 balas para ela.', 'A munição sai da §fbancada de munição§r do TaCZ (a bancada é feita com cobre, ferro e uma caixa de munição).', '', 'Vale qualquer arma e qualquer munição.') }
       @{ k='e1_canhao'; x=3; y=3; deps=@('e1_bancada'); t=@('createbigcannons:cannon_mount=1', 'createbigcannons:cast_iron_cannon_barrel=2', 'createbigcannons:cast_iron_cannon_chamber=1'); r=@(); titulo='Canhão de ferro fundido'
          d=@('A primeira artilharia (Create Big Cannons): suporte + câmara + canos de ferro fundido.', 'Canos são fundidos com ferro derretido em moldes.', '', $DICA_PONDER) }
       @{ k='e1_projetil'; x=4.5; y=3; deps=@('e1_canhao'); t=@('createbigcannons:solid_shot=4', 'createbigcannons:powder_charge=4'); r=@(); titulo='Fogo!'
          d=@('Projétil sólido + cargas de pólvora. A ordem de carregar o canhão está no Ponder.') }
       @{ k='e1_balao'; x=6; y=3; deps=@('e1_cola'); t=@('aeronautics:white_envelope=8', 'aeronautics:adjustable_burner=1'); r=@(); titulo='Dirigível simples'
          d=@('Envelopes de ar quente + queimador = balão. A trilha §fVoando§r ensina a montar.') }
-      @{ k='e1_proxima'; x=8; y=1; deps=@('e1_cola', 'e1_carcaca'); t=@('create:steam_engine=1'); r=@('create:andesite_alloy=32', 'minecraft:copper_ingot=16'); titulo='Rumo à Era 2: Vapor'; forma='gear'; tam=1.5
+      @{ k='e1_proxima'; s='Marco da Era 2'; x=8; y=1; deps=@('e1_cola', 'e1_carcaca'); t=@('create:steam_engine=1'); r=@('create:andesite_alloy=32', 'minecraft:copper_ingot=16'); titulo='Rumo à Era 2: Vapor'; forma='gear'; tam=1.5
          d=@('§6Marco da Era 2: Motor a Vapor.§r Ter um no inventário leva você para a Era 2.', '', 'O motor a vapor do Create precisa de um §ftanque de fluido§r com água, aquecido por um §fqueimador de blaze§r. Veja o Ponder.') }
      ) }
   @{ arquivo = 'c2_era2'; titulo = 'Era 2 — Vapor'; icone = 'create:steam_engine'
      subtitulo = 'Latão, mecanismos de precisão e armas automáticas.'
      quests = @(
-      @{ k='e2_inicio'; x=0; y=0; deps=@('e1_proxima'); t=@('check'); r=@(); titulo='Bem-vindo à Era 2'; forma='hexagon'
+      @{ k='e2_inicio'; s='Era 2 — Vapor'; tc='Vamos lá!'; x=0; y=0; deps=@('e1_proxima'); t=@('check'); r=@(); titulo='Bem-vindo à Era 2'; forma='hexagon'
          d=@('Agora você tem vapor: força de sobra para máquinas grandes.', 'O material desta era é o §6latão§r. As armas e veículos daqui pedem latão e mecanismo de precisão.') }
       @{ k='e2_queimador'; x=1.5; y=-1; deps=@('e2_inicio'); t=@('create:blaze_burner=1'); r=@(); titulo='Queimador de blaze'
          d=@('Calor para o misturador e para o motor a vapor. Capture um blaze no Nether com um queimador vazio.') }
       @{ k='e2_misturador'; x=3; y=-1; deps=@('e2_queimador'); t=@('create:mechanical_mixer=1', 'create:basin=1'); r=@(); titulo='Misturador mecânico'
          d=@('Misturador sobre uma bacia: liga metais e faz receitas com calor.') }
-      @{ k='e2_latao'; x=4.5; y=-1; deps=@('e2_misturador'); t=@('create:brass_ingot=16'); r=@(); titulo='Latão'
+      @{ k='e2_latao'; s='Material da Era 2'; x=4.5; y=-1; deps=@('e2_misturador'); t=@('create:brass_ingot=16'); r=@(); titulo='Latão'
          d=@('Cobre + zinco no misturador, aquecido. §6É o material da Era 2.§r') }
       @{ k='e2_tubo'; x=4.5; y=-2.5; deps=@('e2_latao'); t=@('create:electron_tube=4'); r=@(); titulo='Tubo eletrônico'
          d=@('Componente de máquinas de latão e de controles.') }
@@ -90,7 +94,7 @@ $grupos = @(
          d=@('Feito por montagem em sequência (veja o Ponder). Toda arma da Era 2 do TaCZ pede um.') }
       @{ k='e2_trem'; x=6; y=-2.5; deps=@('e2_mecanismo'); t=@('create:track=32', 'create:controls=1'); r=@(); titulo='Trens'
          d=@('Trilhos e controles de trem: logística pesada entre bases (e fronts).') }
-      @{ k='e2_armas'; x=1.5; y=1.5; deps=@('e2_latao'); t=@('check'); r=@(); titulo='Armas da Era 2'
+      @{ k='e2_armas'; s='Bancada de armas do TaCZ'; x=1.5; y=1.5; deps=@('e2_latao'); t=@('check'); r=@(); titulo='Armas da Era 2'
          d=@('Na bancada de armas do TaCZ agora saem, com §f+6 latão e 1 mecanismo de precisão§r:', '§fsubmetralhadoras (Uzi, MP5, UMP45, Vector, P90), B93R, Desert Eagle, Taurus 500, M1014, SPAS-12, M700, M16A1, Type 81§r.') }
       @{ k='e2_autocanhao'; x=3; y=1.5; deps=@('e2_latao'); t=@('createbigcannons:cast_iron_autocannon_barrel=1', 'createbigcannons:cast_iron_autocannon_breech=1', 'createbigcannons:autocannon_ammo_container=1'); r=@(); titulo='Autocanhão'
          d=@('Canhão de tiro rápido. A caixa de munição e os cartuchos pedem latão.') }
@@ -101,14 +105,14 @@ $grupos = @(
       @{ k='e2_coque'; x=7.5; y=-1; deps=@('e2_mecanismo'); t=@('tfmg:coke_oven=1', 'tfmg:coal_coke=8'); r=@(); titulo='Coque'
          d=@('O forno de coque do TFMG transforma carvão em §fcoque§r — o combustível do alto-forno.') }
       @{ k='e2_altoforno'; x=9; y=0; deps=@('e2_coque'); t=@('tfmg:blast_furnace_output=1', 'tfmg:blast_furnace_reinforcement=8'); r=@(); titulo='Alto-forno'
-         d=@('Saída + reforços do alto-forno do TFMG. Alimentado com minério de ferro e coque, ele produz §faço§r.', $DICA_PONDER) }
-      @{ k='e2_proxima'; x=10.5; y=0; deps=@('e2_altoforno'); t=@('tfmg:steel_ingot=1'); r=@('tfmg:steel_ingot=8'); titulo='Rumo à Era 3: Aço'; forma='gear'; tam=1.5
+         d=@('Saída + reforços: a estrutura do alto-forno do TFMG. Ele funde ferro com coque para fazer §faço§r.', 'O passo a passo (forma da estrutura, entradas e como o aço sai) está no Ponder e no EMI do lingote de aço.', $DICA_PONDER) }
+      @{ k='e2_proxima'; s='Marco da Era 3'; x=10.5; y=0; deps=@('e2_altoforno'); t=@('tfmg:steel_ingot=1'); r=@('tfmg:steel_ingot=8'); titulo='Rumo à Era 3: Aço'; forma='gear'; tam=1.5
          d=@('§6Marco da Era 3: Lingote de Aço.§r', '', '§cO único aço do servidor é o do TFMG.§r O aço de outros mods (Superb Warfare, etc.) foi removido.') }
      ) }
   @{ arquivo = 'c3_era3'; titulo = 'Era 3 — Petróleo e Aço'; icone = 'tfmg:steel_ingot'
      subtitulo = 'Refinaria, aço e a guerra moderna.'
      quests = @(
-      @{ k='e3_inicio'; x=0; y=0; deps=@('e2_proxima'); t=@('check'); r=@(); titulo='Bem-vindo à Era 3'; forma='hexagon'
+      @{ k='e3_inicio'; s='Era 3 — Petróleo e Aço'; tc='Vamos lá!'; x=0; y=0; deps=@('e2_proxima'); t=@('check'); r=@(); titulo='Bem-vindo à Era 3'; forma='hexagon'
          d=@('Aço e petróleo: aqui começa a guerra moderna.', 'Os materiais desta era são o §6aço§r e o §6enxofre§r do TFMG.') }
       @{ k='e3_blocoaco'; x=1.5; y=-1.5; deps=@('e3_inicio'); t=@('tfmg:steel_block=4'); r=@(); titulo='Blocos de aço'
          d=@('Muito aço vai ser preciso: canhões, bancadas, bombas.') }
@@ -120,9 +124,9 @@ $grupos = @(
          d=@('Combustível dos motores do TFMG e de veículos.') }
       @{ k='e3_motor'; x=6; y=-3; deps=@('e3_diesel'); t=@('tfmg:regular_engine=1'); r=@(); titulo='Motor a combustão'
          d=@('Força rotacional muito maior que a do vapor, queimando combustível.') }
-      @{ k='e3_enxofre'; x=3; y=-1.5; deps=@('e3_destilaria'); t=@('tfmg:sulfur_dust=8'); r=@(); titulo='Enxofre'
-         d=@('Sai da refinaria. §6Material da Era 3§r: armas, munição Mk.III e bombas pedem enxofre.') }
-      @{ k='e3_armas'; x=1.5; y=1.5; deps=@('e3_inicio'); t=@('check'); r=@(); titulo='Armas da Era 3'
+      @{ k='e3_enxofre'; s='Material da Era 3'; x=3; y=-1.5; deps=@('e3_destilaria'); t=@('tfmg:sulfur_dust=8'); r=@(); titulo='Enxofre'
+         d=@('§6Material da Era 3§r: armas, munição Mk.III e bombas pedem enxofre.', 'Veja no EMI (§eR§r em cima do enxofre do TFMG) de onde ele sai na cadeia do petróleo.') }
+      @{ k='e3_armas'; s='Bancada de armas do TaCZ'; x=1.5; y=1.5; deps=@('e3_inicio'); t=@('check'); r=@(); titulo='Armas da Era 3'
          d=@('Na bancada de armas do TaCZ, com §f+10 aço e 2 enxofre§r:', '§fAK-47, M4A1, M16A4, HK416, G36K, AUG, QBZ-95, QBZ-191, SCAR-L/H, FN FAL, G3, MK14, SPR15, RPK, M249, AA-12, AWP§r.') }
       @{ k='e3_canhao'; x=3; y=1.5; deps=@('e3_blocoaco'); t=@('createbigcannons:steel_cannon_barrel=1', 'createbigcannons:steel_cannon_chamber=1'); r=@(); titulo='Canhão de aço'
          d=@('Canos de aço aguentam cargas muito maiores que os de ferro.') }
@@ -142,15 +146,15 @@ $grupos = @(
          d=@('Transforma rotação em §feletricidade§r. Comece a rede elétrica.') }
       @{ k='e3_eletrico'; x=9.5; y=-1.5; deps=@('e3_gerador'); t=@('tfmg:electric_motor=1', 'tfmg:cable_connector=4'); r=@(); titulo='Rede elétrica'
          d=@('Cabos ligam geradores a motores elétricos.', $DICA_PONDER) }
-      @{ k='e3_aluminio'; x=9.5; y=0; deps=@('e3_eletrico'); t=@('tfmg:aluminum_ingot=8'); r=@(); titulo='Alumínio'
+      @{ k='e3_aluminio'; s='Material da Era 4'; x=9.5; y=0; deps=@('e3_eletrico'); t=@('tfmg:aluminum_ingot=8'); r=@(); titulo='Alumínio'
          d=@('Feito com eletricidade. §6Material da Era 4.§r') }
-      @{ k='e3_proxima'; x=11; y=0; deps=@('e3_aluminio'); t=@('tfmg:circuit_board=1'); r=@('tfmg:aluminum_ingot=8'); titulo='Rumo à Era 4: Eletricidade'; forma='gear'; tam=1.5
+      @{ k='e3_proxima'; s='Marco da Era 4'; x=11; y=0; deps=@('e3_aluminio'); t=@('tfmg:circuit_board=1'); r=@('tfmg:aluminum_ingot=8'); titulo='Rumo à Era 4: Eletricidade'; forma='gear'; tam=1.5
          d=@('§6Marco da Era 4: Placa de Circuito.§r', '', 'Placa vazia → revestida → gravada → placa de circuito (veja a cadeia no EMI).') }
      ) }
   @{ arquivo = 'c4_era4'; titulo = 'Era 4 — Eletricidade'; icone = 'tfmg:circuit_board'
      subtitulo = 'Eletrônica, armas pesadas, mísseis guiados e veículos.'
      quests = @(
-      @{ k='e4_inicio'; x=0; y=0; deps=@('e3_proxima'); t=@('check'); r=@(); titulo='Bem-vindo à Era 4'; forma='hexagon'
+      @{ k='e4_inicio'; s='Era 4 — Eletricidade'; tc='Vamos lá!'; x=0; y=0; deps=@('e3_proxima'); t=@('check'); r=@(); titulo='Bem-vindo à Era 4'; forma='hexagon'
          d=@('Circuitos e alumínio: armas guiadas e máquinas de guerra pesadas.', 'Materiais desta era: §6alumínio§r, §6placa de circuito§r e §6motor elétrico pesado§r.') }
       @{ k='e4_motor'; x=1.5; y=-1.5; deps=@('e4_inicio'); t=@('tfmg:heavy_electric_motor=1'); r=@(); titulo='Motor elétrico pesado'
          d=@('Peça-chave de ICBM, veículos do Superb Warfare e da Fat Man.') }
@@ -158,7 +162,7 @@ $grupos = @(
          d=@('Acumuladores guardam energia; transformadores ajustam a tensão.') }
       @{ k='e4_blocoal'; x=4.5; y=-1.5; deps=@('e4_energia'); t=@('tfmg:aluminum_block=4'); r=@(); titulo='Blocos de alumínio'
          d=@('Bunkers à prova total e a Fat Man pedem muito alumínio.') }
-      @{ k='e4_armas'; x=1.5; y=1.5; deps=@('e4_inicio'); t=@('check'); r=@(); titulo='Armas da Era 4'
+      @{ k='e4_armas'; s='Bancada de armas do TaCZ'; x=1.5; y=1.5; deps=@('e4_inicio'); t=@('check'); r=@(); titulo='Armas da Era 4'
          d=@('Na bancada de armas do TaCZ, com §f+8 alumínio, 2 placas de circuito e 6 aço§r:', '§fM107, M95, FN Evolys, minigun, RPG-7, M320, Desert Eagle dourada, Timeless 50§r.') }
       @{ k='e4_mk5'; x=3; y=1.5; deps=@('e4_inicio'); t=@('cbc_enhanced_shells:he_shell_mk5=1'); r=@(); titulo='Munição Mk.V'
          d=@('Mk.IV = Mk.III + 2 alumínio + aço. Mk.V = Mk.IV + placa de circuito + 2 alumínio.') }
@@ -180,13 +184,13 @@ $grupos = @(
          d=@('Desvia tornados e tempestades da sua base.') }
       @{ k='e4_detector'; x=9; y=0; deps=@('e4_defletor'); t=@('projectexplosive:radiation_detector=1', 'projectexplosive:raw_uranium=4'); r=@(); titulo='Urânio'
          d=@('Minério de urânio fica no fundo do mundo. O detector de radiação ajuda a achar.') }
-      @{ k='e4_proxima'; x=10.5; y=0; deps=@('e4_detector'); t=@('projectexplosive:uranium_ingot=1'); r=@(); titulo='Rumo à Era 5: Fim de jogo'; forma='gear'; tam=1.5
+      @{ k='e4_proxima'; s='Marco da Era 5'; x=10.5; y=0; deps=@('e4_detector'); t=@('projectexplosive:uranium_ingot=1'); r=@(); titulo='Rumo à Era 5: Fim de jogo'; forma='gear'; tam=1.5
          d=@('§6Marco da Era 5: Lingote de Urânio.§r') }
      ) }
   @{ arquivo = 'c5_era5'; titulo = 'Era 5 — Fim de jogo'; icone = 'projectexplosive:nuclear_bomb'
      subtitulo = 'A Fat Man.'
      quests = @(
-      @{ k='e5_inicio'; x=0; y=0; deps=@('e4_proxima'); t=@('check'); r=@(); titulo='Bem-vindo à Era 5'; forma='hexagon'
+      @{ k='e5_inicio'; s='Era 5 — Fim de jogo'; tc='Vamos lá!'; x=0; y=0; deps=@('e4_proxima'); t=@('check'); r=@(); titulo='Bem-vindo à Era 5'; forma='hexagon'
          d=@('A última era. A única arma nuclear que um jogador pode fabricar é a §cFat Man§r, e ela custa uma indústria inteira.') }
       @{ k='e5_estrela'; x=1.5; y=-1.5; deps=@('e5_inicio'); t=@('minecraft:nether_star=1'); r=@(); titulo='Estrela do Nether'
          d=@('Derrote o Wither.') }
@@ -198,7 +202,7 @@ $grupos = @(
          d=@('8 lingotes de urânio.') }
       @{ k='e5_crafter'; x=3; y=-1.5; deps=@('e5_estrela'); t=@('create:mechanical_crafter=49'); r=@(); titulo='Crafter Mecânico 7x7'
          d=@('49 crafters mecânicos em um quadrado 7x7. Veja o Ponder.') }
-      @{ k='e5_fatman'; x=5; y=0; deps=@('e5_placas', 'e5_uranio', 'e5_crafter'); t=@('check'); r=@(); titulo='Fat Man'; forma='gear'; tam=2
+      @{ k='e5_fatman'; s='A arma final'; x=5; y=0; deps=@('e5_placas', 'e5_uranio', 'e5_crafter'); t=@('check'); r=@(); titulo='Fat Man'; forma='gear'; tam=2
          d=@('Monte a Fat Man no Crafter Mecânico 7x7:', '§f16 blocos de aço, 8 blocos de alumínio, 8 urânio, 2 placas revestidas, 1 motor elétrico pesado, 1 bomba Mk 84 e 1 Estrela do Nether§r (formato no EMI).', '', '§cSó a Fat Man feita assim é válida§r — a da bancada de munições é confiscada.', 'Lembre: explosões só quebram blocos no horário de guerra.') }
      ) }
  ) }
@@ -269,7 +273,7 @@ $grupos = @(
      subtitulo = 'Claims, muralhas, armadilhas e bunkers.'
      quests = @(
       @{ k='d_claim'; x=0; y=0; deps=@('q0_time'); t=@('check'); r=@(); titulo='Base protegida'
-         d=@('Reivindique os chunks da sua base pelo mapa (§eM§r, clique direito). Dentro do claim ninguém de fora quebra nada.', 'Explosões no horário de guerra quebram blocos em qualquer lugar — por isso as muralhas.') }
+         d=@('Reivindique os chunks da sua base pelo mapa (§eM§r, clique direito). Dentro do claim ninguém de fora quebra nada com as mãos.', 'Mas explosões no horário de guerra quebram blocos em qualquer lugar, com ou sem claim — por isso as muralhas.') }
       @{ k='d_reforcado'; x=1.5; y=0; deps=@('d_claim'); t=@('stronger_blocks:reinforced_stone_bricks=32'); r=@(); titulo='Muralha reforçada'
          d=@('Blocos reforçados aguentam muito mais explosões (Era 1: pedra + pepita de ferro).') }
       @{ k='d_vidro'; x=1.5; y=-1.5; deps=@('d_reforcado'); t=@('stronger_blocks:reinforced_glass=8'); r=@(); titulo='Vidro reforçado'
@@ -308,13 +312,22 @@ foreach ($g in $grupos) {
     foreach ($q in $c.quests) {
       $qid = Id "quest:$($q.k)"
       $lang["quest.$qid.title"] = $q.titulo
+      if ($q.s) { $lang["quest.$qid.quest_subtitle"] = $q.s }
       $lang["quest.$qid.quest_desc"] = $q.d
       $deps = ($q.deps | ForEach-Object { Str (Id "quest:$_") }) -join ', '
       $i = 0
       $tarefas = foreach ($t in $q.t) {
         $i++; $tid = Id "task:$($q.k):$i"
-        if ($t -eq 'check') { "{ id: $(Str $tid), type: `"checkmark`" }" }
-        else { $item, $n = $t -split '='; "{ count: ${n}L, id: $(Str $tid), item: { count: 1, id: $(Str $item) }, type: `"item`" }" }
+        if ($t -eq 'check') {
+          # Tarefa de marcar: sem nome ela aparece como "Unnamed" na lista de tarefas
+          $lang["task.$tid.title"] = $(if ($q.tc) { $q.tc } else { 'Feito!' })
+          "{ id: $(Str $tid), type: `"checkmark`" }"
+        } else {
+          # '~item' = qualquer variante do item (ignora os dados do item: armas e munição do TaCZ)
+          $semDados = $t.StartsWith('~'); $item, $n = $t.TrimStart('~') -split '='
+          $mc = $(if ($semDados) { ', match_components: "none"' } else { '' })
+          "{ count: ${n}L, id: $(Str $tid), item: { count: 1, id: $(Str $item) }$mc, type: `"item`" }"
+        }
       }
       $i = 0
       $recompensas = foreach ($r in $q.r) {
@@ -360,10 +373,13 @@ $data = @'
 [IO.File]::WriteAllText((Join-Path $raiz 'data.snbt'), $data, $utf8)
 
 # Textos em pt-BR no en_us (o FTB Quests usa en_us como reserva para todos os idiomas)
+# As chaves vão SEM aspas, como o próprio FTB Quests grava (com aspas, as aspas entram no nome
+# da chave, nenhuma tradução casa e tudo aparece como "Unnamed").
 $linhas = foreach ($k in $lang.Keys) {
+  if ($k -notmatch '^[a-z_]+\.[0-9A-F]{16}\.[a-z_]+$') { throw "Chave de tradução inválida: $k" }
   $v = $lang[$k]
-  if ($v -is [array]) { "`t$(Str $k): [`n" + (($v | ForEach-Object { "`t`t$(Str $_)" }) -join "`n") + "`n`t]" }
-  else { "`t$(Str $k): $(Str $v)" }
+  if ($v -is [array]) { "`t${k}: [`n" + (($v | ForEach-Object { "`t`t$(Str $_)" }) -join "`n") + "`n`t]" }
+  else { "`t${k}: $(Str $v)" }
 }
 [IO.File]::WriteAllText((Join-Path $raiz 'lang\en_us.snbt'), "{`n$($linhas -join "`n")`n}`n", $utf8)
 Write-Host "Quests geradas: $($grupos.Count) grupos, $ordem capítulos, $nQuests quests em $raiz"

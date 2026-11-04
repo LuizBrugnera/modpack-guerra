@@ -4,13 +4,13 @@
 	filename: "c5_era5"
 	group: "05E56B3176A98963"
 	icon: { count: 1, id: "projectexplosive:nuclear_bomb" }
-	id: "E6AF6663904969AD"
+	id: "66AF6663904969AD"
 	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["5AC9BCE954D16181"]
-			id: "F6D1EF1B2FA802AB"
+			id: "76D1EF1B2FA802AB"
 			rewards: []
 			shape: "hexagon"
 			tasks: [{ id: "60B3006A781CF845", type: "checkmark" }]
@@ -18,15 +18,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["F6D1EF1B2FA802AB"]
+			dependencies: ["76D1EF1B2FA802AB"]
 			id: "61C5312816AC8FF2"
 			rewards: []
-			tasks: [{ count: 1L, id: "D1C9AE85A677638C", item: { count: 1, id: "minecraft:nether_star" }, type: "item" }]
+			tasks: [{ count: 1L, id: "51C9AE85A677638C", item: { count: 1, id: "minecraft:nether_star" }, type: "item" }]
 			x: 1.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["F6D1EF1B2FA802AB"]
+			dependencies: ["76D1EF1B2FA802AB"]
 			id: "2FBF433282423EBD"
 			rewards: []
 			tasks: [{ count: 2L, id: "527D7B06A960AFEB", item: { count: 1, id: "tfmg:coated_circuit_board" }, type: "item" }]
@@ -34,10 +34,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["F6D1EF1B2FA802AB"]
+			dependencies: ["76D1EF1B2FA802AB"]
 			id: "5AD1B90EC88896B3"
 			rewards: []
-			tasks: [{ count: 16L, id: "B3E5393F5B6E65BC", item: { count: 1, id: "tfmg:steel_block" }, type: "item" }, { count: 8L, id: "9EB9EEDF965972CD", item: { count: 1, id: "tfmg:aluminum_block" }, type: "item" }]
+			tasks: [{ count: 16L, id: "33E5393F5B6E65BC", item: { count: 1, id: "tfmg:steel_block" }, type: "item" }, { count: 8L, id: "1EB9EEDF965972CD", item: { count: 1, id: "tfmg:aluminum_block" }, type: "item" }]
 			x: 1.5d
 			y: 1.5d
 		}
@@ -45,25 +45,25 @@
 			dependencies: ["5AD1B90EC88896B3"]
 			id: "36AEB3E8C1A4F1E6"
 			rewards: []
-			tasks: [{ count: 8L, id: "F08CC0F8FAD306E7", item: { count: 1, id: "projectexplosive:uranium_ingot" }, type: "item" }]
+			tasks: [{ count: 8L, id: "708CC0F8FAD306E7", item: { count: 1, id: "projectexplosive:uranium_ingot" }, type: "item" }]
 			x: 3.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["61C5312816AC8FF2"]
-			id: "AA603D000A80EAC5"
+			id: "2A603D000A80EAC5"
 			rewards: []
 			tasks: [{ count: 49L, id: "2DC18AEFEF6CD1DE", item: { count: 1, id: "create:mechanical_crafter" }, type: "item" }]
 			x: 3.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["2FBF433282423EBD", "36AEB3E8C1A4F1E6", "AA603D000A80EAC5"]
+			dependencies: ["2FBF433282423EBD", "36AEB3E8C1A4F1E6", "2A603D000A80EAC5"]
 			id: "17CF9C845152156E"
 			rewards: []
 			shape: "gear"
 			size: 2.0d
-			tasks: [{ id: "CB2BF2EB756872F0", type: "checkmark" }]
+			tasks: [{ id: "4B2BF2EB756872F0", type: "checkmark" }]
 			x: 5.0d
 			y: 0.0d
 		}
