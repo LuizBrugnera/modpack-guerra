@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "5bbe0d448c1c0a5dd2208eead9d78086f031235ccac2a53788cdf9f625b66d58"
+hash = "20cd44bae1ceca59c61b8210aadf9565c3db481ee9cd7d0c9fc9cbf999071e57"
 
 [[files]]
 file = "config/Weather2/Storm.toml"
@@ -11,6 +11,10 @@ hash = "9753d4af541b76d1b6dd61371fa5ebb43609941e3b6d284fcc82b522ab9d248a"
 [[files]]
 file = "config/Weather2/Tornado.toml"
 hash = "5acfddaeea2429786823909b309a4412bf9b8d63635acc39f225975bf997af20"
+
+[[files]]
+file = "config/chunky/config.json"
+hash = "6c103db0800e63ba88c2296e42fb8f5e631f70ea17b8c5d77bef0166d0662d96"
 
 [[files]]
 file = "config/createbigcannons-server.toml"
@@ -79,6 +83,10 @@ hash = "3dc0528b53718987c44bc40ce4748374fb92dabec2ba848ca8eb1063544c14b7"
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
 hash = "a924b326629cf419a3d6c02c0ae0bd1def952408d20300fce0761399c6dbd10e"
+
+[[files]]
+file = "config/servercore/config.yml"
+hash = "72ba2c776bbad52bd57c97943acf9488e7b851cb773052aba3f702d12d74a255"
 
 [[files]]
 file = "defaultconfigs/openpartiesandclaims-default-player-config.toml"
@@ -261,6 +269,10 @@ file = "kubejs/server_scripts/horario_guerra.js"
 hash = "7089cc79cc1fd55b3e1ad0b0f678967550cde390f23dbb399779c9a3dec63372"
 
 [[files]]
+file = "kubejs/server_scripts/pregeracao.js"
+hash = "2937516f31d6b9f253c26b3463e25a326cb3e7cbae5865e1c906de7c9fda6d89"
+
+[[files]]
 file = "kubejs/server_scripts/progressao.js"
 hash = "b047424b78bde6f2a052af577073bdff558e9f12b135672001f0f65a7a2fd021"
 
@@ -360,8 +372,23 @@ hash = "a6fc685c5d20335a9695a58ec80c293f6b136fa7c894b6206d37ffd8c29d6a3f"
 metafile = true
 
 [[files]]
+file = "mods/chunky.pw.toml"
+hash = "dbf1b55fa703024af47aafaa0fab0af1c972e7faea68e6f46f4467f20f0c837b"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
+metafile = true
+
+[[files]]
+file = "mods/clumps.pw.toml"
+hash = "2acaff560bbda5741538528a2967355ec86a8f7564adba0b2316989c66892374"
+metafile = true
+
+[[files]]
+file = "mods/copycats-plus-aeronautics-weight.pw.toml"
+hash = "a1e68ec75524eb10a4522c27e3429a43c22861ac3c081686bd948a06bc4cfc91"
 metafile = true
 
 [[files]]
@@ -387,6 +414,11 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics-climbable-rope.pw.toml"
 hash = "914f2efb2afa0113d5936b0e721fb5c291abb9c2e66944f33fc33be8e33c8a89"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-compatability.pw.toml"
+hash = "d66f3ca71587c7ab8076f4a0154b0d3aa2f043c29c6373f2b8b2e5d6c3c3e91f"
 metafile = true
 
 [[files]]
@@ -422,6 +454,16 @@ metafile = true
 [[files]]
 file = "mods/create-big-cannons-advanced-technologies.pw.toml"
 hash = "2de7339944ca4d988001c6cf30e9bf793cce8e18b6519fa3209afa8fb6ee3f94"
+metafile = true
+
+[[files]]
+file = "mods/create-big-cannons-equally-opposite.pw.toml"
+hash = "a6b68c1b0ebcaf4fa95013256679946adfc828a842a7ee9ae3579f7de135cadb"
+metafile = true
+
+[[files]]
+file = "mods/create-big-cannons-going-ballistic.pw.toml"
+hash = "0b12883f11dbbe00992317ce0c867e9f9c63d5b5141fb34dc61cc0a34deb56ea"
 metafile = true
 
 [[files]]
@@ -470,6 +512,11 @@ hash = "422fd5cf73322f4379b04dc0a3d8dc952b8faeadd2f287d40e31db596db72c83"
 metafile = true
 
 [[files]]
+file = "mods/create-threaded-trains.pw.toml"
+hash = "f802c6f488a0141d9a51624bcce33c80c2c3d4bea731ea3f9301a6ec9d36cf4d"
+metafile = true
+
+[[files]]
 file = "mods/create-timeless-and-classics-zero-tacz-port.pw.toml"
 hash = "08579d3ace75d7e5047b902f1d69413447333dc1f6a15235e35677864c1380a4"
 metafile = true
@@ -477,6 +524,11 @@ metafile = true
 [[files]]
 file = "mods/create-tracks-plus.pw.toml"
 hash = "b5d7bf5c707e49e0ad5f266fc440ad6bdfeb86c2774e9b3574ea17c35d33082d"
+metafile = true
+
+[[files]]
+file = "mods/create-tweaked-controllers.pw.toml"
+hash = "2c72104b4cf249d4f096f673293a41c199d611dc9b99a9055d463fa5cd90c7cd"
 metafile = true
 
 [[files]]
@@ -565,8 +617,8 @@ hash = "6b235aa1d0c43ab4fa7eacca3eb3c62530fa6ae1b44bc56aecc25c636a8ffc5b"
 metafile = true
 
 [[files]]
-file = "mods/guerra-weather2fix-1.0.0.jar"
-hash = "f84feac7c854afac79b92b7c72eba5f0f1f92d0f6b8f7a246b80cfdcc884dafa"
+file = "mods/guerra-correcoes-1.1.0.jar"
+hash = "fe46034b518c405303de8eaade22c85370547d66d23d174c9f1e5cbb13a3734b"
 
 [[files]]
 file = "mods/horde-moon-2.pw.toml"
@@ -611,6 +663,11 @@ metafile = true
 [[files]]
 file = "mods/library-ferret.pw.toml"
 hash = "599c8c37e60b9f1fbfb29d10eb9ede3d174b72287b9fbe407e90b6417a27a441"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+hash = "0d3683a8c533e1fb67bf0b1668089a322fc5f594f9610d441657378ab4f64383"
 metafile = true
 
 [[files]]
@@ -704,8 +761,18 @@ hash = "fadb5c9cfe145e51992894fe57209fc8f1696ef892ee9702a24c6205f042e9b2"
 metafile = true
 
 [[files]]
+file = "mods/sablecompat.pw.toml"
+hash = "b9ceb0fa4707ced2e0467f334ce8b6cb2fd60c729b47aee065e2bb0d5b905189"
+metafile = true
+
+[[files]]
 file = "mods/sbw-aeronautics-compat.pw.toml"
 hash = "cfab7eec2a7cebc9bfcd58385ffe3cd9e5c4f13936a123c71dc4d4f3ad0a647f"
+metafile = true
+
+[[files]]
+file = "mods/servercore.pw.toml"
+hash = "e6bfb33055c9c6e32034c2c2ac03768a8978d3f7200a266b00849ff76b9e6816"
 metafile = true
 
 [[files]]
@@ -746,6 +813,11 @@ metafile = true
 [[files]]
 file = "mods/tacz-1.21.1.pw.toml"
 hash = "71944dea59c3df21fd71d4ea2d75d3e34ab159c2c39f047269e14b203416afb5"
+metafile = true
+
+[[files]]
+file = "mods/tacz-aeronautics-compat.pw.toml"
+hash = "9b0efc6327054eae3121ba7a29bb8e78d337f387d915785e2bfc4852a7728dc3"
 metafile = true
 
 [[files]]

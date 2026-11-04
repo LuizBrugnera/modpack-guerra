@@ -151,3 +151,13 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - **Create: Bits 'n' Tracks Community Edition** 3.0.1 (esteiras de tanque com física do Sable) e **Create: Tracks+** 1.0.6b7 (esteiras estilo Trackwork; modid `tracks`).
 - O BnT CE pede **Create: Bits 'n' Bobs** 2.3.5, que por sua vez exige **Strut Your Stuff (Struts)** e **Azimuth API** — o Modrinth não lista esses dois como dependência; sem eles o servidor nem sobe (adicionados: struts 1.3.1, azimuth 1.4.10).
 - Testado: servidor de teste sobe com os cinco. Não testado em jogo: as duas esteiras no mesmo veículo.
+
+## Mods de prioridade alta e carregamento de chunks — 04/11/2026
+- Adicionados (pesquisa em 18 modpacks do gênero): **TACZ Aeronautics compat** 1.8.0, **CBC: Equally Opposite** 0.1.3 (recuo dos canhões nos veículos), **CBC: Going Ballistic** 0.3.2, **Create: Tweaked Controllers** 1.2.7, **Create Aeronautics: Compatibility** 1.1.3, **Sable: Physics Compat** 1.3.0, **Copycats+ aeronautics weight** 1.1.1, **Lootr** 1.11.38 (loot por jogador nas cidades), **Clumps**, **Create: Threaded Trains**, e só no servidor **Chunky** 1.4.23 e **ServerCore** 1.5.19.
+- **Causa do carregamento lento de chunks:** o mundo novo tinha só 4 regiões geradas; cada lugar visitado era gerado na hora (Lost Cities + dezenas de mods de estrutura), e o Distant Horizons do servidor ainda gerava chunks completos num raio de 64 em volta de cada jogador (`SURFACE_THEN_CHUNKS`). Nos dias de jogo isso aparecia como atrasos de 2 a 4,5 s.
+- **Correções:**
+  - Pré-geração com o Chunky (~18 chunks/s; o mapa inteiro de 1 milhão de chunks leva ~15 h). `kubejs/server_scripts/pregeracao.js` pausa quando alguém entra e continua quando o último sai; `config/chunky/config.json` com `continueOnRestart: true`. Para começar: `chunky worldborder` e `chunky start` no console.
+  - DH: `generatorPlan = "SURFACE_ONLY"` (só o esboço rápido do terreno onde não foi pré-gerado; onde foi, o DH usa o terreno real).
+  - ServerCore dinâmico (`config/servercore/config.yml`): acima de 40 MSPT, reduz mobs → distância de tick (6→3) → simulação (6→4) → visão (8→6), e volta quando alivia.
+  - `servidor/server.properties`: `sync-chunk-writes=false`.
+- **Crash do DH 3.3.3 com o Chunky:** o DH tentava se ligar ao Chunky no primeiro chunk carregado, antes de o Chunky carregar ("IllegalStateException: Chunky is not loaded"), e o servidor caía no boot. Corrigido no nosso mod de correções, que virou `guerra-correcoes-1.1.0.jar` (código em `fix-mods/weather2fix/`): a ligação fica para depois que o Chunky estiver pronto. Com isso o DH também pausa a geração dele enquanto o Chunky roda.

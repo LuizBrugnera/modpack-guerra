@@ -4,12 +4,15 @@ license="MIT"
 
 [[mods]]
 modId="guerra_weather2fix"
-version="1.0.0"
-displayName="Guerra: Weather2 Fix"
-description="Corrige a queda de conexão 'Failed to encode packet custom_payload' do Weather2 2.8.7 (envia cópia do NBT)."
+version="1.1.0"
+displayName="Guerra: Correções"
+description="Corrige a queda de conexão 'Failed to encode packet custom_payload' do Weather2 2.8.7 (envia cópia do NBT) e o crash do Distant Horizons com o Chunky ao abrir o servidor."
 
 [[mixins]]
 config="guerra_weather2fix.mixins.json"
+
+[[mixins]]
+config="guerra_dhfix.mixins.json"
 
 [[dependencies.guerra_weather2fix]]
 modId="weather2"
