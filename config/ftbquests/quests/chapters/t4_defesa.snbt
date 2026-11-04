@@ -1,0 +1,76 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "t4_defesa"
+	group: "A6DC4DBA16805B43"
+	icon: { count: 1, id: "stronger_blocks:reinforced_stone_bricks" }
+	id: "7973C12EAB6CB3C8"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0768BEF0968CE3E8"]
+			id: "5E984CA74DDC6568"
+			rewards: []
+			tasks: [{ id: "D0A56D3349B61122", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E984CA74DDC6568"]
+			id: "EA092A3CE90A67BE"
+			rewards: []
+			tasks: [{ count: 32L, id: "2FF9CB3CEB63BFCC", item: { count: 1, id: "stronger_blocks:reinforced_stone_bricks" }, type: "item" }]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["EA092A3CE90A67BE"]
+			id: "0E26B9220152A479"
+			rewards: []
+			tasks: [{ count: 8L, id: "DEBC0A669E94CA91", item: { count: 1, id: "stronger_blocks:reinforced_glass" }, type: "item" }]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E984CA74DDC6568"]
+			id: "2D40E5D3EA2B0E42"
+			rewards: []
+			tasks: [{ count: 16L, id: "D1F0B5461E425949", item: { count: 1, id: "minetraps:barbed_wire" }, type: "item" }]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2D40E5D3EA2B0E42"]
+			id: "5C7A352BF3FE06B2"
+			rewards: []
+			tasks: [{ count: 4L, id: "7D0AA3B3E6E36A65", item: { count: 1, id: "minetraps:explosive_mine" }, type: "item" }, { count: 2L, id: "C80BF9F638423BC0", item: { count: 1, id: "minetraps:bear_trap" }, type: "item" }]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["EA092A3CE90A67BE"]
+			id: "AB1F9C21C7EE07DA"
+			rewards: []
+			tasks: [{ count: 8L, id: "655A3C3F686017CF", item: { count: 1, id: "copycats:copycat_block" }, type: "item" }]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["EA092A3CE90A67BE", "BAADDEBB0E253E43"]
+			id: "176CD37B0F91A397"
+			rewards: []
+			tasks: [{ count: 32L, id: "AD781F89895DC3F5", item: { count: 1, id: "s_a_b:steelblock" }, type: "item" }]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["176CD37B0F91A397", "ED586BEFD33E970D"]
+			id: "ED7F524265047709"
+			rewards: []
+			tasks: [{ count: 16L, id: "A51D29581150A063", item: { count: 1, id: "stronger_blocks:reinforced_stone_bricks_ub" }, type: "item" }]
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+}

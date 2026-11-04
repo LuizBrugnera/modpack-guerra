@@ -1,11 +1,11 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "c3_voo"
-	group: ""
+	filename: "t2_voo"
+	group: "A6DC4DBA16805B43"
 	icon: { count: 1, id: "aeronautics:white_envelope" }
-	id: "061D519601C53B42"
-	order_index: 2
+	id: "3302A2577A88B85D"
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -57,7 +57,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["CE73FE22C7711BE8"]
+			dependencies: ["CE73FE22C7711BE8", "A2C7333459CA22E6"]
 			id: "3A424595E9F2D9B4"
 			rewards: []
 			tasks: [{ count: 1L, id: "AAB7A4D981E64AE6", item: { count: 1, id: "aeronautics:andesite_propeller" }, type: "item" }]
@@ -65,7 +65,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["B128DC9D00EC8EB2"]
+			dependencies: ["B128DC9D00EC8EB2", "A78A2446133441F3"]
 			id: "8BF907B6D761DB48"
 			rewards: []
 			tasks: [{ count: 1L, id: "18177F448E9A0EBC", item: { count: 1, id: "createpropulsion:thruster" }, type: "item" }]

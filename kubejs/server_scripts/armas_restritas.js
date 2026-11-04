@@ -3,7 +3,7 @@
 //  - Nucleares: só admin (op) pode ter. Para eventos, um admin entrega/usa.
 //    Exceção: Fat Man feita no Crafter Mecânico 7x7 (receita de fim de jogo em progressao.js).
 //  - Bombas grandes (Mk 84) e ICBM grande: só quem já chegou na Era 4
-//    (estágio 'era4', ganho ao ter uma placa de circuito do TFMG no inventário).
+//    (estágio 'era4', dado por eras.js ao ter uma placa de circuito do TFMG no inventário).
 //  - Blocos à prova total (_ub): limite de colocação por jogador.
 
 const NUCLEARES = [
@@ -15,7 +15,7 @@ const ERA4_ITENS = [
   'projectexplosive:big_bomb', 'projectexplosive:big_bomb_armed', 'projectexplosive:big_bomb_head',
   'projectexplosive:big_bomb_frag', 'projectexplosive:big_bomb_frag_head', 'projectexplosive:icbm_big'
 ]
-const GATILHO_ERA4 = 'tfmg:circuit_board'
+// O estágio 'era4' é dado por eras.js (marco: placa de circuito do TFMG).
 
 // Fat Man feita pela receita de fim de jogo (progressao.js) carrega custom_data {guerra_autorizada:1b}
 function fatManAutorizada(item) {
@@ -34,12 +34,6 @@ PlayerEvents.inventoryChanged(event => {
   const item = event.item
   if (!player || item.isEmpty()) return
   const id = item.id
-
-  if (id === GATILHO_ERA4 && !player.stages.has('era4')) {
-    player.stages.add('era4')
-    player.tell(Text.of('§6[Progressão] Era 4 (Eletricidade) liberada: bombas grandes e ICBM grande.'))
-    return
-  }
   if (player.hasPermissions(2)) return
 
   if (id === 'projectexplosive:nuclear_bomb' && fatManAutorizada(item)) return

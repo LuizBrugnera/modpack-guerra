@@ -1,0 +1,51 @@
+{
+    "materials":  [
+                      {
+                          "item":  {
+                                       "tag":  "c:gems/diamond"
+                                   },
+                          "count":  6
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/gold"
+                                   },
+                          "count":  30
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/iron"
+                                   },
+                          "count":  145
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:rods/blaze"
+                                   },
+                          "count":  5
+                      },
+                      {
+                          "item":  {
+                                       "item":  "tfmg:aluminum_ingot"
+                                   },
+                          "count":  8
+                      },
+                      {
+                          "item":  {
+                                       "item":  "tfmg:circuit_board"
+                                   },
+                          "count":  2
+                      },
+                      {
+                          "item":  {
+                                       "item":  "tfmg:steel_ingot"
+                                   },
+                          "count":  6
+                      }
+                  ],
+    "result":  {
+                   "type":  "gun",
+                   "id":  "tacz:fn_evolys"
+               },
+    "type":  "tacz:gun_smith_table_crafting"
+}

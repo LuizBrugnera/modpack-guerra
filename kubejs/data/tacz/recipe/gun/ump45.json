@@ -1,0 +1,39 @@
+{
+    "materials":  [
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/gold"
+                                   },
+                          "count":  5
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/iron"
+                                   },
+                          "count":  62
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:gems/quartz"
+                                   },
+                          "count":  3
+                      },
+                      {
+                          "item":  {
+                                       "item":  "create:brass_ingot"
+                                   },
+                          "count":  6
+                      },
+                      {
+                          "item":  {
+                                       "item":  "create:precision_mechanism"
+                                   },
+                          "count":  1
+                      }
+                  ],
+    "result":  {
+                   "type":  "gun",
+                   "id":  "tacz:ump45"
+               },
+    "type":  "tacz:gun_smith_table_crafting"
+}

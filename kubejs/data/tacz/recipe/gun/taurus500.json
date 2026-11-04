@@ -1,0 +1,45 @@
+{
+    "materials":  [
+                      {
+                          "item":  {
+                                       "tag":  "c:gems/diamond"
+                                   },
+                          "count":  8
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/gold"
+                                   },
+                          "count":  65
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/iron"
+                                   },
+                          "count":  85
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:rods/blaze"
+                                   },
+                          "count":  4
+                      },
+                      {
+                          "item":  {
+                                       "item":  "create:brass_ingot"
+                                   },
+                          "count":  6
+                      },
+                      {
+                          "item":  {
+                                       "item":  "create:precision_mechanism"
+                                   },
+                          "count":  1
+                      }
+                  ],
+    "result":  {
+                   "type":  "gun",
+                   "id":  "tacz:taurus500"
+               },
+    "type":  "tacz:gun_smith_table_crafting"
+}

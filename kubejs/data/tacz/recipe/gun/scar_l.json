@@ -1,0 +1,39 @@
+{
+    "materials":  [
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/gold"
+                                   },
+                          "count":  6
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/iron"
+                                   },
+                          "count":  48
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:gems/quartz"
+                                   },
+                          "count":  3
+                      },
+                      {
+                          "item":  {
+                                       "item":  "tfmg:steel_ingot"
+                                   },
+                          "count":  10
+                      },
+                      {
+                          "item":  {
+                                       "item":  "tfmg:sulfur_dust"
+                                   },
+                          "count":  2
+                      }
+                  ],
+    "result":  {
+                   "type":  "gun",
+                   "id":  "tacz:scar_l"
+               },
+    "type":  "tacz:gun_smith_table_crafting"
+}

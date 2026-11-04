@@ -17,20 +17,48 @@ file = "config/createbigcannons-server.toml"
 hash = "f9b43150ae555d8c43f6a65f41a0c3b31dc344eb01c7f6b2608fd0a016294b0c"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/c1_create.snbt"
-hash = "0ef5d287e300ae81a43ce106aa627526d2874d59bfa837e070ef235295b600c7"
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "d4e396cbbdbba4e43ffd873cdbfb412e8df9fafee3f03d5a98146946df54b8f0"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/c2_barco.snbt"
-hash = "c6797f0dcd376e5c7c49b24fb32457730dc47854b775ac944ebd2028fe3d5d3e"
+file = "config/ftbquests/quests/chapters/c0_bemvindo.snbt"
+hash = "d9d6024e9f86616c368980b9cea594dd1b3c427c2009725dc7a36076b79c10b9"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/c3_voo.snbt"
-hash = "865c93329926cfba5573a61d2dfafa8ab807001702c3be1a65cb4182f21fe1be"
+file = "config/ftbquests/quests/chapters/c1_era1.snbt"
+hash = "6b9c908c646515c1f4d34ec72ce3c12c0c13b55c7be493c85bcabc8e087e4106"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/c4_navegacao.snbt"
-hash = "9c3a9df1d567b30999167f190cc91a82254d88396de5220ed61758fca8fa1f36"
+file = "config/ftbquests/quests/chapters/c2_era2.snbt"
+hash = "aafc2c00bcbf7327e843525c95740e97a79a539ac00481354c730f44bc8d9a7c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/c3_era3.snbt"
+hash = "4905892e6800596a7e8bbf82e504786e7b07a1c4603c53caf990278c51f5c883"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/c4_era4.snbt"
+hash = "a75613c39723d51e5768f1799f58c3d0724a4c98017ed7d299c80bbe24e58081"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/c5_era5.snbt"
+hash = "206c430cc3ba2c76f68686b3f6e350c634fab8749356bf82828ded5030a042ca"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t1_barco.snbt"
+hash = "7f5de4f645850d724e0cbce730db2c6e835f0b67816955339e8d8b2f844df908"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t2_voo.snbt"
+hash = "6ac50b0ec8adeabc5cacad2785dec63ad04a2d9b711f48c1bba4e67862abbe66"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t3_navegacao.snbt"
+hash = "d1a9146560557798abcb484f0902b574b367d24e853b8b3290c7fb58648af956"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/t4_defesa.snbt"
+hash = "d5144cef6c853f46e32dee9c1a4e7015bbd1f36da5e39123ff684b1d09897045"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -38,7 +66,7 @@ hash = "3518b6c3095128aa2bfbb04e68dcfc95c60ba3effcf0fa09e859f206985fcfb9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "af2c58092f510657751205fb1847235865a3c4d1b8c6e6e563f30594480cc65c"
+hash = "6490beda3165ec7855a19ce8c402ef4ca3e6beaeae0768045c8228ce821224da"
 
 [[files]]
 file = "config/guardvillagerstaczsupport-common.toml"
@@ -57,12 +85,176 @@ file = "defaultconfigs/openpartiesandclaims-default-player-config.toml"
 hash = "21c9248a694adce931e8a341a38c56cfee0f06afab4a49449cf7d896449adf35"
 
 [[files]]
+file = "kubejs/client_scripts/info_eras.js"
+hash = "7186222a4940bb6a8c939998db81009c566872085517d91d11af5a50a2e5bd96"
+
+[[files]]
 file = "kubejs/data/guardvillagers/loot_table/entities/guard_armor.json"
 hash = "8247c72bbfaa68b0c0fec73f350d7aaae3053701d8f5020013f0fe0163a4b5cd"
 
 [[files]]
+file = "kubejs/data/tacz/recipe/gun/aa12.json"
+hash = "e84d11baa1e1c48c3bcf6f0e8bfabb0c2628fdc67d337c4bc166d847c6566bfb"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/ai_awp.json"
+hash = "3ce37ce21db65e2779a713e12b0ba7dbb5178dcc09d4b0ec7ddfae712c47a6a0"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/ak47.json"
+hash = "5babf99bcf402b75e39a65ba5457fae6c8fe6ced75acbd0ce5a140800f1ba30a"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/aug.json"
+hash = "9476cd2a5d3609c2d6f044a904e4b1ec7e5df5906ff45911e7460b7c805f47d7"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/b93r.json"
+hash = "b856d7a1d158a78fd4565b2126052c7dac8ee551e41c2f74324c76295289b89d"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/deagle.json"
+hash = "f70d80a2c597307010b6f7aaa2aeb91d9e559cfcdabc3d9f3913d4c1c1c729f2"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/deagle_golden.json"
+hash = "a9d0e0096fbcc97a2ccd31611e5bee13b726fdf47b8882d58c466be54af23945"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/fn_evolys.json"
+hash = "e9273f2078554677ad3fc1f92d25770e784f2c53473961e63ef931d777c6c694"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/fn_fal.json"
+hash = "ae733e8f5d1dd99540b6969e4d6e0992a7d91c58b64eb5b0064906d16c7b6b76"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/g36k.json"
+hash = "f3af0bccf411d438f875821022dc26fc97b6bfd3048ae6ad6c33b6d62521e80d"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/hk416d.json"
+hash = "00ce95c8a8fec69b03e55b8147ee9b559ab358a966ccb48bf0c3b41452f49704"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/hk_g3.json"
+hash = "e028137cd6dc90d35bab42240347801f8313b830abe57f59a351d89fa7c00150"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/hk_mp5a5.json"
+hash = "1f8f587ecce289797705149de9224674825ec966393ebf22565afd288873ab6f"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/m1014.json"
+hash = "82e3cbc69b7939d65d9e9f133048259066e04d698ddf989118659378c56ea1d5"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/m107.json"
+hash = "27d34f69eace72b18c2f89d496d85f3d00ac9926b537599c8b106043bd876878"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/m16a1.json"
+hash = "5426db4d220439cf91e7b7af4b6e308678e2e68a08ad9dac3212a6ed97db1a85"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/m16a4.json"
+hash = "679db62d340ebd76816b8842918c018286b93376724aed9133540b5b5e44e5f8"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/m249.json"
+hash = "c015c5a5b0a18becfc206351095a064b072e97af6e09629dcefb3effc7b05d3a"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/m320.json"
+hash = "5813547897ec16be74b5687eb118136237c94119e55d0646335fc84a0c63169f"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/m4a1.json"
+hash = "21e9e541fbef514d4220ef220b08a093282f8dc14c06170c8b87eeddfbde891e"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/m700.json"
+hash = "5645dba6a05eef86e7ba72e2dceced2e845a6756f321f9bf86d4eb44f5623f23"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/m95.json"
+hash = "f413facea2bd6c57f5802d4b0600fea6ac1eb5cb71a3b86c0d498bdca394a4da"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/minigun.json"
+hash = "e7c051bf641621e2b5c7c5cd023a2fee021cf6432ae184107898745301e50546"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/mk14.json"
+hash = "f2ad626e2fa7cc6bf7a272ecbee9db18e6952b059dc643c613eb0e48425f4ba2"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/p90.json"
+hash = "8a72d04bf3db36b82b5ce145ae63ecd0f65ca4a30fcc4256472a5b88ff01d3da"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/qbz_191.json"
+hash = "dec9a228d68801c332560b473f0af4557d8c5c702df60d7f5318ce1e6526d258"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/qbz_95.json"
+hash = "1744f41e18e22b5a9470db1fd48ec2aca1f484a2ecf73c49c56c6f5aaebdbaae"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/rpg7.json"
+hash = "bd92cd77b33e31361192feb6abc095fdf1d3dc2f2c0db9990b951798026cfed7"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/rpk.json"
+hash = "1bfc838408a2cf08c3057094557084e3ae9bf364a4273465685c65f558ffe677"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/scar_h.json"
+hash = "9031c288b52f736dced9d490506ec920f5c1d7ebad670d9f3c014a4af28b97e7"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/scar_l.json"
+hash = "e263fb44c756898ad31b1a9867d69152a4a4064dfb5dac5b391c12c2f38a5cb0"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/spas_12.json"
+hash = "d9001ac3e103c98474e345449767a5479160201f55b46751730bbe8c40698ff0"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/spr15hb.json"
+hash = "00704b766cb384717f7dc7a96bcbce50fb6315a925c858ec170496cc2d207e36"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/taurus500.json"
+hash = "398483bdefa8f9a0b82cd2bf5d081fd94c3c9d4f0204c9c614d4558a7d6a0cb2"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/timeless50.json"
+hash = "9cbf84b744a4c43447f04c465c55dc5f6107b597b0dc0b9ba54ef1e165b52fae"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/type_81.json"
+hash = "4aadc1cfb27ad7a0fb81cb08f07f314ce9c216cf00a8354d0fdcb1378b6d2f13"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/ump45.json"
+hash = "56544c16ddada456f381b0be2e74e38cc04215cae97ea394f801e098e8f4808c"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/uzi.json"
+hash = "e6edb989fcb1e9e94f6f02e8010fe4bb08470823b903129d07a72da694cd3583"
+
+[[files]]
+file = "kubejs/data/tacz/recipe/gun/vector45.json"
+hash = "13862a65084684fca77155d1e5d42456d706fb13e1ffb4cab25a6c1ad3c8361a"
+
+[[files]]
 file = "kubejs/server_scripts/armas_restritas.js"
-hash = "b3e89f4dfe170f1d6bdcaa8e9d55404146c5fc1c4b07381bbee5e226dd6d1540"
+hash = "57572d6b7373489c3d39994bccc67633cf862489562981d6dba04ac06c9c384c"
+
+[[files]]
+file = "kubejs/server_scripts/eras.js"
+hash = "33995e29d562c7375c127aa8c86e14349bf43d5208625eacc731e2280c022c04"
 
 [[files]]
 file = "kubejs/server_scripts/horario_guerra.js"
@@ -70,7 +262,7 @@ hash = "7089cc79cc1fd55b3e1ad0b0f678967550cde390f23dbb399779c9a3dec63372"
 
 [[files]]
 file = "kubejs/server_scripts/progressao.js"
-hash = "840e72cba45c1593c1a8ebc295fdc7d7c10e5af51605280d78e6bab2d4f2e8aa"
+hash = "b047424b78bde6f2a052af577073bdff558e9f12b135672001f0f65a7a2fd021"
 
 [[files]]
 file = "mods/aero_cam_sync.pw.toml"

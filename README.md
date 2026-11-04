@@ -12,11 +12,15 @@ Modpack de guerra para servidor com amigos: Create + Create Aeronautics + Create
 ```
 pack.toml / index.toml   definição do pack (packwiz)
 mods/                    um .pw.toml por mod (com lado client/server/both)
-kubejs/server_scripts/   progressao.js, horario_guerra.js, armas_restritas.js
+kubejs/server_scripts/   eras.js, progressao.js, horario_guerra.js, armas_restritas.js
+kubejs/client_scripts/   info_eras.js (notas no EMI)
+kubejs/data/tacz/        receitas das armas do TaCZ por era (gerado)
+scripts/                 gerar-quests.ps1, gerar-armas-tacz.ps1, gerar-exports.ps1
 config/ defaultconfigs/  configs do servidor/cliente
 docker-compose.yml       servidor em VPS (imagem itzg/minecraft-server)
 JOGADORES.md             guia para os jogadores
 PENDENCIAS.md            o que ficou de fora e o que falta testar
+PROGRESSAO.md            eras, travas por material e quests
 ```
 
 ## Comandos úteis (dentro desta pasta)
@@ -34,6 +38,7 @@ O `packwiz.exe` e o Java 21 portátil ficam em `../tools/`.
 
 ## Admin
 
+- `/era` mostra a era do jogador; `/era definir <jogador> <1-5>` (op) muda.
 - `/guerra on | off | auto | status` — força ou libera o horário de guerra (padrão: sex/sáb 20h–23h, America/Sao_Paulo).
 - Nunca atualizar CBC, Project Explosive ou Create Aeronautics no meio de uma guerra sem testar.
 - `create-radars` e `cbc-firepower-components` estão fixados (`packwiz pin`) — ver PENDENCIAS.md.

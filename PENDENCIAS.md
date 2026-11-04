@@ -133,3 +133,9 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - **The Lost Cities** 1.21-8.4.6: `config/lostcities/common.toml` com `dimensionsWithProfiles = ["minecraft:overworld=default"]` — cidades abandonadas (com estragos de explosão) no overworld normal. Perfis possíveis em `config/lostcities/profiles/` (rarecities, largecities, nodamage, onlycities…). Só vale para terreno novo: o mundo do servidor foi recriado (o antigo ficou em `servidor/world-antigo-2026-11-04`).
 - **Borda do mundo**: 16.000 × 16.000 blocos (1000 × 1000 chunks), centro 0,0 — `/worldborder set 16000` (fica salvo no mundo). O servidor só gera os chunks visitados; a borda limita até onde o mundo cresce.
 - Ao recriar o mundo, zeram: claims do OPAC, progresso das quests, times do FTB Teams. Contas do MixAuth (`servidor/mixauth`) e ops continuam.
+
+## Rework de progressão e quests — 04/11/2026
+- Novo sistema de eras (`eras.js`), armas do TaCZ por era (39 receitas em `kubejs/data/tacz/`), travas de material nos mods novos (Air War, Simulated Missiles, Superb Warfare), notas no EMI (`info_eras.js`) e quests refeitas: 10 capítulos, 110 quests. Tudo descrito em **PROGRESSAO.md**.
+- Testado no servidor de teste: 5/5 scripts sem erro; receitas das armas e das travas conferidas pelos ingredientes; FTB Quests carrega 10 capítulos/110 quests; `/era` e `/guerra` respondem.
+- Não testado: notas no EMI (script de cliente), tela da bancada de armas, anúncio de era com jogador.
+- Servidor de teste e servidor real rodando juntos na mesma máquina: o de teste usava a mesma porta do voice chat (24454) e morria logo depois de subir; trocada para 24464 em `servidor-teste/config/voicechat/`.

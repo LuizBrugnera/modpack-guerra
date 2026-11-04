@@ -1,15 +1,15 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "c2_barco"
-	group: ""
+	filename: "t1_barco"
+	group: "A6DC4DBA16805B43"
 	icon: { count: 1, id: "simulated:steering_wheel" }
-	id: "9F8B72D8F4A2C4D6"
-	order_index: 1
+	id: "015B357BB5253AC0"
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2CA4309464C9FD28"]
+			dependencies: ["2ED1F727FF4549ED"]
 			id: "8D51DF8C6F657746"
 			rewards: []
 			tasks: [{ count: 1L, id: "1D268F8135C9BFE3", item: { count: 1, id: "simulated:physics_assembler" }, type: "item" }]

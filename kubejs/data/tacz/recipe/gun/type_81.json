@@ -1,0 +1,33 @@
+{
+    "materials":  [
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/iron"
+                                   },
+                          "count":  28
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "minecraft:logs"
+                                   },
+                          "count":  10
+                      },
+                      {
+                          "item":  {
+                                       "item":  "create:brass_ingot"
+                                   },
+                          "count":  6
+                      },
+                      {
+                          "item":  {
+                                       "item":  "create:precision_mechanism"
+                                   },
+                          "count":  1
+                      }
+                  ],
+    "result":  {
+                   "type":  "gun",
+                   "id":  "tacz:type_81"
+               },
+    "type":  "tacz:gun_smith_table_crafting"
+}

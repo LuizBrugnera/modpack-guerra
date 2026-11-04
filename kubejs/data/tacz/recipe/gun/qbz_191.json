@@ -1,0 +1,45 @@
+{
+    "materials":  [
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/iron"
+                                   },
+                          "count":  64
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/gold"
+                                   },
+                          "count":  8
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:gems/lapis"
+                                   },
+                          "count":  16
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:gems/quartz"
+                                   },
+                          "count":  8
+                      },
+                      {
+                          "item":  {
+                                       "item":  "tfmg:steel_ingot"
+                                   },
+                          "count":  10
+                      },
+                      {
+                          "item":  {
+                                       "item":  "tfmg:sulfur_dust"
+                                   },
+                          "count":  2
+                      }
+                  ],
+    "result":  {
+                   "type":  "gun",
+                   "id":  "tacz:qbz_191"
+               },
+    "type":  "tacz:gun_smith_table_crafting"
+}

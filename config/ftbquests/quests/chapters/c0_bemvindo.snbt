@@ -1,0 +1,70 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "c0_bemvindo"
+	group: "0386218FD4346A39"
+	icon: { count: 1, id: "minecraft:writable_book" }
+	id: "CF230A4F2C922C51"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: []
+			id: "11ED17611FD0DA6B"
+			rewards: [{ count: 16, id: "80E99590AC83F27F", item: { count: 1, id: "minecraft:bread" }, type: "item" }]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{ id: "397AC65AC985B91A", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11ED17611FD0DA6B"]
+			id: "FFC1C0E989516143"
+			rewards: []
+			tasks: [{ id: "0562D81A457DE604", type: "checkmark" }]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FFC1C0E989516143"]
+			id: "DECF59D53FD48932"
+			rewards: []
+			tasks: [{ id: "DE2C39F3B251CED3", type: "checkmark" }]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["FFC1C0E989516143"]
+			id: "0768BEF0968CE3E8"
+			rewards: []
+			tasks: [{ id: "4584E78BCAD7E14A", type: "checkmark" }]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["DECF59D53FD48932"]
+			id: "811A9FCE8919B71D"
+			rewards: []
+			tasks: [{ id: "ADED050C61C8A1C1", type: "checkmark" }]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0768BEF0968CE3E8"]
+			id: "AFE84CFDA3777E61"
+			rewards: []
+			tasks: [{ id: "D8D3BFDC839F443D", type: "checkmark" }]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["811A9FCE8919B71D", "AFE84CFDA3777E61"]
+			id: "65B102D332D13417"
+			rewards: [{ count: 32, id: "961758EF20D178F1", item: { count: 1, id: "minecraft:torch" }, type: "item" }]
+			tasks: [{ id: "AD64466441F22AA8", type: "checkmark" }]
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+}

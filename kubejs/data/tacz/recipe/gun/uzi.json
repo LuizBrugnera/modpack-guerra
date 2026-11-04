@@ -1,0 +1,27 @@
+{
+    "materials":  [
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/iron"
+                                   },
+                          "count":  32
+                      },
+                      {
+                          "item":  {
+                                       "item":  "create:brass_ingot"
+                                   },
+                          "count":  6
+                      },
+                      {
+                          "item":  {
+                                       "item":  "create:precision_mechanism"
+                                   },
+                          "count":  1
+                      }
+                  ],
+    "result":  {
+                   "type":  "gun",
+                   "id":  "tacz:uzi"
+               },
+    "type":  "tacz:gun_smith_table_crafting"
+}

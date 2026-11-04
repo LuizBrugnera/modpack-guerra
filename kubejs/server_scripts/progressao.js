@@ -101,6 +101,21 @@ ServerEvents.recipes(event => {
     })
   })
 
+  // ---------- Mods de guerra adicionados depois: cada peça-chave pede o material da era ----------
+  // (as receitas que já usam #c:ingots/steel ficam na Era 3 sozinhas: o único aço é o do TFMG/CBC.
+  //  Ex.: bancada de pesquisa do Superb Warfare, motor de foguete dos mísseis.)
+  // Era 2 — metralhadora da Air War pede latão
+  event.replaceInput({ output: 'create_the_air_wars:machinegun' }, 'minecraft:iron_ingot', 'create:brass_ingot')
+  // Era 3 — explosivo e motor de foguete pequeno da Air War pedem aço (bombas e mísseis)
+  event.replaceInput({ output: 'create_the_air_wars:explosive' }, 'create_the_air_wars:titaniumingot', ERA3.aco)
+  event.replaceInput({ output: 'create_the_air_wars:rocketengine' }, 'create_the_air_wars:titaniumingot', ERA3.aco)
+  // Era 4 — eletrônica: chip da Air War (mísseis guiados, câmeras, sonar), turbina dos aviões,
+  // computador de guiagem dos mísseis e bancada de veículos do Superb Warfare
+  event.replaceInput({ output: 'create_the_air_wars:chip' }, 'minecraft:copper_ingot', ERA4.circuito)
+  event.replaceInput({ output: 'create_the_air_wars:rocket_engine' }, 'create:display_link', ERA4.circuito)
+  event.replaceInput({ output: 'cbcaeronauticsmissiles:guidance_computer' }, 'create:electron_tube', ERA4.circuito)
+  event.replaceInput({ output: 'superbwarfare:vehicle_assembling_table' }, '#c:storage_blocks/iron', ERA4.motor)
+
   // ---------- Clima: Deflector de tempestades = fim de jogo (Era 4+) ----------
   event.remove({ id: 'weather2:weather_deflector' })
   event.shaped('weather2:weather_deflector', ['SCS', 'MWM', 'SCS'], {

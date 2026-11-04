@@ -1,0 +1,60 @@
+{
+    "materials":  [
+                      {
+                          "item":  {
+                                       "tag":  "c:gems/diamond"
+                                   },
+                          "count":  18
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/gold"
+                                   },
+                          "count":  64
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/netherite"
+                                   },
+                          "count":  3
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:ingots/iron"
+                                   },
+                          "count":  320
+                      },
+                      {
+                          "item":  {
+                                       "tag":  "c:rods/blaze"
+                                   },
+                          "count":  5
+                      },
+                      {
+                          "item":  {
+                                       "item":  "tfmg:aluminum_ingot"
+                                   },
+                          "count":  8
+                      },
+                      {
+                          "item":  {
+                                       "item":  "tfmg:circuit_board"
+                                   },
+                          "count":  2
+                      },
+                      {
+                          "item":  {
+                                       "item":  "tfmg:steel_ingot"
+                                   },
+                          "count":  6
+                      }
+                  ],
+    "result":  {
+                   "type":  "gun",
+                   "id":  "tacz:m107",
+                   "attachments":  {
+                                       "scope":  "tacz:scope_contender"
+                                   }
+               },
+    "type":  "tacz:gun_smith_table_crafting"
+}

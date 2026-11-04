@@ -1,62 +1,422 @@
 {
 	"file.0000000000000001.title": "Modpack Guerra"
-	"chapter.432B89D21BF2FFC2.title": "1. Primeiros passos no Create"
-	"chapter.432B89D21BF2FFC2.chapter_subtitle": [
-		"O básico para construir qualquer máquina (e qualquer veículo)."
+	"chapter_group.0386218FD4346A39.title": "Começo"
+	"chapter.CF230A4F2C922C51.title": "Bem-vindo à Guerra"
+	"chapter.CF230A4F2C922C51.chapter_subtitle": [
+		"Leia antes de tudo: como o servidor funciona."
 	]
-	"quest.B94D469ED5E9DE1F.title": "Chave inglesa"
-	"quest.B94D469ED5E9DE1F.quest_desc": [
+	"quest.11ED17611FD0DA6B.title": "Bem-vindo à Guerra"
+	"quest.11ED17611FD0DA6B.quest_desc": [
+		"Este é um servidor de §cguerra entre times§r: indústria do Create e do TFMG sustentando canhões, armas, aviões, mísseis e bombas."
+		""
+		"A progressão é dividida em §65 eras§r. Cada era libera armas e veículos novos, e cada um exige o material da indústria daquela era. Não dá para pular etapas: quem domina a indústria domina a guerra."
+		""
+		"Clique na tarefa para marcar como lida."
+	]
+	"quest.FFC1C0E989516143.title": "Como funcionam as eras"
+	"quest.FFC1C0E989516143.quest_desc": [
+		"§fEra 1 — Mecânica:§r Create básico. Pistolas, rifles clássicos, canhões de ferro, barcos e balões."
+		"§fEra 2 — Vapor:§r latão e motor a vapor. Submetralhadoras, autocanhões, hélices, trens."
+		"§fEra 3 — Petróleo e Aço:§r refinaria e aço do TFMG. Fuzis, canhões de aço, bombas, Superb Warfare."
+		"§fEra 4 — Eletricidade:§r alumínio e circuitos. Armas pesadas, Mk 84, mísseis guiados, veículos, jatos."
+		"§fEra 5 — Fim de jogo:§r urânio. A Fat Man."
+		""
+		"Você sobe de era ao ter no inventário o §emarco§r da próxima: §fmotor a vapor → aço → placa de circuito → urânio§r. O servidor anuncia para todo mundo."
+		""
+		"Digite §e/era§r a qualquer momento para ver sua era e o que falta."
+	]
+	"quest.DECF59D53FD48932.title": "Receitas e regras no EMI"
+	"quest.DECF59D53FD48932.quest_desc": [
+		"A lista de itens à direita do inventário é o §eEMI§r (o JEI do pack)."
+		""
+		"§eR§r em cima de um item: receitas. §eU§r: onde ele é usado."
+		"Itens com regra especial (era, confisco, limite) têm uma página §fInformação§r explicando — por exemplo a bancada de armas do TaCZ, o aço do TFMG e a Fat Man."
+	]
+	"quest.0768BEF0968CE3E8.title": "Monte seu time e proteja a base"
+	"quest.0768BEF0968CE3E8.quest_desc": [
+		"Os claims são do §eOpen Parties and Claims§r:"
+		"1. Aperte §e'§r (apóstrofo) para abrir o menu e crie um §fgrupo§r (party). Convide seus amigos."
+		"2. Abra o mapa (§eM§r), clique com o direito nos chunks e escolha §fReivindicar§r."
+		""
+		"Limite: §f64 chunks§r, +16 por membro do grupo. Os claims são do grupo."
+		"Dentro do claim, ninguém de fora quebra nem abre nada."
+	]
+	"quest.811A9FCE8919B71D.title": "Horário de guerra"
+	"quest.811A9FCE8919B71D.quest_desc": [
+		"Explosões só quebram blocos no §chorário de guerra§r: §fsexta e sábado, 20h–23h§r (Brasília)."
+		"Fora disso, explosões ainda ferem, mas não destroem nada."
+		""
+		"Admins podem forçar com /guerra on | off."
+	]
+	"quest.AFE84CFDA3777E61.title": "Regras de armamento"
+	"quest.AFE84CFDA3777E61.quest_desc": [
+		"§c•§r Armas nucleares (exceto a Fat Man) só existem em eventos do servidor."
+		"§c•§r Fat Man só vale montada no Crafter Mecânico 7x7 (Era 5). Outras são confiscadas."
+		"§c•§r Bombas grandes Mk 84 exigem a Era 4; sem ela o item some."
+		"§c•§r Blocos à prova total (bunker): no máximo 128 por jogador."
+	]
+	"quest.65B102D332D13417.title": "O mundo"
+	"quest.65B102D332D13417.quest_desc": [
+		"§f•§r O mapa tem borda: §f16.000 × 16.000 blocos§r, centro em 0, 0."
+		"§f•§r Existem §fcidades abandonadas§r pelo mapa, com loot e prédios para combate urbano."
+		"§f•§r §fTornados§r quebram blocos. Fique de olho no céu."
+		"§f•§r Algumas noites têm §fluas especiais§r: horda de zumbis, aranhas, cegueira (Lua Negra), caos (mobs do Born in Chaos mais fortes)…"
+		"§f•§r Morreu? Seu §fcorpo§r fica no lugar com os itens (mod Corpse). Volte para buscar."
+		""
+		"§aAgora comece pela Era 1."
+	]
+	"chapter_group.05E56B3176A98963.title": "Eras"
+	"chapter.50FEC084A8513FDF.title": "Era 1 — Mecânica"
+	"chapter.50FEC084A8513FDF.chapter_subtitle": [
+		"Create básico, primeiras armas e a primeira artilharia."
+	]
+	"quest.6C002353DB7739E4.title": "Chave inglesa"
+	"quest.6C002353DB7739E4.quest_desc": [
 		"A ferramenta do Create: gira, ajusta e desmonta blocos (agachado + clique direito)."
 		""
-		"Dica: segure §eW§r em cima de qualquer item do Create para ver o §ePonder§r, uma animação que mostra como ele funciona."
+		"Segure §eW§r em cima do item para ver o §ePonder§r (animação de como funciona). No EMI, §eR§r mostra a receita e §eU§r os usos."
 	]
-	"quest.31CE669E9A9599DC.title": "Liga de andesito"
-	"quest.31CE669E9A9599DC.quest_desc": [
-		"Andesito + pepita de ferro (ou zinco). Quase tudo no começo do Create usa isso."
+	"quest.AC34C5B08FF0D138.title": "Liga de andesito"
+	"quest.AC34C5B08FF0D138.quest_desc": [
+		"Andesito + pepita de ferro (ou zinco). Quase tudo do começo do Create usa isso."
 	]
-	"quest.9E71173466073603.title": "Primeira força: roda d'água"
-	"quest.9E71173466073603.quest_desc": [
-		"Coloque na beira de água corrente. Ela gira e gera força rotacional."
+	"quest.836D152141988D6B.title": "Primeira força"
+	"quest.836D152141988D6B.quest_desc": [
+		"A roda d'água gira com água corrente e gera força rotacional."
+		"Moinhos de vento também servem (veja no EMI)."
 	]
-	"quest.8016AEC38A85B136.title": "Eixos e engrenagens"
-	"quest.8016AEC38A85B136.quest_desc": [
-		"Eixos levam a rotação em linha reta; engrenagens mudam a direção e a velocidade."
+	"quest.667AA553D3345EF6.title": "Eixos e engrenagens"
+	"quest.667AA553D3345EF6.quest_desc": [
+		"Eixos levam a rotação em linha reta; engrenagens mudam direção e velocidade."
 	]
-	"quest.9C2E5D008DE3BC65.title": "Óculos do engenheiro"
-	"quest.9C2E5D008DE3BC65.quest_desc": [
-		"Com eles você vê velocidade e estresse das máquinas. Se a rede estiver sobrecarregada, tudo para."
+	"quest.70E2F5E693423FB3.title": "Óculos do engenheiro"
+	"quest.70E2F5E693423FB3.quest_desc": [
+		"Mostram velocidade e estresse das máquinas. Rede sobrecarregada = tudo para."
 	]
-	"quest.3DEED02EEA45B6DB.title": "Carcaça de andesito"
-	"quest.3DEED02EEA45B6DB.quest_desc": [
-		"Base de várias máquinas (e do montador de física do próximo capítulo)."
+	"quest.C8B6ECCC0B857511.title": "Prensa mecânica"
+	"quest.C8B6ECCC0B857511.quest_desc": [
+		"Faz chapas (sheets) de metal — usadas em quase todas as máquinas e armas."
 	]
-	"quest.2CA4309464C9FD28.title": "Super cola"
-	"quest.2CA4309464C9FD28.quest_desc": [
-		"Gruda blocos entre si para que se movam juntos. Todo veículo começa aqui."
+	"quest.61523EC84C40C655.title": "Carcaça de andesito"
+	"quest.61523EC84C40C655.quest_desc": [
+		"Base de várias máquinas, inclusive o montador de física dos veículos."
+	]
+	"quest.2ED1F727FF4549ED.title": "Super cola"
+	"quest.2ED1F727FF4549ED.quest_desc": [
+		"Gruda blocos para que se movam juntos. Todo veículo começa aqui — veja a trilha §fBarcos§r."
+	]
+	"quest.41BC7E3ADF1E4B77.title": "Bancada de armas"
+	"quest.41BC7E3ADF1E4B77.quest_desc": [
+		"Aqui você monta as armas do TaCZ. Na Era 1 saem:"
+		"§fpistolas comuns (M1911, Glock, CZ75…), Kar98, Springfield, SKS, escopetas de cano duplo e M870§r."
 		""
-		"§aPróximo capítulo: seu primeiro barco."
+		"As outras armas aparecem na bancada, mas pedem material de eras seguintes (latão, aço, alumínio). Veja a página Informação da bancada no EMI."
 	]
-	"chapter.9F8B72D8F4A2C4D6.title": "2. Seu primeiro barco"
-	"chapter.9F8B72D8F4A2C4D6.chapter_subtitle": [
-		"Do casco de madeira à primeira viagem."
+	"quest.26DF2942C3B68BC8.title": "Primeira arma"
+	"quest.26DF2942C3B68BC8.quest_desc": [
+		"Monte uma arma da Era 1 e a munição dela (bancada de munição do TaCZ)."
+		""
+		"Marque quando tiver feito."
+	]
+	"quest.699D1D4E2C58DF83.title": "Canhão de ferro fundido"
+	"quest.699D1D4E2C58DF83.quest_desc": [
+		"A primeira artilharia (Create Big Cannons): suporte + câmara + canos de ferro fundido."
+		"Canos são fundidos com ferro derretido em moldes."
+		""
+		"Segure §eW§r em cima do item para ver o §ePonder§r (animação de como funciona). No EMI, §eR§r mostra a receita e §eU§r os usos."
+	]
+	"quest.5893693F59E82C08.title": "Fogo!"
+	"quest.5893693F59E82C08.quest_desc": [
+		"Projétil sólido + cargas de pólvora. A ordem de carregar o canhão está no Ponder."
+	]
+	"quest.1806806DA0CBF0B3.title": "Dirigível simples"
+	"quest.1806806DA0CBF0B3.quest_desc": [
+		"Envelopes de ar quente + queimador = balão. A trilha §fVoando§r ensina a montar."
+	]
+	"quest.EE3C72F6DDE9EF4D.title": "Rumo à Era 2: Vapor"
+	"quest.EE3C72F6DDE9EF4D.quest_desc": [
+		"§6Marco da Era 2: Motor a Vapor.§r Ter um no inventário leva você para a Era 2."
+		""
+		"O motor a vapor do Create precisa de um §ftanque de fluido§r com água, aquecido por um §fqueimador de blaze§r. Veja o Ponder."
+	]
+	"chapter.D71C61250DD26BEB.title": "Era 2 — Vapor"
+	"chapter.D71C61250DD26BEB.chapter_subtitle": [
+		"Latão, mecanismos de precisão e armas automáticas."
+	]
+	"quest.9F74209A02F200F1.title": "Bem-vindo à Era 2"
+	"quest.9F74209A02F200F1.quest_desc": [
+		"Agora você tem vapor: força de sobra para máquinas grandes."
+		"O material desta era é o §6latão§r. As armas e veículos daqui pedem latão e mecanismo de precisão."
+	]
+	"quest.133D658E8EFDA2F1.title": "Queimador de blaze"
+	"quest.133D658E8EFDA2F1.quest_desc": [
+		"Calor para o misturador e para o motor a vapor. Capture um blaze no Nether com um queimador vazio."
+	]
+	"quest.4EBFB0F05F70DC2C.title": "Misturador mecânico"
+	"quest.4EBFB0F05F70DC2C.quest_desc": [
+		"Misturador sobre uma bacia: liga metais e faz receitas com calor."
+	]
+	"quest.A2C7333459CA22E6.title": "Latão"
+	"quest.A2C7333459CA22E6.quest_desc": [
+		"Cobre + zinco no misturador, aquecido. §6É o material da Era 2.§r"
+	]
+	"quest.DF60AF1ED47A92A3.title": "Tubo eletrônico"
+	"quest.DF60AF1ED47A92A3.quest_desc": [
+		"Componente de máquinas de latão e de controles."
+	]
+	"quest.FAA25A787C902286.title": "Mecanismo de precisão"
+	"quest.FAA25A787C902286.quest_desc": [
+		"Feito por montagem em sequência (veja o Ponder). Toda arma da Era 2 do TaCZ pede um."
+	]
+	"quest.32BA299E28BA2AF0.title": "Trens"
+	"quest.32BA299E28BA2AF0.quest_desc": [
+		"Trilhos e controles de trem: logística pesada entre bases (e fronts)."
+	]
+	"quest.7E3215F55E853C03.title": "Armas da Era 2"
+	"quest.7E3215F55E853C03.quest_desc": [
+		"Na bancada de armas do TaCZ agora saem, com §f+6 latão e 1 mecanismo de precisão§r:"
+		"§fsubmetralhadoras (Uzi, MP5, UMP45, Vector, P90), B93R, Desert Eagle, Taurus 500, M1014, SPAS-12, M700, M16A1, Type 81§r."
+	]
+	"quest.95FA54C1535544B2.title": "Autocanhão"
+	"quest.95FA54C1535544B2.quest_desc": [
+		"Canhão de tiro rápido. A caixa de munição e os cartuchos pedem latão."
+	]
+	"quest.F666E5D9C651FC9C.title": "Metralhadora de aeronave"
+	"quest.F666E5D9C651FC9C.quest_desc": [
+		"Metralhadora da Air War para montar em aviões (pede latão)."
+	]
+	"quest.422C9528BB387E45.title": "Aeronaves médias"
+	"quest.422C9528BB387E45.quest_desc": [
+		"Rolamento de hélice + hélice de andesito: propulsão para aeronaves maiores. Veja a trilha §fVoando§r."
+	]
+	"quest.62414BAD907EC793.title": "Coque"
+	"quest.62414BAD907EC793.quest_desc": [
+		"O forno de coque do TFMG transforma carvão em §fcoque§r — o combustível do alto-forno."
+	]
+	"quest.C72B128E3D9F082D.title": "Alto-forno"
+	"quest.C72B128E3D9F082D.quest_desc": [
+		"Saída + reforços do alto-forno do TFMG. Alimentado com minério de ferro e coque, ele produz §faço§r."
+		"Segure §eW§r em cima do item para ver o §ePonder§r (animação de como funciona). No EMI, §eR§r mostra a receita e §eU§r os usos."
+	]
+	"quest.90C94F4E86A4381E.title": "Rumo à Era 3: Aço"
+	"quest.90C94F4E86A4381E.quest_desc": [
+		"§6Marco da Era 3: Lingote de Aço.§r"
+		""
+		"§cO único aço do servidor é o do TFMG.§r O aço de outros mods (Superb Warfare, etc.) foi removido."
+	]
+	"chapter.888FD4A106FD8FAA.title": "Era 3 — Petróleo e Aço"
+	"chapter.888FD4A106FD8FAA.chapter_subtitle": [
+		"Refinaria, aço e a guerra moderna."
+	]
+	"quest.3AC398F04F7C4FCB.title": "Bem-vindo à Era 3"
+	"quest.3AC398F04F7C4FCB.quest_desc": [
+		"Aço e petróleo: aqui começa a guerra moderna."
+		"Os materiais desta era são o §6aço§r e o §6enxofre§r do TFMG."
+	]
+	"quest.BAADDEBB0E253E43.title": "Blocos de aço"
+	"quest.BAADDEBB0E253E43.quest_desc": [
+		"Muito aço vai ser preciso: canhões, bancadas, bombas."
+	]
+	"quest.F3A9CAA4474C9A2F.title": "Petróleo"
+	"quest.F3A9CAA4474C9A2F.quest_desc": [
+		"A bomba de petróleo (pumpjack) extrai petróleo de jazidas no subsolo."
+		"Segure §eW§r em cima do item para ver o §ePonder§r (animação de como funciona). No EMI, §eR§r mostra a receita e §eU§r os usos."
+	]
+	"quest.9ACEE90271F9D05A.title": "Refinaria"
+	"quest.9ACEE90271F9D05A.quest_desc": [
+		"A torre de destilação separa o petróleo em diesel, gasolina, querosene e outros."
+	]
+	"quest.A78A2446133441F3.title": "Diesel"
+	"quest.A78A2446133441F3.quest_desc": [
+		"Combustível dos motores do TFMG e de veículos."
+	]
+	"quest.32DBAA8EA1006947.title": "Motor a combustão"
+	"quest.32DBAA8EA1006947.quest_desc": [
+		"Força rotacional muito maior que a do vapor, queimando combustível."
+	]
+	"quest.4A4E90A4D3F1FA20.title": "Enxofre"
+	"quest.4A4E90A4D3F1FA20.quest_desc": [
+		"Sai da refinaria. §6Material da Era 3§r: armas, munição Mk.III e bombas pedem enxofre."
+	]
+	"quest.0E44D437D7BDB674.title": "Armas da Era 3"
+	"quest.0E44D437D7BDB674.quest_desc": [
+		"Na bancada de armas do TaCZ, com §f+10 aço e 2 enxofre§r:"
+		"§fAK-47, M4A1, M16A4, HK416, G36K, AUG, QBZ-95, QBZ-191, SCAR-L/H, FN FAL, G3, MK14, SPR15, RPK, M249, AA-12, AWP§r."
+	]
+	"quest.7BC77AE85E63EA6D.title": "Canhão de aço"
+	"quest.7BC77AE85E63EA6D.quest_desc": [
+		"Canos de aço aguentam cargas muito maiores que os de ferro."
+	]
+	"quest.C4A7DA913D83C489.title": "Munição Mk.III"
+	"quest.C4A7DA913D83C489.quest_desc": [
+		"Mk.III = Mk.II + 2 aço + enxofre. Vale para todos os tipos de munição Enhanced Shells."
+	]
+	"quest.0D31CF41C45BDEC4.title": "Bombas pequenas"
+	"quest.0D31CF41C45BDEC4.quest_desc": [
+		"A bancada de munições (Project Explosive) pede aço e enxofre. Bombas pequenas: Era 3."
+		"Bombas grandes saem da mesma bancada, mas exigem a Era 4."
+	]
+	"quest.ABBDC94DE72D22A3.title": "Superb Warfare"
+	"quest.ABBDC94DE72D22A3.quest_desc": [
+		"A mesa de pesquisa de projetos (pede aço) libera as armas do Superb Warfare."
+		"Os veículos do Superb Warfare são da Era 4."
+	]
+	"quest.C872657F0AC6F0FA.title": "Motor de foguete"
+	"quest.C872657F0AC6F0FA.quest_desc": [
+		"Base dos mísseis (Simulated Missiles). A guiagem vem na Era 4."
+	]
+	"quest.6090D4058C47B556.title": "Propulsor"
+	"quest.6090D4058C47B556.quest_desc": [
+		"Empurra aeronaves com combustível. Veja a trilha §fVoando§r."
+	]
+	"quest.C7353683E5A636ED.title": "Blindagem de aço"
+	"quest.C7353683E5A636ED.quest_desc": [
+		"Blocos de blindagem (Steel Armor Blocks) para veículos e bunkers."
+	]
+	"quest.5C602756A9493004.title": "Gerador"
+	"quest.5C602756A9493004.quest_desc": [
+		"Transforma rotação em §feletricidade§r. Comece a rede elétrica."
+	]
+	"quest.12C403244C1EFF48.title": "Rede elétrica"
+	"quest.12C403244C1EFF48.quest_desc": [
+		"Cabos ligam geradores a motores elétricos."
+		"Segure §eW§r em cima do item para ver o §ePonder§r (animação de como funciona). No EMI, §eR§r mostra a receita e §eU§r os usos."
+	]
+	"quest.EB813BF84196EAF6.title": "Alumínio"
+	"quest.EB813BF84196EAF6.quest_desc": [
+		"Feito com eletricidade. §6Material da Era 4.§r"
+	]
+	"quest.3525D3D9BC0A612E.title": "Rumo à Era 4: Eletricidade"
+	"quest.3525D3D9BC0A612E.quest_desc": [
+		"§6Marco da Era 4: Placa de Circuito.§r"
+		""
+		"Placa vazia → revestida → gravada → placa de circuito (veja a cadeia no EMI)."
+	]
+	"chapter.550ED41908DC8745.title": "Era 4 — Eletricidade"
+	"chapter.550ED41908DC8745.chapter_subtitle": [
+		"Eletrônica, armas pesadas, mísseis guiados e veículos."
+	]
+	"quest.74E4CEC280ACA6F9.title": "Bem-vindo à Era 4"
+	"quest.74E4CEC280ACA6F9.quest_desc": [
+		"Circuitos e alumínio: armas guiadas e máquinas de guerra pesadas."
+		"Materiais desta era: §6alumínio§r, §6placa de circuito§r e §6motor elétrico pesado§r."
+	]
+	"quest.D325F1E85190C8E9.title": "Motor elétrico pesado"
+	"quest.D325F1E85190C8E9.quest_desc": [
+		"Peça-chave de ICBM, veículos do Superb Warfare e da Fat Man."
+	]
+	"quest.26EA60B39CF45512.title": "Rede elétrica forte"
+	"quest.26EA60B39CF45512.quest_desc": [
+		"Acumuladores guardam energia; transformadores ajustam a tensão."
+	]
+	"quest.ED586BEFD33E970D.title": "Blocos de alumínio"
+	"quest.ED586BEFD33E970D.quest_desc": [
+		"Bunkers à prova total e a Fat Man pedem muito alumínio."
+	]
+	"quest.4A89314C04B5EED6.title": "Armas da Era 4"
+	"quest.4A89314C04B5EED6.quest_desc": [
+		"Na bancada de armas do TaCZ, com §f+8 alumínio, 2 placas de circuito e 6 aço§r:"
+		"§fM107, M95, FN Evolys, minigun, RPG-7, M320, Desert Eagle dourada, Timeless 50§r."
+	]
+	"quest.0D037F456D3318B1.title": "Munição Mk.V"
+	"quest.0D037F456D3318B1.quest_desc": [
+		"Mk.IV = Mk.III + 2 alumínio + aço. Mk.V = Mk.IV + placa de circuito + 2 alumínio."
+	]
+	"quest.7886DA7A0E602B3B.title": "Bomba Mk 84"
+	"quest.7886DA7A0E602B3B.quest_desc": [
+		"A bomba grande da bancada de munições. Exige a Era 4 — sem ela, o item é confiscado."
+	]
+	"quest.54883DBD0420A63D.title": "ICBM e ataque aéreo"
+	"quest.54883DBD0420A63D.quest_desc": [
+		"Míssil balístico e chamada de ataque aéreo: alumínio, circuito e motor pesado."
+	]
+	"quest.387DE9D8E2838E2F.title": "Veículos de guerra"
+	"quest.387DE9D8E2838E2F.quest_desc": [
+		"A mesa de montagem de veículos do Superb Warfare pede motor elétrico pesado: tanques, helicópteros e jatos."
+	]
+	"quest.5C1343FBC7273746.title": "Míssil guiado"
+	"quest.5C1343FBC7273746.quest_desc": [
+		"O computador de guiagem pede placa de circuito. Junte com o motor de foguete da Era 3."
+	]
+	"quest.9A0BB45E37CE28BE.title": "Jatos e mísseis da Air War"
+	"quest.9A0BB45E37CE28BE.quest_desc": [
+		"Turbina de avião e chips: mísseis guiados (AIM-9X, Tomahawk…), câmeras e sonar da Air War."
+	]
+	"quest.EC198EBA4A34FD32.title": "Radar"
+	"quest.EC198EBA4A34FD32.quest_desc": [
+		"Veja aeronaves e mísseis chegando, e controle canhões automáticos."
+	]
+	"quest.A4D0E0309B32DB60.title": "Bunker à prova total"
+	"quest.A4D0E0309B32DB60.quest_desc": [
+		"Bloco reforçado + alumínio + bloco de aço. §cLimite de 128 por jogador.§r"
+	]
+	"quest.4D41D83F24590C06.title": "Defletor de tempestades"
+	"quest.4D41D83F24590C06.quest_desc": [
+		"Desvia tornados e tempestades da sua base."
+	]
+	"quest.95CB2292DF092BD3.title": "Urânio"
+	"quest.95CB2292DF092BD3.quest_desc": [
+		"Minério de urânio fica no fundo do mundo. O detector de radiação ajuda a achar."
+	]
+	"quest.5AC9BCE954D16181.title": "Rumo à Era 5: Fim de jogo"
+	"quest.5AC9BCE954D16181.quest_desc": [
+		"§6Marco da Era 5: Lingote de Urânio.§r"
+	]
+	"chapter.E6AF6663904969AD.title": "Era 5 — Fim de jogo"
+	"chapter.E6AF6663904969AD.chapter_subtitle": [
+		"A Fat Man."
+	]
+	"quest.F6D1EF1B2FA802AB.title": "Bem-vindo à Era 5"
+	"quest.F6D1EF1B2FA802AB.quest_desc": [
+		"A última era. A única arma nuclear que um jogador pode fabricar é a §cFat Man§r, e ela custa uma indústria inteira."
+	]
+	"quest.61C5312816AC8FF2.title": "Estrela do Nether"
+	"quest.61C5312816AC8FF2.quest_desc": [
+		"Derrote o Wither."
+	]
+	"quest.2FBF433282423EBD.title": "Placas revestidas"
+	"quest.2FBF433282423EBD.quest_desc": [
+		"Duas placas de circuito revestidas."
+	]
+	"quest.5AD1B90EC88896B3.title": "Metal em volume"
+	"quest.5AD1B90EC88896B3.quest_desc": [
+		"16 blocos de aço e 8 blocos de alumínio."
+	]
+	"quest.36AEB3E8C1A4F1E6.title": "Núcleo de urânio"
+	"quest.36AEB3E8C1A4F1E6.quest_desc": [
+		"8 lingotes de urânio."
+	]
+	"quest.AA603D000A80EAC5.title": "Crafter Mecânico 7x7"
+	"quest.AA603D000A80EAC5.quest_desc": [
+		"49 crafters mecânicos em um quadrado 7x7. Veja o Ponder."
+	]
+	"quest.17CF9C845152156E.title": "Fat Man"
+	"quest.17CF9C845152156E.quest_desc": [
+		"Monte a Fat Man no Crafter Mecânico 7x7:"
+		"§f16 blocos de aço, 8 blocos de alumínio, 8 urânio, 2 placas revestidas, 1 motor elétrico pesado, 1 bomba Mk 84 e 1 Estrela do Nether§r (formato no EMI)."
+		""
+		"§cSó a Fat Man feita assim é válida§r — a da bancada de munições é confiscada."
+		"Lembre: explosões só quebram blocos no horário de guerra."
+	]
+	"chapter_group.A6DC4DBA16805B43.title": "Trilhas"
+	"chapter.015B357BB5253AC0.title": "Barcos"
+	"chapter.015B357BB5253AC0.chapter_subtitle": [
+		"Do casco de madeira à primeira viagem (Era 1–2)."
 	]
 	"quest.8D51DF8C6F657746.title": "Montador de física"
 	"quest.8D51DF8C6F657746.quest_desc": [
-		"É ele que transforma um monte de blocos em um veículo de verdade, com física."
+		"Transforma um monte de blocos num veículo de verdade, com física."
 		""
 		"1. Construa o casco."
 		"2. Coloque o montador encostado nele."
 		"3. Dê um sinal de redstone no montador."
 		""
-		"Veja o passo a passo no §ePonder§r (segure §eW§r sobre o item)."
+		"Segure §eW§r em cima do item para ver o §ePonder§r (animação de como funciona). No EMI, §eR§r mostra a receita e §eU§r os usos."
 	]
 	"quest.553DCFD107A1D7EC.title": "Monte o casco"
 	"quest.553DCFD107A1D7EC.quest_desc": [
 		"Construa um casco simples de madeira na água e monte com o montador de física."
-		""
-		"Madeira é leve e flutua bem; pedra e metal pesam. Teste perto da margem antes de ir longe."
-		""
-		"Clique na tarefa para marcar como feita."
+		"Madeira é leve e flutua bem; pedra e metal pesam. Teste perto da margem."
 	]
 	"quest.00D7A5EB51F49098.title": "Timão"
 	"quest.00D7A5EB51F49098.quest_desc": [
@@ -64,41 +424,35 @@
 	]
 	"quest.3314FEB7EB02EF95.title": "Hélice"
 	"quest.3314FEB7EB02EF95.quest_desc": [
-		"Rolamento de hélice + hélice de madeira: empurram o barco quando recebem rotação."
-		""
-		"Veja no §ePonder§r como montar e qual lado empurra."
+		"Rolamento de hélice + hélice de madeira empurram o barco quando recebem rotação."
 	]
 	"quest.78244061AD2B9F46.title": "Motor portátil"
 	"quest.78244061AD2B9F46.quest_desc": [
-		"Uma fonte de força que vai junto com o veículo, para girar a hélice no meio do mar."
-		""
-		"Veja no §ePonder§r como alimentar."
+		"Fonte de força que vai junto com o veículo. Veja no Ponder como alimentar."
 	]
 	"quest.07191F37D94E695F.title": "Leme"
 	"quest.07191F37D94E695F.quest_desc": [
-		"O rolamento giratório deixa uma parte do barco virar: use para um leme ou para apontar a hélice."
+		"O rolamento giratório deixa uma parte virar: leme ou hélice direcionável."
 	]
 	"quest.AD2A8A67769504A3.title": "Alavanca de aceleração"
 	"quest.AD2A8A67769504A3.quest_desc": [
-		"Controla a força enviada à hélice: devagar no porto, rápido em mar aberto."
+		"Controla a força enviada à hélice."
 	]
 	"quest.0C6AA1F4EB5DC837.title": "Primeira viagem"
 	"quest.0C6AA1F4EB5DC837.quest_desc": [
 		"Navegue até outro bioma e volte com o barco inteiro."
-		""
-		"§aPróximo capítulo: voar."
 	]
-	"chapter.061D519601C53B42.title": "3. Voando: balão e avião"
-	"chapter.061D519601C53B42.chapter_subtitle": [
-		"Primeiro sobe, depois aprende a ir para frente."
+	"chapter.3302A2577A88B85D.title": "Voando"
+	"chapter.3302A2577A88B85D.chapter_subtitle": [
+		"Balão (Era 1), aeronave (Era 2–3) e avião."
 	]
 	"quest.5933CD21B8FE8A34.title": "Envelope de ar quente"
 	"quest.5933CD21B8FE8A34.quest_desc": [
-		"Blocos que seguram ar quente. Quanto mais envelopes cheios, mais sustentação."
+		"Blocos que seguram ar quente. Mais envelopes cheios = mais sustentação."
 	]
 	"quest.EFA88038E2BED6D9.title": "Queimador de ar quente"
 	"quest.EFA88038E2BED6D9.quest_desc": [
-		"Coloque embaixo dos envelopes. Com redstone você controla a chama: mais forte para subir, mais fraca para descer."
+		"Embaixo dos envelopes. Com redstone você controla a chama: mais forte sobe, mais fraca desce."
 	]
 	"quest.CE73FE22C7711BE8.title": "Primeiro balão"
 	"quest.CE73FE22C7711BE8.quest_desc": [
@@ -106,7 +460,7 @@
 	]
 	"quest.C766A184BAC1FCF5.title": "Levitita"
 	"quest.C766A184BAC1FCF5.quest_desc": [
-		"Um material que flutua sozinho. Ajuda a deixar aeronaves pesadas mais leves."
+		"Material que flutua sozinho. Deixa aeronaves pesadas mais leves."
 	]
 	"quest.4FAE0677D76709BC.title": "Paraquedas"
 	"quest.4FAE0677D76709BC.quest_desc": [
@@ -118,11 +472,11 @@
 	]
 	"quest.3A424595E9F2D9B4.title": "Hélice de andesito"
 	"quest.3A424595E9F2D9B4.quest_desc": [
-		"Uma hélice mais forte, para empurrar aeronaves."
+		"Hélice mais forte para empurrar aeronaves (Era 2)."
 	]
 	"quest.8BF907B6D761DB48.title": "Propulsor"
 	"quest.8BF907B6D761DB48.quest_desc": [
-		"Empurra a aeronave com combustível. Veja no §ePonder§r o que ele queima e como abastecer."
+		"Empurra a aeronave com combustível (Era 3). Veja no Ponder o que ele queima."
 	]
 	"quest.B9A65210502934FE.title": "Óculos de aviador"
 	"quest.B9A65210502934FE.quest_desc": [
@@ -132,17 +486,17 @@
 	"quest.5CF7B02391FFDFBE.quest_desc": [
 		"Decole, voe 500 blocos e pouse com a aeronave inteira."
 	]
-	"chapter.AE9A32C868418A47.title": "4. Navegação e controle"
-	"chapter.AE9A32C868418A47.chapter_subtitle": [
+	"chapter.8FD3347B2AD59A5C.title": "Navegação e controle"
+	"chapter.8FD3347B2AD59A5C.chapter_subtitle": [
 		"Sensores e redstone para pilotar melhor (e sozinho)."
 	]
 	"quest.A85934BF78562AD1.title": "Mesa de navegação"
 	"quest.A85934BF78562AD1.quest_desc": [
-		"Ajuda a manter o rumo em viagens longas. Veja no §ePonder§r como usar."
+		"Ajuda a manter o rumo em viagens longas. Veja no Ponder."
 	]
 	"quest.A7F7130D190D68F9.title": "Sensor de altitude"
 	"quest.A7F7130D190D68F9.quest_desc": [
-		"Emite redstone conforme a altura. Ligue no queimador para o balão parar sozinho numa altitude."
+		"Redstone conforme a altura. Ligue no queimador para o balão parar sozinho numa altitude."
 	]
 	"quest.3E88B0C23132CB2D.title": "Sensor de inclinação"
 	"quest.3E88B0C23132CB2D.quest_desc": [
@@ -150,18 +504,55 @@
 	]
 	"quest.F0569965F6E722D2.title": "Sensor de velocidade"
 	"quest.F0569965F6E722D2.quest_desc": [
-		"Mede a velocidade do veículo e emite redstone. Bom para controlar o acelerador."
+		"Mede a velocidade e emite redstone. Bom para controlar o acelerador."
 	]
 	"quest.AF4C357F4B3ADC8F.title": "Conector de atracação"
 	"quest.AF4C357F4B3ADC8F.quest_desc": [
-		"Prende um veículo em outro (ou num porto) para atracar sem bater."
+		"Prende um veículo em outro (ou num porto) sem bater."
 	]
 	"quest.804A79224F67D342.title": "Controle remoto"
 	"quest.804A79224F67D342.quest_desc": [
-		"Manda sinais de redstone sem fio: controle o veículo de qualquer lugar a bordo."
+		"Sinais de redstone sem fio: controle o veículo de qualquer lugar a bordo."
 	]
 	"quest.6C60F7BC9B623ABE.title": "Piloto automático"
 	"quest.6C60F7BC9B623ABE.quest_desc": [
-		"Faça um veículo manter altitude ou rumo sozinho, usando sensores e redstone."
+		"Faça um veículo manter altitude ou rumo sozinho, com sensores e redstone."
+	]
+	"chapter.7973C12EAB6CB3C8.title": "Defesa da base"
+	"chapter.7973C12EAB6CB3C8.chapter_subtitle": [
+		"Claims, muralhas, armadilhas e bunkers."
+	]
+	"quest.5E984CA74DDC6568.title": "Base protegida"
+	"quest.5E984CA74DDC6568.quest_desc": [
+		"Reivindique os chunks da sua base pelo mapa (§eM§r, clique direito). Dentro do claim ninguém de fora quebra nada."
+		"Explosões no horário de guerra quebram blocos em qualquer lugar — por isso as muralhas."
+	]
+	"quest.EA092A3CE90A67BE.title": "Muralha reforçada"
+	"quest.EA092A3CE90A67BE.quest_desc": [
+		"Blocos reforçados aguentam muito mais explosões (Era 1: pedra + pepita de ferro)."
+	]
+	"quest.0E26B9220152A479.title": "Vidro reforçado"
+	"quest.0E26B9220152A479.quest_desc": [
+		"Janelas que não estouram na primeira bomba."
+	]
+	"quest.2D40E5D3EA2B0E42.title": "Arame farpado"
+	"quest.2D40E5D3EA2B0E42.quest_desc": [
+		"Atrasa e fere quem tenta passar (MineTraps)."
+	]
+	"quest.5C7A352BF3FE06B2.title": "Minas e armadilhas"
+	"quest.5C7A352BF3FE06B2.quest_desc": [
+		"Minas explosivas e armadilhas de urso no caminho do inimigo."
+	]
+	"quest.AB1F9C21C7EE07DA.title": "Camuflagem"
+	"quest.AB1F9C21C7EE07DA.quest_desc": [
+		"Blocos copycat imitam qualquer bloco: esconda portas, canhões e entradas."
+	]
+	"quest.176CD37B0F91A397.title": "Blindagem de aço"
+	"quest.176CD37B0F91A397.quest_desc": [
+		"Blocos de blindagem de aço (Era 3)."
+	]
+	"quest.ED7F524265047709.title": "Bunker à prova total"
+	"quest.ED7F524265047709.quest_desc": [
+		"À prova de qualquer explosão (Era 4). §cLimite de 128 por jogador§r — use no núcleo da base."
 	]
 }

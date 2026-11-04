@@ -1,0 +1,143 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "c4_era4"
+	group: "05E56B3176A98963"
+	icon: { count: 1, id: "tfmg:circuit_board" }
+	id: "550ED41908DC8745"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3525D3D9BC0A612E"]
+			id: "74E4CEC280ACA6F9"
+			rewards: []
+			shape: "hexagon"
+			tasks: [{ id: "1CE5AAE1B7CFA420", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["74E4CEC280ACA6F9"]
+			id: "D325F1E85190C8E9"
+			rewards: []
+			tasks: [{ count: 1L, id: "C9C33D527D395CA1", item: { count: 1, id: "tfmg:heavy_electric_motor" }, type: "item" }]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["D325F1E85190C8E9"]
+			id: "26EA60B39CF45512"
+			rewards: []
+			tasks: [{ count: 1L, id: "2333340051BC386F", item: { count: 1, id: "tfmg:accumulator" }, type: "item" }, { count: 1L, id: "9E1D908A3A8758E1", item: { count: 1, id: "tfmg:transformer" }, type: "item" }]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26EA60B39CF45512"]
+			id: "ED586BEFD33E970D"
+			rewards: []
+			tasks: [{ count: 4L, id: "08DDB53F1D351571", item: { count: 1, id: "tfmg:aluminum_block" }, type: "item" }]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["74E4CEC280ACA6F9"]
+			id: "4A89314C04B5EED6"
+			rewards: []
+			tasks: [{ id: "4261122717A1A654", type: "checkmark" }]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["74E4CEC280ACA6F9"]
+			id: "0D037F456D3318B1"
+			rewards: []
+			tasks: [{ count: 1L, id: "D4BB51B456F0FCAA", item: { count: 1, id: "cbc_enhanced_shells:he_shell_mk5" }, type: "item" }]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["74E4CEC280ACA6F9"]
+			id: "7886DA7A0E602B3B"
+			rewards: []
+			tasks: [{ count: 1L, id: "D293540A4E2CF2C8", item: { count: 1, id: "projectexplosive:big_bomb" }, type: "item" }]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["D325F1E85190C8E9"]
+			id: "54883DBD0420A63D"
+			rewards: []
+			tasks: [{ count: 1L, id: "57F86B9A681AE5D5", item: { count: 1, id: "projectexplosive:icbm" }, type: "item" }, { count: 1L, id: "99E8C7F4CE607C51", item: { count: 1, id: "projectexplosive:airstrike_caller" }, type: "item" }]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["D325F1E85190C8E9"]
+			id: "387DE9D8E2838E2F"
+			rewards: []
+			tasks: [{ count: 1L, id: "2F9519211A005E62", item: { count: 1, id: "superbwarfare:vehicle_assembling_table" }, type: "item" }]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["74E4CEC280ACA6F9"]
+			id: "5C1343FBC7273746"
+			rewards: []
+			tasks: [{ count: 1L, id: "0B2C9AE92C271A82", item: { count: 1, id: "cbcaeronauticsmissiles:guidance_computer" }, type: "item" }]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["74E4CEC280ACA6F9"]
+			id: "9A0BB45E37CE28BE"
+			rewards: []
+			tasks: [{ count: 1L, id: "FC382AC293CF502C", item: { count: 1, id: "create_the_air_wars:rocket_engine" }, type: "item" }, { count: 2L, id: "B7A3C0F1ED8C1CBF", item: { count: 1, id: "create_the_air_wars:chip" }, type: "item" }]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["74E4CEC280ACA6F9"]
+			id: "EC198EBA4A34FD32"
+			rewards: []
+			tasks: [{ count: 1L, id: "3E04725C85F1EF06", item: { count: 1, id: "create_radar:radar_bearing" }, type: "item" }, { count: 4L, id: "5D5EBA4A84812063", item: { count: 1, id: "create_radar:radar_dish_block" }, type: "item" }]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["ED586BEFD33E970D"]
+			id: "A4D0E0309B32DB60"
+			rewards: []
+			tasks: [{ count: 8L, id: "5907815B098E3B16", item: { count: 1, id: "stronger_blocks:reinforced_stone_bricks_ub" }, type: "item" }]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["ED586BEFD33E970D"]
+			id: "4D41D83F24590C06"
+			rewards: []
+			tasks: [{ count: 1L, id: "56802BC798ACD6E2", item: { count: 1, id: "weather2:weather_deflector" }, type: "item" }]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D41D83F24590C06"]
+			id: "95CB2292DF092BD3"
+			rewards: []
+			tasks: [{ count: 1L, id: "50DE9E1F58836F2D", item: { count: 1, id: "projectexplosive:radiation_detector" }, type: "item" }, { count: 4L, id: "B31F831575724664", item: { count: 1, id: "projectexplosive:raw_uranium" }, type: "item" }]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["95CB2292DF092BD3"]
+			id: "5AC9BCE954D16181"
+			rewards: []
+			shape: "gear"
+			size: 1.5d
+			tasks: [{ count: 1L, id: "14848976818DC159", item: { count: 1, id: "projectexplosive:uranium_ingot" }, type: "item" }]
+			x: 10.5d
+			y: 0.0d
+		}
+	]
+}
