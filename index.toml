@@ -18,7 +18,7 @@ hash = "f9b43150ae555d8c43f6a65f41a0c3b31dc344eb01c7f6b2608fd0a016294b0c"
 
 [[files]]
 file = "config/firstaid-client.toml"
-hash = "f3819bab0c12a9f10b38ce04052a5b0262025c21948308dd5dbe06de0b849c84"
+hash = "6227492a4d1fe99384f7fa804e048c97d61e8f27bb5e94cce2f94a5eb210068b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/c1_create.snbt"

@@ -105,7 +105,7 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - Não testado em jogo: First Aid New com dano do TaCZ (não há compat instalado), Corpse com OPAC, armadilhas do MineTraps em claims.
 
 ## HUD
-- First Aid: o boneco de vida ficava em cima do minimapa do Xaero (os dois no canto superior esquerdo). `config/firstaid-client.toml`: `overlayPosition = "BOTTOM_LEFT"`. Opções: TOP_LEFT, TOP_RIGHT, BOTTOM_RIGHT, BOTTOM_LEFT, mais `xOffset`/`yOffset`.
+- First Aid: o boneco de vida ficava em cima do minimapa do Xaero (os dois no canto superior esquerdo). `config/firstaid-client.toml`: `overlayPosition = "BOTTOM_RIGHT"` (pedido do admin em 04/11; o HUD de munição do TaCZ também fica embaixo à direita — conferir se não sobrepõe). Opções: TOP_LEFT, TOP_RIGHT, BOTTOM_RIGHT, BOTTOM_LEFT, mais `xOffset`/`yOffset`.
 
 ## Quests (FTB Quests)
 - 4 capítulos, 32 quests, em português: 1. Primeiros passos no Create → 2. Seu primeiro barco → 3. Voando: balão e avião → 4. Navegação e controle. Textos originais (não copiados de outros modpacks).
