@@ -94,7 +94,7 @@ hash = "21c9248a694adce931e8a341a38c56cfee0f06afab4a49449cf7d896449adf35"
 
 [[files]]
 file = "kubejs/client_scripts/info_eras.js"
-hash = "7186222a4940bb6a8c939998db81009c566872085517d91d11af5a50a2e5bd96"
+hash = "34ed077237bf668543480cc9295db3ee6eef30e526b0a814d28c513f72838565"
 
 [[files]]
 file = "kubejs/data/guardvillagers/loot_table/entities/guard_armor.json"
@@ -773,6 +773,11 @@ metafile = true
 [[files]]
 file = "mods/servercore.pw.toml"
 hash = "e6bfb33055c9c6e32034c2c2ac03768a8978d3f7200a266b00849ff76b9e6816"
+metafile = true
+
+[[files]]
+file = "mods/shahed.pw.toml"
+hash = "099502b7aec84df9f94898d7b80247556d280743b5d4b636ca8c34c93ff75eb4"
 metafile = true
 
 [[files]]

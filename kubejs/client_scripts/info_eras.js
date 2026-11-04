@@ -43,6 +43,14 @@ RecipeViewerEvents.addInformation('item', event => {
   info(['create_the_air_wars:explosive', 'create_the_air_wars:rocketengine'], ['§6Era 3', 'Pede aço: bombas e foguetes da Air War.'])
   info(['create_the_air_wars:chip', 'create_the_air_wars:rocket_engine'], ['§6Era 4', 'Pede placa de circuito: mísseis guiados, câmeras, sonar e turbina de avião.'])
 
+  // ---- Drones (Skyfront) ----
+  info(['skyfront:fpv_drone', 'skyfront:kvn_drone_250', 'skyfront:kvn_drone_500', 'skyfront:kvn_drone_1000', 'skyfront:interceptor_drone', 'skyfront:thermal_interceptor_drone'],
+    ['§6Era 4 — Drone FPV', 'Montado na mesa de montagem de veículos do Superb Warfare.', 'Voa pelo monitor de drone. Aceita §erádio de drone de verdade§r: ligue o rádio no USB',
+     'em modo joystick (EdgeTX: Model Setup → USB Joystick → Classic) e abra a tecla', '"Radio settings" (Controles → Skyfront: Drones) para escolher e calibrar.', 'Tab arma os motores. Sem munição acoplada o FPV não causa dano.'])
+  info(['skyfront:drone', 'skyfront:thermal_drone'], ['§6Era 4 — Drone de reconhecimento', 'Câmera com zoom (o 3T tem térmica) e solta granada, fumaça ou C4.'])
+  info(['skyfront:molniya_drone', 'skyfront:shahed_136', 'skyfront:jet_shahed'], ['§6Era 4 — Drone de ataque', 'Lançado da rampa (Launch Rail). Shaheds voam por rota marcada no terminal de controle.'])
+  info('skyfront:reb', ['§6Bloqueador de sinal (EW)', 'Corta vídeo e controle dos drones em volta. Não afeta o KVN (fibra óptica).'])
+
   // ---- Defesa ----
   info(/^stronger_blocks:.*_ub$/, ['§6Era 4 — Bunker', 'Bloco à prova total: 2 blocos reforçados + alumínio + bloco de aço.', '§cLimite: 128 por jogador.'])
   info('weather2:weather_deflector', ['§6Era 4', 'Desvia tempestades e tornados da base.'])
