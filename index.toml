@@ -45,6 +45,10 @@ file = "config/guardvillagerstaczsupport-common.toml"
 hash = "73ef649f7dcb4304c05963230aacd4b4e76137700ee8f434f56956d9ddbda2c3"
 
 [[files]]
+file = "config/lostcities/common.toml"
+hash = "3dc0528b53718987c44bc40ce4748374fb92dabec2ba848ca8eb1063544c14b7"
+
+[[files]]
 file = "config/openpartiesandclaims-server.toml"
 hash = "a924b326629cf419a3d6c02c0ae0bd1def952408d20300fce0761399c6dbd10e"
 
@@ -540,6 +544,11 @@ metafile = true
 [[files]]
 file = "mods/tfmg-community-edition.pw.toml"
 hash = "aef8922d29952bc613515e87e2baeee1e047b9ad7604df26dd257fe112215657"
+metafile = true
+
+[[files]]
+file = "mods/the-lost-cities.pw.toml"
+hash = "d05b640a4668376c428e9556c65eb47f1d063bf55f3faee62b7310c775557471"
 metafile = true
 
 [[files]]

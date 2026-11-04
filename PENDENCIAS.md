@@ -128,3 +128,8 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 ## Varinha de construção — 04/11/2026
 - Pedido: "mod de magic wand para facilitar a construção". Não existe mod de construção chamado "Magic Wand" para 1.21.1 (os que existem são de magia, Bukkit ou versões antigas). Adicionado o **Building Wands** 3.0.5 (nicguzzo, Apache-2.0; deps Architectury e Cloth Config, já no pack): varinhas de pedra/ferro/diamante/netherite que colocam e removem fileiras de blocos em vários modos.
 - Testado: servidor de teste sobe com ele. Não testado: varinha dentro de claims do OPAC.
+
+## Cidades e mapa — 04/11/2026
+- **The Lost Cities** 1.21-8.4.6: `config/lostcities/common.toml` com `dimensionsWithProfiles = ["minecraft:overworld=default"]` — cidades abandonadas (com estragos de explosão) no overworld normal. Perfis possíveis em `config/lostcities/profiles/` (rarecities, largecities, nodamage, onlycities…). Só vale para terreno novo: o mundo do servidor foi recriado (o antigo ficou em `servidor/world-antigo-2026-11-04`).
+- **Borda do mundo**: 16.000 × 16.000 blocos (1000 × 1000 chunks), centro 0,0 — `/worldborder set 16000` (fica salvo no mundo). O servidor só gera os chunks visitados; a borda limita até onde o mundo cresce.
+- Ao recriar o mundo, zeram: claims do OPAC, progresso das quests, times do FTB Teams. Contas do MixAuth (`servidor/mixauth`) e ops continuam.
