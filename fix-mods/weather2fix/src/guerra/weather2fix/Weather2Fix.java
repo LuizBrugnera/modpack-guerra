@@ -1,8 +1,13 @@
 package guerra.weather2fix;
 
 import net.neoforged.fml.common.Mod;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-// Correção do Modpack Guerra para o Weather2 2.8.7 (ver mixin/NetworkingMixin.java).
+// Mod de correções do Modpack Guerra (o modId ficou o antigo, guerra_weather2fix).
+// Weather2: mixin/NetworkingMixin. Distant Horizons + Chunky: mixin/DhChunkyMixin.
+// Project Explosive: ProtecaoBombas e mixin/Pe*Mixin.
 @Mod("guerra_weather2fix")
 public class Weather2Fix {
+    public static final Logger LOG = LoggerFactory.getLogger("guerra_correcoes");
 }

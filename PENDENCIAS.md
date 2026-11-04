@@ -169,3 +169,25 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - Testado: servidor de teste sobe com ele; não testado em jogo (rádio, voo, monitor).
 - Reinício do servidor para o Skyfront (18:06): o `stop` com o Chunky rodando ficou preso em `ChunkMap.processUnloads` depois de "Saving worlds" (CPU em 100% num núcleo, nada gravado no disco por 20 min). Fechado à força; ninguém online, perda só do último minuto da pré-geração. Procedimento agora: `chunky pause`, esperar, `stop` (no README).
 - O `desativar-selecao.ps1` novo (processo separado) funcionou: a janela aberta às 18:26 já veio com o modo de seleção desligado.
+
+## Bombas do Project Explosive: resistência e horário de guerra — 04/11/2026
+- **Problema 1 (relatado):** as bombas ignoravam a resistência dos blocos. O mod (0.7.2-beta, ARR, ofuscado) decide o que quebra pela **dureza**: só poupa bedrock e dureza negativa (as bombas comuns também poupam dureza ≥ 50). Medido no servidor de teste (arena com cubos 3×3×3, Mk 84 no centro, sem correção): bunker `stronger_blocks:*_ub` (resistência 160 mil–1,6 milhão, dureza 16–20), concreto armado do TFMG (1200/12), obsidiana, aço do `s_a_b` e pedra: **todos 0/27**.
+- **Problema 2 (achado no teste):** as bombas escrevem os blocos direto no mundo e não passam pelo evento de explosão que o `horario_guerra.js` usa. **Fora do horário de guerra elas destruíam bases do mesmo jeito.**
+- **Correção** no mod de correções 1.2.0 (`ProtecaoBombas` + 4 mixins, detalhes em `fix-mods/weather2fix/COMPILAR.md`):
+  - resistência ≥ 100.000: nenhuma bomba quebra (nem a Fat Man); ≥ 1.000: só a nuclear quebra; abaixo: igual ao mod;
+  - em paz (`horario_guerra.js` avisa a cada segundo e no `/guerra`): nenhuma troca de bloco do Project Explosive. A bomba explode e fere, mas não quebra.
+  - Tentativas descartadas: dureza −1 para tudo em paz (travava a bomba); desligar `enableBlockDestruction` em tempo real (o mod lê a config uma vez só).
+- **Resultado no teste** (cubos 27/27 = intacto):
+
+  | Teste | Bunker | Concreto | Obsidiana | Aço s_a_b | Pedra |
+  |---|---|---|---|---|---|
+  | Mk 84, guerra | 27 | 27 | 27 | 0 | 0 |
+  | Mk 82, guerra | 27 | 27 | 27 | 27 | 24 |
+  | Fat Man, guerra | 27 | 0 | 27 | 24 | 0 |
+  | Mk 84, paz | 27 | 27 | 27 | 27 | 27 |
+  | Mk 84 em teto de bunker, guerra | teto 49/49 (a bomba explode em cima) | | | | |
+
+  Sem duplicação: o total de cada material na área continua 27. As "bombas" que ficam paradas no ar depois da explosão são o emissor de fumaça da cratera (somem em 3–4 min), comportamento normal do mod.
+- **Custo:** em guerra, nenhum (só blocos de resistência ≥ 1.000 fazem a checagem). Em paz, cada troca de bloco olha a pilha de chamadas: `/fill` de 16.384 blocos passou de ~150 ms para ~220 ms (≈ 4 µs por troca).
+- O aço do `s_a_b` (resistência 37–47) continua quebrando com bombas comuns; se quiser que ele também resista, baixar `RESISTENCIA_BLINDADO`.
+- Não testado em jogo: ICBMs, bomba de fragmentação, bomba de fogo.

@@ -4,9 +4,9 @@ license="MIT"
 
 [[mods]]
 modId="guerra_weather2fix"
-version="1.1.1"
+version="1.2.0"
 displayName="Guerra: Correções"
-description="Corrige a queda de conexão 'Failed to encode packet custom_payload' do Weather2 2.8.7 (envia cópia do NBT) e o crash do Distant Horizons com o Chunky ao abrir o servidor."
+description="Corrige a queda de conexão 'Failed to encode packet custom_payload' do Weather2 2.8.7 (envia cópia do NBT) e o crash do Distant Horizons com o Chunky ao abrir o servidor; e faz as bombas do Project Explosive respeitarem a resistência a explosão dos blocos e o horário de guerra."
 
 [[mixins]]
 config="guerra_weather2fix.mixins.json"
@@ -20,3 +20,6 @@ type="required"
 versionRange="[1.21.0-2.8.7,)"
 ordering="AFTER"
 side="BOTH"
+
+[[mixins]]
+config="guerra_pefix.mixins.json"

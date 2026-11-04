@@ -43,12 +43,31 @@ LevelEvents.afterExplosion(event => {
   if (!emGuerra(event.level.server)) event.removeAllAffectedBlocks()
 })
 
+// As bombas do Project Explosive não passam pelo evento de explosão acima: escrevem os blocos
+// direto no mundo. A proteção delas fica no mod de correções (guerra-correcoes, classe
+// ProtecaoBombas), que precisa saber se é guerra ou paz. Atualiza a cada segundo e no /guerra.
+let GUERRA_PROTECAO_BOMBAS = null
+try {
+  GUERRA_PROTECAO_BOMBAS = Java.loadClass('guerra.weather2fix.ProtecaoBombas')
+} catch (e) {
+  console.warn('[Guerra] ProtecaoBombas indisponível (bombas do Project Explosive sem proteção de horário): ' + e)
+}
+
+function avisarProtecaoBombas(server) {
+  if (GUERRA_PROTECAO_BOMBAS) GUERRA_PROTECAO_BOMBAS.definirPaz(!emGuerra(server))
+}
+
+ServerEvents.tick(event => {
+  if (event.server.tickCount % 20 === 0) avisarProtecaoBombas(event.server)
+})
+
 ServerEvents.commandRegistry(event => {
   const Commands = event.commands
 
   const definir = novo => ctx => {
     const server = ctx.source.server
     server.persistentData.putString('guerra_modo', novo)
+    avisarProtecaoBombas(server)
     const txt = novo === 'on' ? '§c[Guerra] Modo GUERRA forçado: explosões quebram blocos.'
       : novo === 'off' ? '§a[Guerra] Modo PAZ forçado: explosões não quebram blocos.'
       : '§e[Guerra] Modo automático: segue o horário (sex/sáb 20h–23h).'

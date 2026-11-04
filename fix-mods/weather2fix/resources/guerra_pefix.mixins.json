@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "guerra.weather2fix.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["PeLevelSetBlockMixin", "PeChunkSetBlockMixin", "PeDurezaMixin", "PeDestrocoMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

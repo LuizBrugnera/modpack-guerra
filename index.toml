@@ -266,7 +266,7 @@ hash = "33995e29d562c7375c127aa8c86e14349bf43d5208625eacc731e2280c022c04"
 
 [[files]]
 file = "kubejs/server_scripts/horario_guerra.js"
-hash = "7089cc79cc1fd55b3e1ad0b0f678967550cde390f23dbb399779c9a3dec63372"
+hash = "55cb36c3c9940bc6385415093ad686542117150a406d41ca063f15b2b946f9d0"
 
 [[files]]
 file = "kubejs/server_scripts/pregeracao.js"
@@ -617,8 +617,8 @@ hash = "6b235aa1d0c43ab4fa7eacca3eb3c62530fa6ae1b44bc56aecc25c636a8ffc5b"
 metafile = true
 
 [[files]]
-file = "mods/guerra-correcoes-1.1.1.jar"
-hash = "c7c3724982548ee8475fc9509b02989ec7cd607b18b7a3738604b20518044cfd"
+file = "mods/guerra-correcoes-1.2.0.jar"
+hash = "d6b8764c31a56ffadd9ffc77f047786935577c7b5dc9bc39b529ce7a8187fea4"
 
 [[files]]
 file = "mods/horde-moon-2.pw.toml"
