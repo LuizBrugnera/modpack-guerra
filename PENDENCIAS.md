@@ -96,3 +96,15 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - Adicionados (Modrinth, 1.21.1 NeoForge): Create: Simulated Missiles 0.2.0 (CurseForge, via CDN), Create Propulsion: Simulated 1.1.5, Create Aeronautics: Toolgun 0.3.7, Better Villages 3.3.1 (só servidor; dep. Library Ferret), Born in Chaos 1.7.6, Create: The Air War 5.00.
 - Luas: o Moon Bundle usa o Enhanced Celestials **1** e o Chaos Moon 2 usa o Enhanced Celestials **2** (reescrita). Decisão: tudo no EC2 — Chaos Moon 2 + as versões "2" das luas do bundle: Horde, Spider, Black, Hunter's, Miner's e Peaceful Moon 2 (deps: EC2 Core, CorgiLib, Data Anchor). O Moon Bundle **não** entrou.
 - Testado: servidor de teste sobe com tudo, sem erros novos. Não testado em jogo: frequência das luas (Peaceful Moon impede spawn de hostis por uma noite; Black Moon dá cegueira), estruturas do Born in Chaos/Better Villages e itens da Air War/Propulsion.
+
+## Lote 2 de 03/11/2026
+- Adicionados (Modrinth): Create: Steel armor blocks 1.4.3, CBC: Terminal Ballistics 0.3.5, Create:Parachute 1.1.5, Corpse 1.1.22, Create: Copycats+ 3.0.9, Sable Pathfinder 1.4.0, First Aid New 1.3.5, Fracture Point 3.0.0-PT1-fix (dep. Curios), TaCZ Armor Scaling 0.5.4, MineTraps 3.0.2, Aeronautics Camera Sync 1.4.0, ModernFix 5.27.27, FerriteCore 7.0.3. CurseForge: FTB Quests 2101.1.38 (+ FTB Library, FTB Teams; Architectury veio do Modrinth).
+- **TaCZ Armor Scaling**: fixado na 0.5.4 (a "0.5.4-customgun" é para outro mod de armas). Exige o **Custom BattleRoyale** (o código saiu dele) — entrou como dependência; os erros de "example.json" dele no log são dos arquivos de exemplo e não afetam nada. Só servidor. **Vem desligado**: para ativar, como op: `/armorscaling damageScaling true` e `/armorscaling durabilityScaling true` (config em `config/armorscaling/`). Não testado.
+- **Otimizações**: ModernFix e FerriteCore em servidor e cliente (`side = both`), configs padrão. A opção "dynamic resources" do ModernFix (economiza RAM no cliente) ficou desligada: pode quebrar texturas de alguns mods; testar antes de ligar.
+- Receitas quebradas nos próprios mods (o mod carrega, só essas receitas não existem): Terminal Ballistics `copycat_armor_layer`, `framed_collapsible_copycat_armor_block`, `armor_upgrader`; Steel armor blocks `glassarmor`. Dá para recriar via KubeJS se fizerem falta.
+- Não testado em jogo: First Aid New com dano do TaCZ (não há compat instalado), Corpse com OPAC, armadilhas do MineTraps em claims.
+
+## Quests (FTB Quests)
+- 4 capítulos, 32 quests, em português: 1. Primeiros passos no Create → 2. Seu primeiro barco → 3. Voando: balão e avião → 4. Navegação e controle. Textos originais (não copiados de outros modpacks).
+- Fonte: `scripts/gerar-quests.ps1` gera `config/ftbquests/quests/`. Editar lá e rodar de novo; os IDs são fixos (hash da chave), então o progresso dos jogadores se mantém. Editar pelo editor do jogo grava só na pasta local — copie de volta para o repo se usar.
+- Testado: servidor carrega "4 chapters, 32 quests" sem avisos; todos os itens das tarefas existem. Não conferido na tela do jogo (layout/textos).

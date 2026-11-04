@@ -17,6 +17,30 @@ file = "config/createbigcannons-server.toml"
 hash = "f9b43150ae555d8c43f6a65f41a0c3b31dc344eb01c7f6b2608fd0a016294b0c"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/c1_create.snbt"
+hash = "0ef5d287e300ae81a43ce106aa627526d2874d59bfa837e070ef235295b600c7"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/c2_barco.snbt"
+hash = "c6797f0dcd376e5c7c49b24fb32457730dc47854b775ac944ebd2028fe3d5d3e"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/c3_voo.snbt"
+hash = "865c93329926cfba5573a61d2dfafa8ab807001702c3be1a65cb4182f21fe1be"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/c4_navegacao.snbt"
+hash = "9c3a9df1d567b30999167f190cc91a82254d88396de5220ed61758fca8fa1f36"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "3518b6c3095128aa2bfbb04e68dcfc95c60ba3effcf0fa09e859f206985fcfb9"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us.snbt"
+hash = "af2c58092f510657751205fb1847235865a3c4d1b8c6e6e563f30594480cc65c"
+
+[[files]]
 file = "config/guardvillagerstaczsupport-common.toml"
 hash = "73ef649f7dcb4304c05963230aacd4b4e76137700ee8f434f56956d9ddbda2c3"
 
@@ -45,6 +69,11 @@ file = "kubejs/server_scripts/progressao.js"
 hash = "840e72cba45c1593c1a8ebc295fdc7d7c10e5af51605280d78e6bab2d4f2e8aa"
 
 [[files]]
+file = "mods/aero_cam_sync.pw.toml"
+hash = "05d7fc1975485e44ed23c67f33d4f691523da2bacef29464f04433154929e6f8"
+metafile = true
+
+[[files]]
 file = "mods/aeroclaims.pw.toml"
 hash = "78137effbcf3f8d93f64aa10f365a225b8439c0a0f49ea61cd99d4d6836aaeb1"
 metafile = true
@@ -52,6 +81,11 @@ metafile = true
 [[files]]
 file = "mods/aeronautics-structures.pw.toml"
 hash = "5279e3ff71cb614a1ab093dc3559740b42daa030d80a8cd298f7f4e2ad1df8ce"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "187eafde5974beee1263538b462b7b8fe2fc8948c5d413980d9796d55928580b"
 metafile = true
 
 [[files]]
@@ -100,6 +134,11 @@ hash = "372291300bbf4e4a0589d5c6bc9b075d28b70d5bf247d1b64ab6f520b68e3e7b"
 metafile = true
 
 [[files]]
+file = "mods/cbc-terminal-ballistics.pw.toml"
+hash = "47a068e177249db051d8aea222968a8797eb8bb8333e12b576f4eed8dbba2892"
+metafile = true
+
+[[files]]
 file = "mods/chaos-moon-2.pw.toml"
 hash = "a6fc685c5d20335a9695a58ec80c293f6b136fa7c894b6206d37ffd8c29d6a3f"
 metafile = true
@@ -110,6 +149,11 @@ hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
 metafile = true
 
 [[files]]
+file = "mods/copycats.pw.toml"
+hash = "4892513825f87217b6cc3f4d3ec4dcd3965b96dede8cc10d6578c4769102ae8e"
+metafile = true
+
+[[files]]
 file = "mods/corgilib.pw.toml"
 hash = "9ae835550d113663b527b6ba934dd7d758d8e0a93c68bb44d84eb1ef1be69159"
 metafile = true
@@ -117,6 +161,11 @@ metafile = true
 [[files]]
 file = "mods/coroutil.pw.toml"
 hash = "d901f874a1e09747b8d0d072c38c426eceead1f29c8ba36680f8f0082996b152"
+metafile = true
+
+[[files]]
+file = "mods/corpse.pw.toml"
+hash = "50f0fe22bec82ed6336a259931394271a1ebb71bb77e682ee233d96134305ccd"
 metafile = true
 
 [[files]]
@@ -215,6 +264,21 @@ hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
 
 [[files]]
+file = "mods/createparachute.pw.toml"
+hash = "695e5d593179613426bed8632f77e931dfaa7b789e0b9d36e64915e7b576735d"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
+metafile = true
+
+[[files]]
+file = "mods/custom-battleroyale.pw.toml"
+hash = "d72fe7e48a41e5309e4a8bb61c7ac6387a56e5830bf1d67d5c75a1ed67c12636"
+metafile = true
+
+[[files]]
 file = "mods/data-anchor.pw.toml"
 hash = "d025359648bc99d4eec57a159fe07ba3638c519a7b568b414041fe15fb196066"
 metafile = true
@@ -232,6 +296,36 @@ metafile = true
 [[files]]
 file = "mods/enhanced-celestials-2-core.pw.toml"
 hash = "092c2fe392d74839d1210f7c5ecf90de3f7c230cc3f5ca064cf284b29ec97f30"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
+metafile = true
+
+[[files]]
+file = "mods/first-aid-new.pw.toml"
+hash = "40cdfaf0c9317fc6fdc191a103c0fc863fc80fa43e65f211ad2d15d19a5ac229"
+metafile = true
+
+[[files]]
+file = "mods/fracturepoint.pw.toml"
+hash = "2fee193b7618d54062de5c736e32229a091a1adbe3208ab4bec8365656200570"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "df64ca595f6f0f79e3a4a844fd0a887b44f5e007f5deb9ac011b5cf67b3a2127"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "ce69874826195a0aed63a54128c8656b80e564cd32db59c1f9cfe3367150fd5e"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "c21c2308684a75cda7dd9d557d129c9f89f49be527da3d5aa675fff444c11f5e"
 metafile = true
 
 [[files]]
@@ -299,8 +393,18 @@ hash = "a1df8816f067189c2a111e55fe3f5cf9f18798f6ba93b6b65193f2bf3af23509"
 metafile = true
 
 [[files]]
+file = "mods/minetraps.pw.toml"
+hash = "eb837389438190b85b4bddb27f8ae0427295adfd794c9558934f736eedae8b65"
+metafile = true
+
+[[files]]
 file = "mods/mixauth.pw.toml"
 hash = "94867ea2f0b435da9235cf4966a4c901c486ff50a35a6d20f92676512c2a2fa9"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "ef65836e005bd42a0f40df30a94eba1ad7ee5ed3194b11eafbeadc64edb44252"
 metafile = true
 
 [[files]]
@@ -344,8 +448,18 @@ hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
 metafile = true
 
 [[files]]
+file = "mods/sab.pw.toml"
+hash = "fa4dc46583e1d2ce3b4f4fbfef0b299dba92b077f68e6419d8eef126b4eff825"
+metafile = true
+
+[[files]]
 file = "mods/sable-drive-by-wire-tfmg-engine-controller-support.pw.toml"
 hash = "60b041da19d898deb3712641794ce30761d28d3f3995eaf274dedcb6b0da4877"
+metafile = true
+
+[[files]]
+file = "mods/sable-pathfinder.pw.toml"
+hash = "bb53384b726692f7c4227355fa0653cbb6aba5bd0bd3ea7c586d395aa4d2d135"
 metafile = true
 
 [[files]]
@@ -391,6 +505,11 @@ metafile = true
 [[files]]
 file = "mods/tacz-1.21.1.pw.toml"
 hash = "71944dea59c3df21fd71d4ea2d75d3e34ab159c2c39f047269e14b203416afb5"
+metafile = true
+
+[[files]]
+file = "mods/tacz-armor-scaling.pw.toml"
+hash = "c45aa6e64107ab051b9a88ab618fa7b939cfb4c792d742e5a6376cd7c6156cc0"
 metafile = true
 
 [[files]]

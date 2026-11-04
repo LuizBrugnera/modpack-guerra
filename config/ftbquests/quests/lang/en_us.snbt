@@ -1,0 +1,167 @@
+{
+	"file.0000000000000001.title": "Modpack Guerra"
+	"chapter.432B89D21BF2FFC2.title": "1. Primeiros passos no Create"
+	"chapter.432B89D21BF2FFC2.chapter_subtitle": [
+		"O básico para construir qualquer máquina (e qualquer veículo)."
+	]
+	"quest.B94D469ED5E9DE1F.title": "Chave inglesa"
+	"quest.B94D469ED5E9DE1F.quest_desc": [
+		"A ferramenta do Create: gira, ajusta e desmonta blocos (agachado + clique direito)."
+		""
+		"Dica: segure §eW§r em cima de qualquer item do Create para ver o §ePonder§r, uma animação que mostra como ele funciona."
+	]
+	"quest.31CE669E9A9599DC.title": "Liga de andesito"
+	"quest.31CE669E9A9599DC.quest_desc": [
+		"Andesito + pepita de ferro (ou zinco). Quase tudo no começo do Create usa isso."
+	]
+	"quest.9E71173466073603.title": "Primeira força: roda d'água"
+	"quest.9E71173466073603.quest_desc": [
+		"Coloque na beira de água corrente. Ela gira e gera força rotacional."
+	]
+	"quest.8016AEC38A85B136.title": "Eixos e engrenagens"
+	"quest.8016AEC38A85B136.quest_desc": [
+		"Eixos levam a rotação em linha reta; engrenagens mudam a direção e a velocidade."
+	]
+	"quest.9C2E5D008DE3BC65.title": "Óculos do engenheiro"
+	"quest.9C2E5D008DE3BC65.quest_desc": [
+		"Com eles você vê velocidade e estresse das máquinas. Se a rede estiver sobrecarregada, tudo para."
+	]
+	"quest.3DEED02EEA45B6DB.title": "Carcaça de andesito"
+	"quest.3DEED02EEA45B6DB.quest_desc": [
+		"Base de várias máquinas (e do montador de física do próximo capítulo)."
+	]
+	"quest.2CA4309464C9FD28.title": "Super cola"
+	"quest.2CA4309464C9FD28.quest_desc": [
+		"Gruda blocos entre si para que se movam juntos. Todo veículo começa aqui."
+		""
+		"§aPróximo capítulo: seu primeiro barco."
+	]
+	"chapter.9F8B72D8F4A2C4D6.title": "2. Seu primeiro barco"
+	"chapter.9F8B72D8F4A2C4D6.chapter_subtitle": [
+		"Do casco de madeira à primeira viagem."
+	]
+	"quest.8D51DF8C6F657746.title": "Montador de física"
+	"quest.8D51DF8C6F657746.quest_desc": [
+		"É ele que transforma um monte de blocos em um veículo de verdade, com física."
+		""
+		"1. Construa o casco."
+		"2. Coloque o montador encostado nele."
+		"3. Dê um sinal de redstone no montador."
+		""
+		"Veja o passo a passo no §ePonder§r (segure §eW§r sobre o item)."
+	]
+	"quest.553DCFD107A1D7EC.title": "Monte o casco"
+	"quest.553DCFD107A1D7EC.quest_desc": [
+		"Construa um casco simples de madeira na água e monte com o montador de física."
+		""
+		"Madeira é leve e flutua bem; pedra e metal pesam. Teste perto da margem antes de ir longe."
+		""
+		"Clique na tarefa para marcar como feita."
+	]
+	"quest.00D7A5EB51F49098.title": "Timão"
+	"quest.00D7A5EB51F49098.quest_desc": [
+		"Coloque no barco e use para pilotar."
+	]
+	"quest.3314FEB7EB02EF95.title": "Hélice"
+	"quest.3314FEB7EB02EF95.quest_desc": [
+		"Rolamento de hélice + hélice de madeira: empurram o barco quando recebem rotação."
+		""
+		"Veja no §ePonder§r como montar e qual lado empurra."
+	]
+	"quest.78244061AD2B9F46.title": "Motor portátil"
+	"quest.78244061AD2B9F46.quest_desc": [
+		"Uma fonte de força que vai junto com o veículo, para girar a hélice no meio do mar."
+		""
+		"Veja no §ePonder§r como alimentar."
+	]
+	"quest.07191F37D94E695F.title": "Leme"
+	"quest.07191F37D94E695F.quest_desc": [
+		"O rolamento giratório deixa uma parte do barco virar: use para um leme ou para apontar a hélice."
+	]
+	"quest.AD2A8A67769504A3.title": "Alavanca de aceleração"
+	"quest.AD2A8A67769504A3.quest_desc": [
+		"Controla a força enviada à hélice: devagar no porto, rápido em mar aberto."
+	]
+	"quest.0C6AA1F4EB5DC837.title": "Primeira viagem"
+	"quest.0C6AA1F4EB5DC837.quest_desc": [
+		"Navegue até outro bioma e volte com o barco inteiro."
+		""
+		"§aPróximo capítulo: voar."
+	]
+	"chapter.061D519601C53B42.title": "3. Voando: balão e avião"
+	"chapter.061D519601C53B42.chapter_subtitle": [
+		"Primeiro sobe, depois aprende a ir para frente."
+	]
+	"quest.5933CD21B8FE8A34.title": "Envelope de ar quente"
+	"quest.5933CD21B8FE8A34.quest_desc": [
+		"Blocos que seguram ar quente. Quanto mais envelopes cheios, mais sustentação."
+	]
+	"quest.EFA88038E2BED6D9.title": "Queimador de ar quente"
+	"quest.EFA88038E2BED6D9.quest_desc": [
+		"Coloque embaixo dos envelopes. Com redstone você controla a chama: mais forte para subir, mais fraca para descer."
+	]
+	"quest.CE73FE22C7711BE8.title": "Primeiro balão"
+	"quest.CE73FE22C7711BE8.quest_desc": [
+		"Monte um balão com cesto, envelopes e queimador, e suba pelo menos 50 blocos."
+	]
+	"quest.C766A184BAC1FCF5.title": "Levitita"
+	"quest.C766A184BAC1FCF5.quest_desc": [
+		"Um material que flutua sozinho. Ajuda a deixar aeronaves pesadas mais leves."
+	]
+	"quest.4FAE0677D76709BC.title": "Paraquedas"
+	"quest.4FAE0677D76709BC.quest_desc": [
+		"Sempre leve um. Aeronave cai, ainda mais em guerra."
+	]
+	"quest.B128DC9D00EC8EB2.title": "Asas"
+	"quest.B128DC9D00EC8EB2.quest_desc": [
+		"Asas geram sustentação com velocidade: é o que separa um balão de um avião."
+	]
+	"quest.3A424595E9F2D9B4.title": "Hélice de andesito"
+	"quest.3A424595E9F2D9B4.quest_desc": [
+		"Uma hélice mais forte, para empurrar aeronaves."
+	]
+	"quest.8BF907B6D761DB48.title": "Propulsor"
+	"quest.8BF907B6D761DB48.quest_desc": [
+		"Empurra a aeronave com combustível. Veja no §ePonder§r o que ele queima e como abastecer."
+	]
+	"quest.B9A65210502934FE.title": "Óculos de aviador"
+	"quest.B9A65210502934FE.quest_desc": [
+		"Todo piloto precisa de um."
+	]
+	"quest.5CF7B02391FFDFBE.title": "Primeiro voo"
+	"quest.5CF7B02391FFDFBE.quest_desc": [
+		"Decole, voe 500 blocos e pouse com a aeronave inteira."
+	]
+	"chapter.AE9A32C868418A47.title": "4. Navegação e controle"
+	"chapter.AE9A32C868418A47.chapter_subtitle": [
+		"Sensores e redstone para pilotar melhor (e sozinho)."
+	]
+	"quest.A85934BF78562AD1.title": "Mesa de navegação"
+	"quest.A85934BF78562AD1.quest_desc": [
+		"Ajuda a manter o rumo em viagens longas. Veja no §ePonder§r como usar."
+	]
+	"quest.A7F7130D190D68F9.title": "Sensor de altitude"
+	"quest.A7F7130D190D68F9.quest_desc": [
+		"Emite redstone conforme a altura. Ligue no queimador para o balão parar sozinho numa altitude."
+	]
+	"quest.3E88B0C23132CB2D.title": "Sensor de inclinação"
+	"quest.3E88B0C23132CB2D.quest_desc": [
+		"Detecta a inclinação do veículo. Use com redstone para estabilizar."
+	]
+	"quest.F0569965F6E722D2.title": "Sensor de velocidade"
+	"quest.F0569965F6E722D2.quest_desc": [
+		"Mede a velocidade do veículo e emite redstone. Bom para controlar o acelerador."
+	]
+	"quest.AF4C357F4B3ADC8F.title": "Conector de atracação"
+	"quest.AF4C357F4B3ADC8F.quest_desc": [
+		"Prende um veículo em outro (ou num porto) para atracar sem bater."
+	]
+	"quest.804A79224F67D342.title": "Controle remoto"
+	"quest.804A79224F67D342.quest_desc": [
+		"Manda sinais de redstone sem fio: controle o veículo de qualquer lugar a bordo."
+	]
+	"quest.6C60F7BC9B623ABE.title": "Piloto automático"
+	"quest.6C60F7BC9B623ABE.quest_desc": [
+		"Faça um veículo manter altitude ou rumo sozinho, usando sensores e redstone."
+	]
+}

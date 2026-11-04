@@ -1,0 +1,14 @@
+name = "TaCZ Armor Scaling"
+filename = "armorscaling-0.5.4-neoforge-1.21.1.jar"
+side = "server"
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/xtuFgpaH/versions/odHMTv3H/armorscaling-0.5.4-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "613ff16f8e333fa8730422be343f58da3bf24f7e99328a3bbca23efc8bd7a6c1064ece9c7b4a40a6891b498904019c5be2179ffbad8aeea18118cd08504ec04a"
+
+[update]
+[update.modrinth]
+mod-id = "xtuFgpaH"
+version = "odHMTv3H"

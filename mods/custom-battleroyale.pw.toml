@@ -1,0 +1,13 @@
+name = "Custom BattleRoyale"
+filename = "battleroyale-0.5.7-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5cs8CYZE/versions/hYYXtXio/battleroyale-0.5.7-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "9096ffe751fc9e6a5f7f98f0a5d5a3ab315c0c28d3a62327ab00c727560f7f28f5546721a16cd7148f5012987856f25adde6c254df12f15e1df0f4b6a275acf4"
+
+[update]
+[update.modrinth]
+mod-id = "5cs8CYZE"
+version = "hYYXtXio"
