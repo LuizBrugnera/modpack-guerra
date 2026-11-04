@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/DistantHorizons.toml"
+hash = "5bbe0d448c1c0a5dd2208eead9d78086f031235ccac2a53788cdf9f625b66d58"
+
+[[files]]
 file = "config/Weather2/Storm.toml"
 hash = "9753d4af541b76d1b6dd61371fa5ebb43609941e3b6d284fcc82b522ab9d248a"
 

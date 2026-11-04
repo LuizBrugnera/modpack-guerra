@@ -99,7 +99,7 @@ Pronto: ela baixa **todos os mods sozinha** na primeira vez que você abrir o jo
 ## Passo 6 — Primeiros ajustes no jogo
 - **Voice chat:** aperte **V** → escolha o microfone → teste. Use os grupos de voz do seu time.
 - **Teclas:** *Opções → Controles*. Create Aeronautics, TaCZ e voice chat adicionam muitos atalhos; resolva os que estiverem em vermelho.
-- **PC fraco:** *Opções → Pacotes de shaders → Desligado*, e reduza o alcance do Distant Horizons.
+- **Distância:** o pack já vem com Distant Horizons em 64 chunks (~1 km) e 4 threads, e o servidor limita a distância normal a 8. Ainda lagando? *Opções → Distant Horizons* → baixe para 32, e *Opções → Pacotes de shaders → Desligado*.
 
 ---
 
