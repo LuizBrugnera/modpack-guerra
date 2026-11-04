@@ -146,3 +146,8 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - Também: as tarefas de marcar ganharam nome (antes apareciam como "Unnamed" na lista de tarefas), subtítulos nas quests principais, e "Primeira arma" agora detecta qualquer arma/munição do TaCZ (`match_components: "none"`).
 - Verificado no servidor de teste pela API do FTB Quests: 3 grupos, 10 capítulos, 110 quests e 21 tarefas de marcar, todos com título; 110 descrições; depois de desligar, o FTB só reformata os arquivos e mantém os 276 IDs.
 - Os IDs mudaram em relação à versão anterior: o progresso de quests de quem já tinha começado zera (o mundo é novo, então não afeta ninguém).
+
+## Esteiras — 04/11/2026
+- **Create: Bits 'n' Tracks Community Edition** 3.0.1 (esteiras de tanque com física do Sable) e **Create: Tracks+** 1.0.6b7 (esteiras estilo Trackwork; modid `tracks`).
+- O BnT CE pede **Create: Bits 'n' Bobs** 2.3.5, que por sua vez exige **Strut Your Stuff (Struts)** e **Azimuth API** — o Modrinth não lista esses dois como dependência; sem eles o servidor nem sobe (adicionados: struts 1.3.1, azimuth 1.4.10).
+- Testado: servidor de teste sobe com os cinco. Não testado em jogo: as duas esteiras no mesmo veículo.

@@ -285,6 +285,11 @@ hash = "187eafde5974beee1263538b462b7b8fe2fc8948c5d413980d9796d55928580b"
 metafile = true
 
 [[files]]
+file = "mods/azimuth-api.pw.toml"
+hash = "a14aa30b199bcc4fb3b382327be7cabb22ce03d8e780f68c3b8307136f0589d7"
+metafile = true
+
+[[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
@@ -292,6 +297,11 @@ metafile = true
 [[files]]
 file = "mods/better-village.pw.toml"
 hash = "70d6a7931439fe0fe8d517e89fcdc67d038affabbe3968fba9a95b4ac1f19da7"
+metafile = true
+
+[[files]]
+file = "mods/bits-n-tracks-ce.pw.toml"
+hash = "9eeb8742db75c2e69f4b375b28234fe1d10ed59b19eac03748021276b40b8e1b"
 metafile = true
 
 [[files]]
@@ -420,6 +430,11 @@ hash = "a0e9ff95570cd9af3374ca8b44aa095447baf94e565f46ae99819d52a9b48dc1"
 metafile = true
 
 [[files]]
+file = "mods/create-bits-n-bobs.pw.toml"
+hash = "2aa588c0760e81c40fae4df29e14643ddb19d40474bf177206a8f687e70b953e"
+metafile = true
+
+[[files]]
 file = "mods/create-deep-seas.pw.toml"
 hash = "c9fbb2088235383670502072f33ba1ae2bce0f9604399ba2171a45286f52507f"
 metafile = true
@@ -457,6 +472,11 @@ metafile = true
 [[files]]
 file = "mods/create-timeless-and-classics-zero-tacz-port.pw.toml"
 hash = "08579d3ace75d7e5047b902f1d69413447333dc1f6a15235e35677864c1380a4"
+metafile = true
+
+[[files]]
+file = "mods/create-tracks-plus.pw.toml"
+hash = "b5d7bf5c707e49e0ad5f266fc440ad6bdfeb86c2774e9b3574ea17c35d33082d"
 metafile = true
 
 [[files]]
@@ -711,6 +731,11 @@ metafile = true
 [[files]]
 file = "mods/stronger-blocks.pw.toml"
 hash = "c63e8cc8ec021596e4e0808eef6656f59054f5b7e3b96814c173807fee829476"
+metafile = true
+
+[[files]]
+file = "mods/strut-your-stuff.pw.toml"
+hash = "aa89e067824ca42d818a81a6d02ce5296ce662d834c35dd2ff0d81189d3bc3f9"
 metafile = true
 
 [[files]]
