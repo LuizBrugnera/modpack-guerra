@@ -46,12 +46,10 @@ $tmp = Join-Path $env:TEMP 'prism-guerra'
 Remove-Item $tmp -Recurse -Force -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force (Join-Path $tmp 'minecraft\mods') | Out-Null
 Copy-Item $boot (Join-Path $tmp 'minecraft\packwiz-installer-bootstrap.jar')
-$linhas = @('@echo off', 'REM Roda antes de cada abertura do jogo (Prism: comando de pre-lancamento)', 'cd /d "%~dp0"', 'if not exist mods mkdir mods')
-foreach ($m in $jarsManuais) {
-  $linhas += "if not exist `"mods\$($m.Arquivo)`" curl -fsSL -o `"mods\$($m.Arquivo)`" `"$($m.Url)`""
-}
-$linhas += "`"%~1`" -jar packwiz-installer-bootstrap.jar $PackUrl"
-[IO.File]::WriteAllText((Join-Path $tmp 'minecraft\atualizar-mods.bat'), ($linhas -join "`r`n") + "`r`n", $utf8)
+# Pré-lançamento: o Prism roda o comando dentro da pasta minecraft/ da instância.
+# O instance.cfg é lido como INI (QSettings): o valor inteiro vai entre aspas e as aspas
+# internas escapadas com \", senão o Prism apaga as aspas e cola os argumentos.
+# Os mods bloqueados na API do CurseForge têm URL direta no .pw.toml, então não precisa de .bat.
 $cfg = @"
 [General]
 ConfigVersion=1.2
@@ -64,7 +62,7 @@ MaxMemAlloc=8192
 OverrideJavaArgs=true
 JvmArgs=-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15
 OverrideCommands=true
-PreLaunchCommand=cmd /c "`$INST_MC_DIR\\atualizar-mods.bat" "`$INST_JAVA"
+PreLaunchCommand="\"`$INST_JAVA\" -jar packwiz-installer-bootstrap.jar $PackUrl"
 "@
 [IO.File]::WriteAllText((Join-Path $tmp 'instance.cfg'), $cfg, $utf8)
 $mmc = '{"components":[{"uid":"net.minecraft","version":"1.21.1","important":true},{"uid":"net.neoforged","version":"' + $nf + '"}],"formatVersion":1}'

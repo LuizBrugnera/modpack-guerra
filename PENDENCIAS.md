@@ -108,3 +108,8 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - 4 capítulos, 32 quests, em português: 1. Primeiros passos no Create → 2. Seu primeiro barco → 3. Voando: balão e avião → 4. Navegação e controle. Textos originais (não copiados de outros modpacks).
 - Fonte: `scripts/gerar-quests.ps1` gera `config/ftbquests/quests/`. Editar lá e rodar de novo; os IDs são fixos (hash da chave), então o progresso dos jogadores se mantém. Editar pelo editor do jogo grava só na pasta local — copie de volta para o repo se usar.
 - Testado: servidor carrega "4 chapters, 32 quests" sem avisos; todos os itens das tarefas existem. Não conferido na tela do jogo (layout/textos).
+
+## Instância do Prism: comando de pré-lançamento (corrigido 03/11/2026)
+- O primeiro zip tinha `PreLaunchCommand=cmd /c "...atualizar-mods.bat" "$INST_JAVA"`. O Prism lê o `instance.cfg` como INI (QSettings): apaga as aspas e cola os argumentos → "A sintaxe do nome do arquivo... está incorreta" e o jogo não abre.
+- Agora: `PreLaunchCommand="\"$INST_JAVA\" -jar packwiz-installer-bootstrap.jar <URL>"` (valor inteiro entre aspas, aspas internas com `\"`), como na documentação do packwiz. O `.bat` saiu: os mods bloqueados na API já têm URL direta.
+- Quem importou o zip antigo: reimportar o zip novo, ou em *Editar instância → Configurações → Comandos personalizados → Pré-lançamento* colar `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/LuizBrugnera/modpack-guerra/main/pack.toml`.
