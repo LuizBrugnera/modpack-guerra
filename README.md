@@ -41,6 +41,7 @@ O `packwiz.exe` e o Java 21 portátil ficam em `../tools/`.
 - `/era` mostra a era do jogador; `/era definir <jogador> <1-5>` (op) muda.
 - `/guerra on | off | auto | status` — força ou libera o horário de guerra (padrão: sex/sáb 20h–23h, America/Sao_Paulo).
 - Pré-geração do mapa (console): `chunky worldborder` e `chunky start`; `chunky progress` mostra o andamento. Pausa sozinha quando alguém entra e continua quando o servidor esvazia (`pregeracao.js`).
+- **Para desligar com a pré-geração rodando:** primeiro `chunky pause`, espere uns 30 segundos, depois `stop`. Um `stop` direto com o Chunky rodando travou o desligamento (ficou preso descarregando chunks) e foi preciso fechar o processo à força. Ao abrir de novo, a pré-geração continua sozinha.
 - ServerCore dinâmico (`config/servercore/config.yml`): quando o servidor pesa, reduz sozinho mobs, simulação e visão; `/servercore reload` aplica mudanças na config.
 - Nunca atualizar CBC, Project Explosive ou Create Aeronautics no meio de uma guerra sem testar.
 - `create-radars` e `cbc-firepower-components` estão fixados (`packwiz pin`) — ver PENDENCIAS.md.

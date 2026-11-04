@@ -167,3 +167,5 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - Progressão: os drones são montados na mesa de montagem de veículos do Superb Warfare, que já é Era 4. Nota no EMI em `info_eras.js`.
 - As explosões são normais do Minecraft, então a proteção fora do horário de guerra (`horario_guerra.js`) vale para elas. Config padrão mantida (`longRangeChunkRadius = 4`).
 - Testado: servidor de teste sobe com ele; não testado em jogo (rádio, voo, monitor).
+- Reinício do servidor para o Skyfront (18:06): o `stop` com o Chunky rodando ficou preso em `ChunkMap.processUnloads` depois de "Saving worlds" (CPU em 100% num núcleo, nada gravado no disco por 20 min). Fechado à força; ninguém online, perda só do último minuto da pré-geração. Procedimento agora: `chunky pause`, esperar, `stop` (no README).
+- O `desativar-selecao.ps1` novo (processo separado) funcionou: a janela aberta às 18:26 já veio com o modo de seleção desligado.
