@@ -1,0 +1,13 @@
+name = "Chaos Moon 2"
+filename = "ChaosMoon2-1.21.1-NeoForge-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/345m3fxN/versions/m4jLYioP/ChaosMoon2-1.21.1-NeoForge-1.0.1.jar"
+hash-format = "sha512"
+hash = "bae82606cb2f77fe41ad147baf14d974df05fd6a6655ab2a33319566ac94ff1c077e9dd252c5dc6aa82f4a4e442ae5317c8819657723782bfc49396bce284f3b"
+
+[update]
+[update.modrinth]
+mod-id = "345m3fxN"
+version = "m4jLYioP"

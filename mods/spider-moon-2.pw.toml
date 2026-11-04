@@ -1,0 +1,13 @@
+name = "Spider Moon 2"
+filename = "SpiderMoon2-1.21.1-NeoForge-Fabric-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ebWKQV3p/versions/tdq1VrN9/SpiderMoon2-1.21.1-NeoForge-Fabric-1.0.0.jar"
+hash-format = "sha512"
+hash = "e43340a718591478b1b1501f766ba6486155d69ab74403e1100bb4ef7682a226b3d8ae544837caa47e9278591363dac28fa4eb54b3bdf8f81761c9c9e891854e"
+
+[update]
+[update.modrinth]
+mod-id = "ebWKQV3p"
+version = "tdq1VrN9"

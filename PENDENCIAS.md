@@ -91,3 +91,8 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 - Verificado: servidor sobe; a classe exportada pelo Mixin mostra a cópia nos 4 métodos de envio. A corrida em si é aleatória e não dá para reproduzir sob demanda: observar se a queda volta.
 - Se uma versão nova do Weather2 corrigir o bug, remover o jar. Se o Weather2 renomear os métodos, o servidor não sobe (mixin obrigatório) — o erro aponta para `guerra_weather2fix`.
 - Recompilar: ver comando em `fix-mods/weather2fix/COMPILAR.md`.
+
+## Lote de 03/11/2026 (pedido do admin)
+- Adicionados (Modrinth, 1.21.1 NeoForge): Create: Simulated Missiles 0.2.0 (CurseForge, via CDN), Create Propulsion: Simulated 1.1.5, Create Aeronautics: Toolgun 0.3.7, Better Villages 3.3.1 (só servidor; dep. Library Ferret), Born in Chaos 1.7.6, Create: The Air War 5.00.
+- Luas: o Moon Bundle usa o Enhanced Celestials **1** e o Chaos Moon 2 usa o Enhanced Celestials **2** (reescrita). Decisão: tudo no EC2 — Chaos Moon 2 + as versões "2" das luas do bundle: Horde, Spider, Black, Hunter's, Miner's e Peaceful Moon 2 (deps: EC2 Core, CorgiLib, Data Anchor). O Moon Bundle **não** entrou.
+- Testado: servidor de teste sobe com tudo, sem erros novos. Não testado em jogo: frequência das luas (Peaceful Moon impede spawn de hostis por uma noite; Black Moon dá cegueira), estruturas do Born in Chaos/Better Villages e itens da Air War/Propulsion.

@@ -60,6 +60,21 @@ hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
 
 [[files]]
+file = "mods/better-village.pw.toml"
+hash = "70d6a7931439fe0fe8d517e89fcdc67d038affabbe3968fba9a95b4ac1f19da7"
+metafile = true
+
+[[files]]
+file = "mods/black-moon-2.pw.toml"
+hash = "f60fd5578be63bfec15dccd2ad5b84f191c5b2ea40335de2cdf937f2b95ecec6"
+metafile = true
+
+[[files]]
+file = "mods/borninchaos.pw.toml"
+hash = "a2c8cf1a4fc5faed55ca1f8d04f7abaa1c8282b9bcd70e1b3e607181923f48d9"
+metafile = true
+
+[[files]]
 file = "mods/burnt.pw.toml"
 hash = "5b399a748b038a060884d9c24f5aa5b1a8d48feb699fc72c5a5d8f2260ae282f"
 metafile = true
@@ -85,8 +100,18 @@ hash = "372291300bbf4e4a0589d5c6bc9b075d28b70d5bf247d1b64ab6f520b68e3e7b"
 metafile = true
 
 [[files]]
+file = "mods/chaos-moon-2.pw.toml"
+hash = "a6fc685c5d20335a9695a58ec80c293f6b136fa7c894b6206d37ffd8c29d6a3f"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
+metafile = true
+
+[[files]]
+file = "mods/corgilib.pw.toml"
+hash = "9ae835550d113663b527b6ba934dd7d758d8e0a93c68bb44d84eb1ef1be69159"
 metafile = true
 
 [[files]]
@@ -120,6 +145,11 @@ hash = "ede459754df771b7fed0268f983b67f9f98ccccd60df8958ffa49d28f0481106"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics-toolgun.pw.toml"
+hash = "629eb4cc7414de1ed8328412431d8e14d894c44e4b9977e024f2d207be4141b1"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "3b8895369640b2a52d3e05f7186185ba6798e44d513f11c5427a0fe9c16769e9"
 metafile = true
@@ -137,6 +167,11 @@ metafile = true
 [[files]]
 file = "mods/create-liquid-fuel.pw.toml"
 hash = "69fc8e5bb97d5ed685c2344572caa78498beb58cda9ab4735076426f0b555ea5"
+metafile = true
+
+[[files]]
+file = "mods/create-propulsion-simulated.pw.toml"
+hash = "f82cdd570cb4f6bd9b87a6a30c5e5ecc23125dfcecc715d4950a17301de8c58a"
 metafile = true
 
 [[files]]
@@ -160,6 +195,11 @@ hash = "80332cead695f1e3c27e99133a48709767d1106f836792bb2fc4d594b88f1a68"
 metafile = true
 
 [[files]]
+file = "mods/create-the-air-war.pw.toml"
+hash = "422fd5cf73322f4379b04dc0a3d8dc952b8faeadd2f287d40e31db596db72c83"
+metafile = true
+
+[[files]]
 file = "mods/create-timeless-and-classics-zero-tacz-port.pw.toml"
 hash = "08579d3ace75d7e5047b902f1d69413447333dc1f6a15235e35677864c1380a4"
 metafile = true
@@ -175,6 +215,11 @@ hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
 
 [[files]]
+file = "mods/data-anchor.pw.toml"
+hash = "d025359648bc99d4eec57a159fe07ba3638c519a7b568b414041fe15fb196066"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "0c20fea3407ed0db85b4b171f1820a24987f2659946fadd30bae044205041b09"
 metafile = true
@@ -182,6 +227,11 @@ metafile = true
 [[files]]
 file = "mods/emi.pw.toml"
 hash = "67bb77eae0b644960be3b1074178ceb5d54facbb42f326981b9d94625238a54a"
+metafile = true
+
+[[files]]
+file = "mods/enhanced-celestials-2-core.pw.toml"
+hash = "092c2fe392d74839d1210f7c5ecf90de3f7c230cc3f5ca064cf284b29ec97f30"
 metafile = true
 
 [[files]]
@@ -202,6 +252,16 @@ metafile = true
 [[files]]
 file = "mods/guerra-weather2fix-1.0.0.jar"
 hash = "f84feac7c854afac79b92b7c72eba5f0f1f92d0f6b8f7a246b80cfdcc884dafa"
+
+[[files]]
+file = "mods/horde-moon-2.pw.toml"
+hash = "7ae5b74d71f05ead5be1b9ce6512f541fd4ef49440816b8518b2f1000a91e4b3"
+metafile = true
+
+[[files]]
+file = "mods/hunters-moon-2.pw.toml"
+hash = "e7650c1f47b34fb6b070a4e142ea918945fbd4c5b33fb2037ad30e6343f9b1ae"
+metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
@@ -229,6 +289,16 @@ hash = "be9f3f981dd69822b4a3e5ab6fd677ec69a4e01dcf66c62e239b6ef65f31f0fd"
 metafile = true
 
 [[files]]
+file = "mods/library-ferret.pw.toml"
+hash = "599c8c37e60b9f1fbfb29d10eb9ede3d174b72287b9fbe407e90b6417a27a441"
+metafile = true
+
+[[files]]
+file = "mods/miners-moon-2.pw.toml"
+hash = "a1df8816f067189c2a111e55fe3f5cf9f18798f6ba93b6b65193f2bf3af23509"
+metafile = true
+
+[[files]]
 file = "mods/mixauth.pw.toml"
 hash = "94867ea2f0b435da9235cf4966a4c901c486ff50a35a6d20f92676512c2a2fa9"
 metafile = true
@@ -246,6 +316,11 @@ metafile = true
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 hash = "299ed58980f5c02afbaabcc52d5e573e8b8ab0c2c30fd688d6d7e86e7ac6bf6d"
+metafile = true
+
+[[files]]
+file = "mods/peaceful-moon-2.pw.toml"
+hash = "62d7231bec1dde8ff674068adec4e8fe2e11a4667d04cfffbc9248cbb2bf685a"
 metafile = true
 
 [[files]]
@@ -301,6 +376,11 @@ metafile = true
 [[files]]
 file = "mods/spark.pw.toml"
 hash = "593fa7b30ab016aa45be07bd6bef3a9f160ed0f24689850d60bf84995d69b843"
+metafile = true
+
+[[files]]
+file = "mods/spider-moon-2.pw.toml"
+hash = "0d56161ff4e5f725c81bb247bc72b76bc8c703065e86b6eff4c3f819b783c6ca"
 metafile = true
 
 [[files]]

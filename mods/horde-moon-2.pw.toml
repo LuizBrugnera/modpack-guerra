@@ -1,0 +1,13 @@
+name = "Horde Moon 2"
+filename = "HordeMoon2-1.21-NeoForge-Fabric-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/QHce5PbN/versions/T1VLpJKP/HordeMoon2-1.21-NeoForge-Fabric-1.0.0.jar"
+hash-format = "sha512"
+hash = "cb42d6f2cbb3e56fdd5e5fdc8ee085d7688f7eceae048175f6ac26e36a5f180fab2e4f25d5e41c9897b4078c2a18ed420866f885a61432f235e9f707abd86ef7"
+
+[update]
+[update.modrinth]
+mod-id = "QHce5PbN"
+version = "T1VLpJKP"

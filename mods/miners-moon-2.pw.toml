@@ -1,0 +1,13 @@
+name = "Miner's Moon 2"
+filename = "MinersMoon2-1.21.1-NeoForge-Fabric-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2ibtXUwq/versions/Na7tM24O/MinersMoon2-1.21.1-NeoForge-Fabric-1.0.1.jar"
+hash-format = "sha512"
+hash = "6f447a99be4b44c1cd43c9bf5056dd416c6115747f988f70d098a7ef3b2bc976e0fda2089ed0eba1c0a4c0d91b38411fd0239f01e855bac7abd49b5ca3200b73"
+
+[update]
+[update.modrinth]
+mod-id = "2ibtXUwq"
+version = "Na7tM24O"

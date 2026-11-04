@@ -1,0 +1,13 @@
+name = "Hunter's Moon 2"
+filename = "HuntersMoon2-1.21.1-NeoForge-Fabric-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fqvUheV6/versions/SjCR082X/HuntersMoon2-1.21.1-NeoForge-Fabric-1.0.1.jar"
+hash-format = "sha512"
+hash = "98a685f0b4f49a2dfa03b83096103d67613af1c8e6bc4f02e8bab0aa1412855c698c1acc1ffd8eb962142d0d461a11659ff879c98b8818b782fcb2faa17ce11d"
+
+[update]
+[update.modrinth]
+mod-id = "fqvUheV6"
+version = "SjCR082X"

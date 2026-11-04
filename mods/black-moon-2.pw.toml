@@ -1,0 +1,13 @@
+name = "Black Moon 2"
+filename = "BlackMoon2-1.21.1-NeoForge-Fabric-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2w0WhrXg/versions/YzX5iq90/BlackMoon2-1.21.1-NeoForge-Fabric-1.0.0.jar"
+hash-format = "sha512"
+hash = "eb53fedb24944933f86339acd9182e96ac39d58cc649024d890fbdef3cce06298c3d472ae95448698514dd41c38749c72ec66ecbe4517518c7e8319a745564b4"
+
+[update]
+[update.modrinth]
+mod-id = "2w0WhrXg"
+version = "YzX5iq90"

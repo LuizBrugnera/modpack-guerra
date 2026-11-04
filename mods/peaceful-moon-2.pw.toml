@@ -1,0 +1,13 @@
+name = "Peaceful Moon 2"
+filename = "PeacefulMoon2-1.21.1-Neoforge-Fabric-1.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/tasFtZEL/versions/BRkHd1zL/PeacefulMoon2-1.21.1-Neoforge-Fabric-1.0.4.jar"
+hash-format = "sha512"
+hash = "ad25fea2093966ee8552d35f7e8c08b343607cefd4a079d3b4ca62ad26d4a3750b984c51f8fcafc4322bd60080568ec1a7039d5398f060677666dc5bff3d0faf"
+
+[update]
+[update.modrinth]
+mod-id = "tasFtZEL"
+version = "BRkHd1zL"
