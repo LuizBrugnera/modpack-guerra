@@ -35,7 +35,7 @@ Para adicionar: `packwiz mr add <slug>` ou `packwiz cf add <slug>` dentro de `mo
 
 - **OPAC** (`config/openpartiesandclaims-server.toml`): `partyOwnedClaims = true`, `maxPlayerClaims = 64`, `claimBonusPerPartyMember = 16`, `maxPlayerClaimForceloads = 4`, `forceloadBonusPerPartyMember = 0`.
 - **OPAC** (`defaultconfigs/openpartiesandclaims-default-player-config.toml`): `blocksByExplosions = true` — claims **não** bloqueiam explosões; quem protege fora do horário é o `horario_guerra.js` (vale para o mapa todo). Os jogadores não podem mudar essa opção. Em servidor novo, copiar este arquivo para `world/serverconfig/`.
-- **Weather2**: chance de tornados F0–F5 reduzida (30/20/10/5/2/1 %) e `Storm_Tornado_grabBlocks = false` (o Weather2 não respeita claims). Religar na Era 3.
+- **Weather2**: chance de tornados F0–F5 reduzida (30/20/10/5/2/1 %). `Storm_Tornado_grabBlocks = true` (religado em 03/11 a pedido): arranca principalmente blocos de madeira, folhas, cercas e plantas (regras "Refined" + "StrengthGrabbing": não arranca terra, grama, areia nem troncos). Antes de arrancar, o Weather2 dispara um evento de quebra de bloco, então o OPAC deve proteger claims — não testado. Não respeita o horário de guerra. Jogador em Criativo não é puxado.
 - **Guard Villagers TACZ Support**: `zombie_tacz_weapon_spawn_chance = 0.0` e `pillager_tacz_enabled = false`. Religar depois da Era 2 com chance baixa (ex.: 0.03).
 - **CBC**: recuo padrão (`bigCannonRecoilScale = 1.0`), `damageRestriction = "ALL_DAMAGE"`.
 
